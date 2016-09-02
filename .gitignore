@@ -1,0 +1,14 @@
+# Eclipse
+.settings/
+.project
+.buildpath
+
+# Webstorm
+.idea/
+
+# Dependencies
+node_modules/
+vendor/
+
+# Personal
+TODO

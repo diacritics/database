@@ -1,0 +1,35 @@
+{
+  "name": "diacritics",
+  "version": "0.1.0",
+  "keywords": [
+    "diacritic",
+    "diacritics",
+    "decompose",
+    "replace",
+    "mapping",
+    "javascript"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/julmot/diacritics",
+  "author": {
+    "name": "Julian Motz",
+    "url": "https://github.com/julmot"
+  },
+  "description": "A collection of diacritics with their associated ASCII characters.",
+  "main": "dist/diacritics.json",
+  "repository": "julmot/diacritics",
+  "bugs": {
+    "url": "https://github.com/julmot/diacritics/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: Use Grunt tasks\" && exit 1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-strip-json-comments": "^2.1.0",
+    "jit-grunt": "^0.10.0"
+  },
+  "private": true
+}
