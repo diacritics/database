@@ -150,13 +150,13 @@ diacritic character (e.g. `ü` decomposes into `ue` in German).
 Optional
 Type: `Array`
 
-Equivalents are contained within the [[equivalents file]] and are concatenated
-to the language file within the `dist` folder. An equivalents array is *only
-defined* in the language file if it does not match all of the values found
-within the [[equivalents file]] for the given diacritic. In this case, *all*
-equivalents *must* be included as the values within the [[equivalents file]] are
-ignored.
+Equivalents are contained within the [equivalents file](equivalents-file.md) and
+are concatenated to the language file within the `dist` folder. An equivalents
+array is *only defined* in the language file if it does not match all of the
+values found within the equivalents file for the given diacritic. In this case,
+*all* equivalents *must* be included as the values within the equivalents file
+are ignored.
 
 If the equivalents of the diacritic do not deviate from the values contained
-within the [[equivalents file]], then *do not* include this `equivalents` key
-and value pair in the language file.
+within the [equivalents file](equivalents-file.md), then *do not* include this
+`equivalents` key and value pair in the language file.
