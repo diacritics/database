@@ -1,6 +1,7 @@
 # language file specification
 
-A language file is used to collect diacritics mapping information for each language or language variant.
+A language file is used to collect diacritic mapping information for each
+language or language variant.
 
 **Example**:
 
@@ -64,31 +65,33 @@ A language file is used to collect diacritics mapping information for each langu
 
 ## metadata.alphabet
 
-Required  
+Required
 Type: `String`
 
-An alphabet code based on [ISO 15924](https://en.wikipedia.org/wiki/ISO_15924) that specifies the associated alphabet
+An alphabet code based on [ISO 15924](https://en.wikipedia.org/wiki/ISO_15924)
+that specifies the associated alphabet.
 
 ## metadata.continent
 
-Required  
+Required
 Type: `String` or `Array` of `String`
 
-A continent code based on [ISO-3166](https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_continent_%28data_file%29) that specifies the assocated continent
+A continent code based on [ISO-3166](https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_continent_%28data_file%29)
+that specifies the assocated continent.
 
 ## metadata.language
 
-Required  
+Required
 Type: `String`
 
-The associated language written in English
+The associated language written in English.
 
 ## metadata.native
 
-Required  
+Required
 Type: `String`
 
-The associated language written in the native language
+The associated language written in the native language.
 
 ## metadata.sources
 
@@ -98,25 +101,62 @@ An optional object containing two properties:
 
 ### metadata.sources.list
 
-Required  
+Required
 Type: `Array`
 
-An array containing links to diacritics sources
+An array containing links to diacritic sources.
 
 ### metadata.sources.mapping
 
-Required  
+Required
 Type: `Array`
 
-An array containing links to diacritics mapping sources
+An array containing links to diacritic mapping sources.
 
 ## data
 
-Required  
+Required
 Type: `Object`
 
-An object containing the actual mapping information. Every diacritic has its own object key. The value for each diacritic is an object specified below:
+An object containing the actual mapping information. Every diacritic has its own
+object key. The value for each diacritic is an object specified below:
 
 ### mapping
 
-TBD
+Required
+Type: `Object`
+
+An object containing mapping values for the given diacritic. This must contain a
+base or decompose value, or both. It can not be empty.
+
+### mapping.base
+
+Optional
+Type: String
+
+This is the base of the diacritic character (e.g. `ü` has a base of `u`, an
+unaccented character).
+
+### mapping.decompose
+
+Optional
+Type: String
+
+This is the character, or combination of characters used to represent the
+diacritic character (e.g. `ü` decomposes into `ue` in German).
+
+### equivalents
+
+Optional
+Type: `Array`
+
+Equivalents are contained within the [[equivalents file]] and are concatenated
+to the language file within the `dist` folder. An equivalents array is *only
+defined* in the language file if it does not match all of the values found
+within the [[equivalents file]] for the given diacritic. In this case, *all*
+equivalents *must* be included as the values within the [[equivalents file]] are
+ignored.
+
+If the equivalents of the diacritic do not deviate from the values contained
+within the [[equivalents file]], then *do not* include this `equivalents` key
+and value pair in the language file.
