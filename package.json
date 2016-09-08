@@ -10,16 +10,16 @@
     "javascript"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/julmot/diacritics",
+  "homepage": "https://github.com/diacritics/diacritics",
   "author": {
     "name": "Julian Motz",
     "url": "https://github.com/julmot"
   },
   "description": "A collection of diacritics with their associated ASCII characters.",
   "main": "dist/diacritics.json",
-  "repository": "julmot/diacritics",
+  "repository": "diacritics/diacritics",
   "bugs": {
-    "url": "https://github.com/julmot/diacritics/issues"
+    "url": "https://github.com/diacritics/diacritics/issues"
   },
   "scripts": {
     "test": "echo \"Error: Use Grunt tasks\" && exit 1"
@@ -28,7 +28,7 @@
     "grunt": "^1.0.0",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0",
-    "grunt-strip-json-comments": "^2.1.0",
+    "grunt-strip-json-comments": "^2.2.0",
     "jit-grunt": "^0.10.0"
   },
   "private": true
