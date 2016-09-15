@@ -10,13 +10,12 @@
      * Output format. Values used in JSON.stringify to format JSON
      * Set to an empty string ("") for a compressed JSON. Or a space (" "),
      * tab ("\t"), or a number of spaces to use (up to 10); defaults to 4 spaces
-     * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify#The_space_argument
-     * for more details
+     * See http://tinyurl.com/hohyfna for more details
      */
     "output-format": 4,
     /**
      * diacritics copied directly from the "Latin" table header at
-     * // http://www.unicode.org/cldr/charts/29/by_type/core_data.alphabetic_information.main.html
+     * http://tinyurl.com/zftlk7t
      * Note:
      *  1. Replace tabs with spaces.
      *  2. This table does include plain characters (e.g. a, b, c, d) which

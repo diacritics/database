@@ -12,7 +12,6 @@
                 "https://en.wikipedia.org/wiki/German_orthography#Sorting"
             ]
         }
-        // there could be more
     },
     "data": {
         "ü": {
