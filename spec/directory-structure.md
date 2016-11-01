@@ -1,3 +1,0 @@
-# directory structure specification
-
-TBD
