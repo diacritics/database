@@ -1,6 +1,6 @@
-# diacritics Specification
+# Diacritics Database Specification
 
-> Source file specification of the diacritics database
+> File specification for the diacritics database
 
 ## 1. What Information Must Be Collected?
 
@@ -59,7 +59,7 @@ Files within the `src/` folder are called **language files**.
 
 ##### 2.1.2.1 Language File Specification
 
-Example structure for the German language file, which only contains case characters for brevity:
+Example structure for the German language file, which only contains lower case characters for brevity:
 
 ```javascript
 {
@@ -205,7 +205,8 @@ languages are included (truncated to avoid repetition):
 
 Beside of generating all the data into one file the build _automatically_ adds visual diacritic equivalents to `diacritics.json`. Behind each diacritic may be several identical looking characters that have a different Unicode code point. To make sure the mapping process will catch all of them, these equivalents need to be mapped too.
 
-These equivalents are added to the language file under `data.{character}.equivalents` (`{character}` is a placeholder for a diacritic).  
+These equivalents are added to the language file under `data.{character}.equivalents` (`{character}` is a placeholder for a diacritic).
+
 Example (only showing one lower case diacritic):
 
 ```javascript
@@ -269,14 +270,14 @@ Contains a named HTML entity (e.g. `&ouml;`) - [ref](https://dev.w3.org/html5/ht
 Required  
 Type: `String`
 
-Contains a URL encoded value (e.g. `%C3%B6`) - see [percent encoding](https://en.wikipedia.org/wiki/Percent-encoding)).
+Contains a URL encoded value (e.g. `%C3%B6`) - see [percent encoding](https://en.wikipedia.org/wiki/Percent-encoding).
 
 ##### equivalents.extras
 
 Optional  
 Type: `Object`
 
-Contains generated normalization values (using NFD, NFC, NFKD, NFKC [normalization forms](http://unicode.org/reports/tr15/#Norm_Forms))).
+Contains generated normalization values (using NFD, NFC, NFKD, NFKC [normalization forms](http://unicode.org/reports/tr15/#Norm_Forms)).
 
 ##### equivalents.extras.unicode
 
