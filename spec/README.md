@@ -50,7 +50,7 @@ src/
 
 - As there might be multiple files for a language, each language has its own folder
 - The language files in this folder will be in a `.js` format to allow comments and to make sure text editors allow formatting them. The containing source is JSON though
-- Folder and files names must be according to [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
+- Folder and file names must be according to [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
 - Each language variant has its own file. If the variants (e.g. de_DE, de_AT, de_CH) don't have any differences, only one file must be added
 - When creating a language variant file all mappings need to be created (redundant) – not incrementally
 - Changes should only be done within the source files
@@ -173,8 +173,11 @@ diacritic character (e.g. `ö` decomposes into `oe` in German).
 
 ## 3. Dist Branch
 
-The `dist` branch contains generated data from master's `src/` files combined into a single file, `diacritics.json`. This file has almost identical structure like the files within `src/` and will be in a valid `.json` format which can not contain comments.  
-This distribution file is automatically generated when a pull request is merged using a build that is running on Travis CI. This workflow has been chosen to allow contributions without a Git clone or command line things in general.
+The `dist` branch contains generated data from master's `src/` files combined into a single file, `diacritics.json`. This file has almost identical structure like the files within `src/` and will be in a valid `.json` format which can not contain comments.
+
+This distribution file is automatically generated when a pull request targeting the master branch is merged using a build that is running on Travis CI. This workflow has been chosen to allow contributions without a Git clone or command line things in general.
+
+The file will be generated to a uniquely named folder, e.g. `v1`. In case the JSON structure changes, it's then possible to generate it to a different folder. This makes sure that components depending on the old file structure will still work.
 
 While the dist branch contains all data, a server-side component is used to serve and filter them.
 
@@ -200,7 +203,7 @@ languages are included (truncated to avoid repetition):
 
 #### 3.1.1 Visual Diacritic Equivalents
 
-Beside of generating all the data into one file the build automatically adds visual diacritic equivalents to `diacritics.json`. Behind each diacritic may be several identical looking characters that have a different Unicode code point. To make sure the mapping process will catch all of them, these equivalents need to be mapped too.
+Beside of generating all the data into one file the build _automatically_ adds visual diacritic equivalents to `diacritics.json`. Behind each diacritic may be several identical looking characters that have a different Unicode code point. To make sure the mapping process will catch all of them, these equivalents need to be mapped too.
 
 These equivalents are added to the language file under `data.{character}.equivalents` (`{character}` is a placeholder for a diacritic).  
 Example (only showing one lower case diacritic):
