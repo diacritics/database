@@ -20,10 +20,22 @@
                 "decompose": "ue"
             }
         },
+        "Ü": {
+            "mapping": {
+                "base": "U",
+                "decompose": "UE"
+            }
+        },
         "ö": {
             "mapping": {
                 "base": "o",
                 "decompose": "oe"
+            }
+        },
+        "Ö": {
+            "mapping": {
+                "base": "O",
+                "decompose": "OE"
             }
         },
         "ä": {
@@ -32,9 +44,15 @@
                 "decompose": "ae"
             }
         },
+        "Ä": {
+            "mapping": {
+                "base": "A",
+                "decompose": "AE"
+            }
+        },
         "ß": {
             "mapping": {
-                "base": "\u00df", // unchanged
+                "base": "ß",
                 "decompose": "ss"
             }
         }
