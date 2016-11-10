@@ -1,4 +1,4 @@
-# diacritics Database
+# Diacritics Database
 
 The meaning behind this repository is to collect diacritics with their associated ASCII characters in a structured form. It should be the central place for various projects when it comes to diacritics mapping.
 
