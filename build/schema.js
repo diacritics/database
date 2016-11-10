@@ -1,3 +1,9 @@
+/*!***************************************************
+ * diacritics
+ * http://diacritics.io/
+ * Copyright (c) 2016, Julian Motz
+ * Released under the MIT license https://git.io/vXg2H
+ *****************************************************/
 {
     "title": "Language File Schema",
     "type": "object",
