@@ -9,7 +9,9 @@ const fs = require("fs"), // file system
     glob = require("glob"), // match files using patterns
     del = require("del"), // delete files using patterns
     stripJsonComments = require("strip-json-comments"), // remove JSON comments
-    Ajv = require("ajv"); // json schema validation
+    Ajv = require("ajv"), // json schema validation
+    schema = JSON.parse(fs.readFileSync("./build/schema.json", "utf8")),
+    pkg = JSON.parse(fs.readFileSync("./package.json", "utf8"));
 
 // clear build folder
 del.sync(["./build/out/**"]);
@@ -33,9 +35,7 @@ files.forEach(file => {
 
     // schema validation
     const validator = new Ajv(),
-        validate = validator.compile(
-            JSON.parse(fs.readFileSync("./build/schema.json", "utf8"))
-        );
+        validate = validator.compile(schema);
     if(!validate(json)) {
         throw new Error(
             `Schema error in file '${file}': ${
@@ -57,8 +57,9 @@ files.forEach(file => {
 
 // write diacritics.json based on `out`
 fs.mkdirSync("./build/out/");
+fs.mkdirSync(`./build/out/v${pkg.version.split(".")[0]}`);
 fs.writeFileSync(
-    "./build/out/diacritics.json",
+    `./build/out/v${pkg.version.split(".")[0]}/diacritics.json`,
     JSON.stringify(out, null, 4),
     "utf8"
 );
