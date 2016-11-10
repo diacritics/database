@@ -185,23 +185,46 @@ class Build {
      * @return {string[]}
      */
     generateEquivalents(char) {
-        return [
-            // add unicode value (UTF-32)
-            this.decodeUnicode(char),
-            // add HTML decimal code
-            this.decodeUnicode(char, {
+        let ret = {
+            "unicode": this.decodeUnicode(char, {
+                prefix: "\\u"
+            }),
+            "html_decimal": this.decodeUnicode(char, {
                 prefix: "&#",
                 suffix: ";",
                 base: "dec"
             }),
-            // add HTML hex code
-            this.decodeUnicode(char, {
+            "html_hex": this.decodeUnicode(char, {
                 prefix: "&#x",
                 suffix: ";"
             }),
-            // add URI equivalent
-            encodeURI(char)
-        ];
+            "encoded_uri": encodeURI(char)
+        };
+        if(this.htmlEntities[char]) {
+            ret["html_entity"] = this.htmlEntities[char];
+        }
+        return ret;
+    }
+
+    /**
+     * Iterates over the mapping characters and adds equivalents using
+     * <code>generateEquivalents</code>
+     * @param {object} json - The JSON object
+     * @return {object}
+     */
+    addEquivalents(json) {
+        let clone = JSON.parse(JSON.stringify(json));
+        for(let lang in json) {
+            if(json.hasOwnProperty(lang)) {
+                for(let char in json[lang]["data"]) {
+                    if(json[lang]["data"].hasOwnProperty(char)) {
+                        const eq = this.generateEquivalents(char);
+                        clone[lang]["data"][char]["equivalents"] = eq;
+                    }
+                }
+            }
+        }
+        return clone;
     }
 
     /**
@@ -250,6 +273,8 @@ class Build {
                 }
                 out[folderName][fileName] = this.readJSON(file);
             }
+
+            out = this.addEquivalents(out);
         });
         this.writeOutput(out);
     }
