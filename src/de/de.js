@@ -4,14 +4,9 @@
         "continent": "EU",
         "language": "German",
         "native": "Deutsch",
-        "sources": {
-            "list": [
-                "https://en.wikipedia.org/wiki/German_orthography#Special_characters"
-            ],
-            "mapping": [
-                "https://en.wikipedia.org/wiki/German_orthography#Sorting"
-            ]
-        }
+        "sources": [
+            "https://en.wikipedia.org/wiki/German_orthography#Special_characters"
+        ]
     },
     "data": { // mapping information
         "ü": {

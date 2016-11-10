@@ -9,7 +9,7 @@ const fs = require("fs"), // file system
     glob = require("glob"), // match files using patterns
     del = require("del"), // delete files using patterns
     stripJsonComments = require("strip-json-comments"), // remove JSON comments
-    validate = require("ajv"); // validate json files
+    Ajv = require("ajv"); // json schema validation
 
 // clear build folder
 del.sync(["./build/out/**"]);
@@ -32,7 +32,17 @@ files.forEach(file => {
     }
 
     // schema validation
-    // TBD
+    const validator = new Ajv(),
+        validate = validator.compile(
+            JSON.parse(fs.readFileSync("./build/schema.json", "utf8"))
+        );
+    if(!validate(json)) {
+        throw new Error(
+            `Schema error in file '${file}': ${
+                JSON.stringify(validate.errors, null, 4)
+            }`
+        );
+    }
 
     // concat json with `out`
     if(folderName === fileName) { // no language variant
