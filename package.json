@@ -1,6 +1,6 @@
 {
-  "name": "diacritics",
-  "version": "0.1.0",
+  "name": "diacritics-database",
+  "version": "1.0.0",
   "keywords": [
     "diacritic",
     "diacritics",
@@ -10,25 +10,33 @@
     "javascript"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/diacritics/diacritics",
+  "homepage": "http://diacritics.io/",
   "author": {
     "name": "Julian Motz",
     "url": "https://github.com/julmot"
   },
-  "description": "A collection of diacritics with their associated ASCII characters.",
-  "main": "dist/diacritics.json",
-  "repository": "diacritics/diacritics",
+  "maintainers": [
+    {
+      "name": "Julian Motz",
+      "web": "https://github.com/julmot"
+    },
+    {
+      "name": "Rob Garrison",
+      "web": "https://github.com/Mottie"
+    }
+  ],
+  "description": "A database to map diacritics with their associated ASCII characters",
+  "repository": "diacritics/database",
   "bugs": {
-    "url": "https://github.com/diacritics/diacritics/issues"
+    "url": "https://github.com/diacritics/database/issues"
   },
   "scripts": {
-    "test": "echo \"Error: Use Grunt tasks\" && exit 1"
+    "build": "node build.js"
   },
+  "private": true,
   "devDependencies": {
-    "grunt": "^1.0.0",
-    "grunt-contrib-clean": "^1.0.0",
-    "grunt-strip-json-comments": "^2.2.0",
-    "jit-grunt": "^0.10.0"
-  },
-  "private": true
+    "del": "^2.2.2",
+    "glob": "^7.1.1",
+    "hjson": "^2.3.1"
+  }
 }

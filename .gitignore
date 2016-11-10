@@ -12,3 +12,6 @@ vendor/
 
 # Personal
 TODO
+
+# Build
+build/

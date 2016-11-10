@@ -34,7 +34,7 @@
         },
         "ß": {
             "mapping": {
-                "base": "\u00df",  // unchanged
+                "base": "\u00df", // unchanged
                 "decompose": "ss"
             }
         }
