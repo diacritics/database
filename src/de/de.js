@@ -13,7 +13,7 @@
             ]
         }
     },
-    "data": {
+    "data": { // mapping information
         "ü": {
             "mapping": {
                 "base": "u",

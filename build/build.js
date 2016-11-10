@@ -8,11 +8,11 @@
 const fs = require("fs"), // file system
     glob = require("glob"), // match files using patterns
     del = require("del"), // delete files using patterns
-    hjson = require("hjson"), // parse json with comments
-    pkg = JSON.parse(fs.readFileSync("./package.json")); // package config
+    stripJsonComments = require("strip-json-comments"), // remove JSON comments
+    validate = require("ajv"); // validate json files
 
 // clear build folder
-del.sync(["./build/**"]);
+del.sync(["./build/out/**"]);
 
 // concatenate all language files
 let out = {},
@@ -21,8 +21,20 @@ files.forEach(file => {
     const spl = file.split("/"),
         folderName = spl[2],
         fileName = spl[3].split(".")[0],
-        ctn = fs.readFileSync(file, "utf8"),
-        json = hjson.parse(ctn);
+        ctn = fs.readFileSync(file, "utf8");
+
+    // syntax validation
+    let json;
+    try {
+        json = JSON.parse(stripJsonComments(ctn));
+    } catch(error) {
+        throw new Error(`Syntax error in file: '${file}'`);
+    }
+
+    // schema validation
+    // TBD
+
+    // concat json with `out`
     if(folderName === fileName) { // no language variant
         out[fileName] = json;
     } else {
@@ -34,9 +46,9 @@ files.forEach(file => {
 });
 
 // write diacritics.json based on `out`
-fs.mkdirSync("./build/");
+fs.mkdirSync("./build/out/");
 fs.writeFileSync(
-    "./build/diacritics.json",
+    "./build/out/diacritics.json",
     JSON.stringify(out, null, 4),
     "utf8"
 );
