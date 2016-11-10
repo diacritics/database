@@ -11,6 +11,9 @@ const fs = require("fs"), // file system
     stripJsonComments = require("strip-json-comments"), // remove JSON comments
     Ajv = require("ajv"); // json schema validation
 
+/**
+ * Build
+ */
 class Build {
 
     /**
@@ -118,6 +121,87 @@ class Build {
         } else {
             return "";
         }
+    }
+
+    /**
+     * @typedef Build~decodeUnicode
+     * @type {object.<string>}
+     * @property {string} prefix - converted character prefix (unicode "\\u",
+     * HTML "&#" or "&#x")
+     * @property {string} suffix - converted character suffix (HTML ";")
+     * @property {string} base - "hex" (default) or "dec" (base 10, decimal)
+     * conversion
+     * @property {string} output - combined string (default); set to "array"
+     * for an array of values
+     */
+    /**
+     * Convert unicode character(s) into UTF-16 or -32 equivalents.
+     * Modified from http://tinyurl.com/zj7sd5h
+     * @param {str} str - The string to convert
+     * @param {Build~decodeUnicode} options
+     * @return {string|string[]}
+     */
+    decodeUnicode(str, options = {}) {
+        const prefix = options.prefix || "",
+            suffix = options.suffix || "",
+            len = str.length,
+            format = function (val) {
+                if(options.base === "dec") {
+                    // if no prefix/suffix, this returns a number type
+                    return(prefix || suffix) ? prefix + val + suffix : val;
+                }
+                // return ignore leading zero if hex <= FFFF
+                let size = val < 0x10000 ? -4 : -5;
+                return prefix +
+                    ("00000" + val.toString(16))
+                    .toUpperCase()
+                    .slice(size) + suffix;
+            };
+        let chr, low,
+            result = [],
+            indx = 0;
+        while(indx < len) {
+            chr = str.charCodeAt(indx++);
+            if(chr < 0x007F) {
+                // plain character
+                result.push(str.charAt(indx - 1));
+            } else if(chr >= 0xD800 && chr <= 0xDBFF) {
+                // surrogate pair
+                low = str.charCodeAt(indx++);
+                result.push(
+                    format(0x10000 + ((chr - 0xD800) << 10) | (low - 0xDC00))
+                );
+            } else {
+                // Basic Multilingual Plane (BMP) character
+                result.push(format(chr));
+            }
+        }
+        return options.output === "array" ? result : result.join("");
+    }
+
+    /**
+     * Generates equivalents of the defined character
+     * @param {string} char
+     * @return {string[]}
+     */
+    generateEquivalents(char) {
+        return [
+            // add unicode value (UTF-32)
+            this.decodeUnicode(char),
+            // add HTML decimal code
+            this.decodeUnicode(char, {
+                prefix: "&#",
+                suffix: ";",
+                base: "dec"
+            }),
+            // add HTML hex code
+            this.decodeUnicode(char, {
+                prefix: "&#x",
+                suffix: ";"
+            }),
+            // add URI equivalent
+            encodeURI(char)
+        ];
     }
 
     /**
