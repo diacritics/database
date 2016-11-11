@@ -31,13 +31,16 @@
     "url": "https://github.com/diacritics/database/issues"
   },
   "scripts": {
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "deploy": "node build/deploy.js"
   },
   "private": true,
   "devDependencies": {
     "ajv": "^4.8.2",
     "del": "^2.2.2",
     "glob": "^7.1.1",
+    "node-fs-extra": "^0.8.1",
+    "simple-git": "^1.62.0",
     "strip-json-comments": "^2.0.1"
   }
 }
