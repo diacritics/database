@@ -111,7 +111,7 @@ class Build {
     /**
      * Validates JSON schema
      * @param {string} file - Path to the JSON file
-     * @return {string] - Either an empty string or the error message
+     * @return {string} - Either an empty string or the error message
      */
     validateJSONSchema(file) {
         const validator = new Ajv(),
@@ -180,28 +180,60 @@ class Build {
     }
 
     /**
+     * Generate equivalents data block
+     * @param {string} char
+     * @return {object}
+     */
+    generateEquivalentsData(char) {
+      const ret = {
+          "raw": char,
+          "unicode": this.decodeUnicode(char, {
+              prefix: "\\u"
+          }),
+          "html_decimal": this.decodeUnicode(char, {
+              prefix: "&#",
+              suffix: ";",
+              base: "dec"
+          }),
+          "html_hex": this.decodeUnicode(char, {
+              prefix: "&#x",
+              suffix: ";"
+          }),
+          "encoded_uri": encodeURI(char)
+      };
+      if(this.htmlEntities[char]) {
+          ret["html_entity"] = this.htmlEntities[char];
+      }
+      return ret;
+    }
+
+    /**
      * Generates equivalents of the defined character
      * @param {string} char
      * @return {string[]}
      */
     generateEquivalents(char) {
-        let ret = {
-            "unicode": this.decodeUnicode(char, {
-                prefix: "\\u"
-            }),
-            "html_decimal": this.decodeUnicode(char, {
-                prefix: "&#",
-                suffix: ";",
-                base: "dec"
-            }),
-            "html_hex": this.decodeUnicode(char, {
-                prefix: "&#x",
-                suffix: ";"
-            }),
-            "encoded_uri": encodeURI(char)
-        };
-        if(this.htmlEntities[char]) {
-            ret["html_entity"] = this.htmlEntities[char];
+        let ret = [this.generateEquivalentsData(char)],
+            // normalization time! http://unicode.org/reports/tr15/#Norm_Forms
+            // we're going to decompose & recompose in every way
+            // e.g. U+00e4 (ä) into a + U+0308 (a + diaeresis)
+            normalized = [
+                char.normalize("NFD"),
+                char.normalize("NFC"),
+                char.normalize("NFKD"),
+                char.normalize("NFKC")
+            ];
+        // only keep the unique values
+        normalized = normalized.filter((char, indx, self) => {
+            let val = this.decodeUnicode(char, {
+              prefix: "\\u"
+            });
+            return ret[0]["unicode"] !== val && self.indexOf(char) === indx;
+        });
+        if (normalized.length) {
+            normalized.forEach(char => {
+                ret.push(this.generateEquivalentsData(char));
+            });
         }
         return ret;
     }
