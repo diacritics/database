@@ -133,10 +133,10 @@ The associated language written in the native language.
 
 ###### metadata.sources
 
-Optional  
+Required  
 Type: `Array`
 
-An array containing links to diacritic sources including mapping.
+An array containing links to diacritic sources including mapping. Include an empty array if no sources are to be listed.
 
 ###### data
 
@@ -218,83 +218,74 @@ Example (only showing one lower case diacritic):
                     "base": "u",
                     "decompose": "ue"
                 },
-                "equivalents": {
-                    "unicode": "\u00fc",
-                    "html_decimal": "&#252;",
-                    "html_hex": "&#xfc;",
-                    "encoded_uri": "%C3%BC",
-                    "html_entity": "&uuml;",
-                    "extras": {
-                        "unicode": "u\u0308",
+                "equivalents": [
+                    {
+                        "raw": "ü"
+                        "unicode": "\u00fc",
+                        "html_decimal": "&#252;",
+                        "html_hex": "&#xfc;",
+                        "encoded_uri": "%C3%BC",
+                        "html_entity": "&uuml;"
+                    },
+                    {
+                        "raw": "ü",
+                        "unicode": "u\\u0308",
                         "html_decimal": "u&#776;",
-                        "html_hex": "u&#x308;"
+                        "html_hex": "u&#x0308;",
+                        "encoded_uri": "u%CC%88"
                     }
-                }
+                ]
             }
         }
     }
 }
 ```
 
-##### equivalents.unicode
+##### equivalents
+
+Required  
+Type: `Array`
+
+Contains an array containing equivalents objects consisting of the original diacritic character and any additional characters created through normalization.
+
+##### equivalents[index].raw
+
+Required  
+Type: `String`
+
+Contains a rendered equivalent character (e.g. `ü`).
+
+##### equivalents[index].unicode
 
 Required  
 Type: `String`
 
 Contains an escaped unicode (hex) value of the character (e.g. `\u00f6`).
 
-##### equivalents.html_decimal
+##### equivalents[index].html_decimal
 
 Required  
 Type: `String`
 
 Contains a HTML entity in decimal format (e.g. `&#246;`).
 
-##### equivalents.html_hex
+##### equivalents[index].html_hex
 
 Required  
 Type: `String`
 
 Contains a HTML entity in hex format (e.g. `&#xf6;`).
 
-##### equivalents.html_entity
+##### equivalents[index].html_entity
 
 Required  
 Type: `String`
 
-Contains a named HTML entity (e.g. `&ouml;`) - [ref](https://dev.w3.org/html5/html-author/charref).
+Contains a named HTML entity if one exists (e.g. `&ouml;`) - [ref](https://dev.w3.org/html5/html-author/charref).
 
-##### equivalents.encoded_uri
+##### equivalents[index].encoded_uri
 
 Required  
 Type: `String`
 
 Contains a URL encoded value (e.g. `%C3%B6`) - see [percent encoding](https://en.wikipedia.org/wiki/Percent-encoding).
-
-##### equivalents.extras
-
-Optional  
-Type: `Object`
-
-Contains generated normalization values (using NFD, NFC, NFKD, NFKC [normalization forms](http://unicode.org/reports/tr15/#Norm_Forms)).
-
-##### equivalents.extras.unicode
-
-Optional  
-Type: `String`
-
-If a value exists, this contains an escaped unicode (hex) value of the character after normalization (e.g. `o\u0308`).
-
-##### equivalents.extras.html_decimal
-
-Optional  
-Type: `String`
-
-If a value exists, this contains a HTML entity in decimal format of the character after normalization (e.g. `o&#776;`).
-
-##### equivalents.extras.html_hex
-
-Optional  
-Type: `String`
-
-If a value exists, this contains a HTML entity in hex format of the character after normalization (e.g. `o&#x308;`).
