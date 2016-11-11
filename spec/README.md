@@ -246,7 +246,7 @@ Example (only showing one lower case diacritic):
 Required  
 Type: `Array`
 
-Contains an array consisting of equivalents objects consisting of the original diacritic character and any additional characters created through normalization.
+Contains an array containing equivalents objects consisting of the original diacritic character and any additional characters created through normalization.
 
 ##### equivalents[index].raw
 
