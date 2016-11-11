@@ -20,11 +20,11 @@ const outDir = `${__dirname}/out/`,
 let githubRemote = githubRepository.replace("https://", "");
 githubRemote = `https://${githubUser}:${githubToken}@${githubRemote}`;
 
-if(!process.env.TRAVIS){
+if(!process.env.TRAVIS) {
     console.log("Deploying is only available on Travis CI");
     process.exit();
 }
-if(process.env.TRAVIS_PULL_REQUEST !== "false"){
+if(process.env.TRAVIS_PULL_REQUEST !== "false") {
     console.log("Deploying is not available in pull requests");
     process.exit();
 }

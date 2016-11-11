@@ -185,26 +185,26 @@ class Build {
      * @return {object}
      */
     generateEquivalentsData(char) {
-      let ret = {
-          "raw": char,
-          "unicode": this.decodeUnicode(char, {
-              prefix: "\\u"
-          }),
-          "html_decimal": this.decodeUnicode(char, {
-              prefix: "&#",
-              suffix: ";",
-              base: "dec"
-          }),
-          "html_hex": this.decodeUnicode(char, {
-              prefix: "&#x",
-              suffix: ";"
-          }),
-          "encoded_uri": encodeURI(char)
-      };
-      if(this.htmlEntities[char]) {
-          ret["html_entity"] = this.htmlEntities[char];
-      }
-      return ret;
+        let ret = {
+            "raw": char,
+            "unicode": this.decodeUnicode(char, {
+                prefix: "\\u"
+            }),
+            "html_decimal": this.decodeUnicode(char, {
+                prefix: "&#",
+                suffix: ";",
+                base: "dec"
+            }),
+            "html_hex": this.decodeUnicode(char, {
+                prefix: "&#x",
+                suffix: ";"
+            }),
+            "encoded_uri": encodeURI(char)
+        };
+        if(this.htmlEntities[char]) {
+            ret["html_entity"] = this.htmlEntities[char];
+        }
+        return ret;
     }
 
     /**
@@ -226,11 +226,11 @@ class Build {
         // only keep the unique values
         normalized = normalized.filter((char, indx, self) => {
             let val = this.decodeUnicode(char, {
-              prefix: "\\u"
+                prefix: "\\u"
             });
             return ret[0]["unicode"] !== val && self.indexOf(char) === indx;
         });
-        if (normalized.length) {
+        if(normalized.length) {
             normalized.forEach(char => {
                 ret.push(this.generateEquivalentsData(char));
             });
