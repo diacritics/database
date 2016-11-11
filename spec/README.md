@@ -228,7 +228,7 @@ Example (only showing one lower case diacritic):
                         "html_entity": "&uuml;"
                     },
                     {
-                        "raw": "u¨",
+                        "raw": "ü",
                         "unicode": "u\\u0308",
                         "html_decimal": "u&#776;",
                         "html_hex": "u&#x0308;",
