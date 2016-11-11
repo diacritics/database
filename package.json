@@ -1,0 +1,46 @@
+{
+  "name": "diacritics-database",
+  "version": "1.0.0",
+  "keywords": [
+    "diacritic",
+    "diacritics",
+    "decompose",
+    "replace",
+    "mapping",
+    "javascript"
+  ],
+  "license": "MIT",
+  "homepage": "http://diacritics.io/",
+  "author": {
+    "name": "Julian Motz",
+    "url": "https://github.com/julmot"
+  },
+  "maintainers": [
+    {
+      "name": "Julian Motz",
+      "web": "https://github.com/julmot"
+    },
+    {
+      "name": "Rob Garrison",
+      "web": "https://github.com/Mottie"
+    }
+  ],
+  "description": "A database to map diacritics with their associated ASCII characters",
+  "repository": "diacritics/database",
+  "bugs": {
+    "url": "https://github.com/diacritics/database/issues"
+  },
+  "scripts": {
+    "build": "node build/build.js",
+    "deploy": "node build/deploy.js"
+  },
+  "private": true,
+  "devDependencies": {
+    "ajv": "^4.8.2",
+    "del": "^2.2.2",
+    "glob": "^7.1.1",
+    "node-fs-extra": "^0.8.1",
+    "simple-git": "^1.62.0",
+    "strip-json-comments": "^2.0.1"
+  }
+}

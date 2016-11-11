@@ -11,3 +11,8 @@ node_modules/
 
 # Personal
 TODO
+
+# Build
+build/out/
+build/deploy/
+npm-debug.log
