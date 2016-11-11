@@ -185,7 +185,7 @@ class Build {
      * @return {object}
      */
     generateEquivalentsData(char) {
-      const ret = {
+      let ret = {
           "raw": char,
           "unicode": this.decodeUnicode(char, {
               prefix: "\\u"
