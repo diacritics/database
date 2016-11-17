@@ -15,4 +15,4 @@ TODO
 # Build
 build/out/
 build/deploy/
-npm-debug.log
+npm-debug.log*
