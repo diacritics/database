@@ -1,0 +1,121 @@
+{
+    "metadata": {
+        "alphabet": "Latn",
+        "continent": ["NA", "SA", "EU", "OC", "AF", "AN"],
+        "language": "Spanish",
+        "native": "Español",
+        "sources": [
+            "https://en.wikipedia.org/wiki/Spanish_orthography#Keyboard_requirements",
+            // Spanish is the official or national language in Spain (EU),
+            // Equatorial Guinea (AF), and 19 countries in the Americas...
+            "https://en.wikipedia.org/wiki/Spanish_language#Estimated_number_of_speakers",
+            // Antarctica is only shown in this image
+            "https://commons.wikimedia.org/wiki/File:Idioma_espa%C3%B1ol_en_el_mundo.PNG",
+            "https://en.wikipedia.org/wiki/Inverted_question_and_exclamation_marks"
+        ]
+    },
+    "data": {
+        "á": {
+            "mapping": {
+                "base": "a"
+            }
+        },
+        "Á": {
+            "mapping": {
+                "base": "A"
+            }
+        },
+        "é": {
+            "mapping": {
+                "base": "e"
+            }
+        },
+        "É": {
+            "mapping": {
+                "base": "E"
+            }
+        },
+        "í": {
+            "mapping": {
+                "base": "i"
+            }
+        },
+        "Í": {
+            "mapping": {
+                "base": "I"
+            }
+        },
+        "ï": {
+            "mapping": {
+                "base": "i"
+            }
+        },
+        "ñ": {
+            "mapping": {
+                "base": "n"
+            }
+        },
+        "Ñ": {
+            "mapping": {
+                "base": "N"
+            }
+        },
+        "ó": {
+            "mapping": {
+                "base": "o"
+            }
+        },
+        "Ó": {
+            "mapping": {
+                "base": "O"
+            }
+        },
+        "ú": {
+            "mapping": {
+                "base": "u"
+            }
+        },
+        "Ú": {
+            "mapping": {
+                "base": "U"
+            }
+        },
+        "ü": {
+            "mapping": {
+                "base": "u"
+            }
+        },
+        "Ü": {
+            "mapping": {
+                "base": "U"
+            }
+        },
+        "ý": {
+            "mapping": {
+                "base": "y"
+            }
+        },
+        "Ý": {
+            "mapping": {
+                "base": "Y"
+            }
+        },
+        // The following symbols are used as an opening tag and the decomposed
+        // symbols are typically used as a closing tag
+        "¿": {
+            "mapping": {
+                "decompose": "?"
+            }
+        },
+        "¡": {
+            "mapping": {
+                "decompose": "!"
+            }
+        },
+        "⸘": {
+            "mapping": {
+                "decompose": "?!"
+            }
+        }
+    }
+}
