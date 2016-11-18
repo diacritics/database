@@ -219,7 +219,7 @@ Example (only showing one lower case diacritic):
                 "equivalents": [
                     {
                         "raw": "ü"
-                        "unicode": "\u00fc",
+                        "unicode": "\\u00fc",
                         "html_decimal": "&#252;",
                         "html_hex": "&#xfc;",
                         "encoded_uri": "%C3%BC",
@@ -227,7 +227,7 @@ Example (only showing one lower case diacritic):
                     },
                     {
                         "raw": "ü",
-                        "unicode": "u\u0308",
+                        "unicode": "u\\u0308",
                         "html_decimal": "u&#776;",
                         "html_hex": "u&#x0308;",
                         "encoded_uri": "u%CC%88"
