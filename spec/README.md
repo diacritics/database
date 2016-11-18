@@ -239,7 +239,7 @@ Example (only showing one lower case diacritic):
                     },
                     {
                         "raw": "ü",
-                        "unicode": "u\\u0308",
+                        "unicode": "u\u0308",
                         "html_decimal": "u&#776;",
                         "html_hex": "u&#x0308;",
                         "encoded_uri": "u%CC%88"
