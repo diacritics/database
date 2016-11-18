@@ -107,16 +107,14 @@ Example structure for the German language file, which only contains lower case c
 Required  
 Type: `String`
 
-An alphabet code based on [ISO 15924](https://en.wikipedia.org/wiki/ISO_15924)
-that specifies the associated alphabet.
+An alphabet code based on [ISO 15924](https://en.wikipedia.org/wiki/ISO_15924) that specifies the associated alphabet.
 
 ###### metadata.continent
 
 Required  
 Type: `String` or `Array` of `String`
 
-A continent code based on [ISO-3166](https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_continent_%28data_file%29)
-that specifies the associated continent.
+A continent code based on [ISO-3166](https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_continent_%28data_file%29) that specifies the associated continent.
 
 ###### metadata.language
 
@@ -151,34 +149,28 @@ An array containing links to diacritic, ligature and symbol sources which includ
 Required  
 Type: `Object`
 
-An object containing the actual mapping information. Every character has its own
-object key. The value for each diacritic, ligature or symbol is an object
-specified below:
+An object containing the actual mapping information. Every character has its own object key. The value for each diacritic, ligature or symbol is an object specified below:
 
 ###### data.{character}.mapping
 
 Required  
 Type: `Object`
 
-An object containing mapping values for the given character. This must contain a
-base or decompose value, or both. It can not be empty.
+An object containing mapping values for the given character. This must contain a base or decompose value, or both. It can not be empty.
 
 ###### data.{character}.mapping.base
 
 Optional  
 Type: String
 
-This is the base of the character (e.g. the diacritic `ü` has a base of `u`, an
-unaccented character).
+This is the base of the character (e.g. the diacritic `ü` has a base of `u`, an unaccented character).
 
 ###### data.{character}.mapping.decompose
 
 Optional  
 Type: String
 
-This is the character, or combination of characters used to represent the
-diacritic (e.g. `ö` decomposes into `oe` in German), ligature (e.g. `æ`
-decomposes into `ae`), or symbol (e.g. `‽` decomposes into `?!`).
+This is the character, or combination of characters used to represent the diacritic (e.g. `ö` decomposes into `oe` in German), ligature (e.g. `æ` decomposes into `ae`), or symbol (e.g. `‽` decomposes into `?!`).
 
 ## 3. Dist Branch
 
@@ -192,10 +184,7 @@ While the dist branch contains all data, a server-side component is used to serv
 
 ### 3.1 diacritics.json
 
-The structure will use the language file name
-([ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)) as the key,
-and the internal file data as the value. In this example, German and French
-languages are included (truncated to avoid repetition):
+The structure will use the language file name ([ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)) as the key, and the internal file data as the value. In this example, German and French languages are included (truncated to avoid repetition):
 
 ```js
 {
