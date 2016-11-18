@@ -297,7 +297,8 @@ class Build {
                 );
             }
 
-            if(folderName === fileName) { // no language variant
+            // check for language variant
+            if(folderName === fileName && !out[folderName]) {
                 out[fileName] = this.readJSON(file);
             } else {
                 if(typeof out[folderName] === "undefined") {
