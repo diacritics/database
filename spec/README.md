@@ -67,6 +67,7 @@ Example structure for the German language file, which only contains lower case c
         "alphabet": "Latn",
         "continent": "EU",
         "language": "German",
+        "variant": "",
         "native": "Deutsch",
         "sources": [
             "https://en.wikipedia.org/wiki/German_orthography#Special_characters",
@@ -123,6 +124,13 @@ Required
 Type: `String`
 
 The associated language written in English.
+
+###### metadata.variant
+
+Optional
+Type: `String`
+
+The associated language variant written in English, if applicable. For example, if the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code is `de_AT`, this entry would include the full name of the variant country, `"Austria"` for the `AT` variant.
 
 ###### metadata.native
 
