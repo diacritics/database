@@ -4,7 +4,7 @@
 
 ## 1. What Information Must Be Collected?
 
-Since there's no trustworthy and complete source, it's necessary to collect all diacritics mapping information manually. It's also necessary to collect meta information for each language such as links to sources documenting the diacritics.
+Since there's no trustworthy and complete source, it's necessary to collect all diacritics, ligatures and symbols mapping information manually. It's also necessary to collect meta information for each language such as links to sources documenting the characters.
 
 ## 2. Master Branch
 
@@ -144,22 +144,23 @@ The associated language written in the native language.
 Required  
 Type: `Array`
 
-An array containing links to diacritic sources including mapping. Include an empty array if no sources are to be listed.
+An array containing links to diacritic, ligature and symbol sources which includes mapping and other details. Include an empty array if no sources are to be listed.
 
 ###### data
 
 Required  
 Type: `Object`
 
-An object containing the actual mapping information. Every diacritic has its own
-object key. The value for each diacritic is an object specified below:
+An object containing the actual mapping information. Every character has its own
+object key. The value for each diacritic, ligature or symbol is an object
+specified below:
 
 ###### data.{character}.mapping
 
 Required  
 Type: `Object`
 
-An object containing mapping values for the given diacritic. This must contain a
+An object containing mapping values for the given character. This must contain a
 base or decompose value, or both. It can not be empty.
 
 ###### data.{character}.mapping.base
@@ -167,7 +168,7 @@ base or decompose value, or both. It can not be empty.
 Optional  
 Type: String
 
-This is the base of the diacritic character (e.g. `ü` has a base of `u`, an
+This is the base of the character (e.g. the diacritic `ü` has a base of `u`, an
 unaccented character).
 
 ###### data.{character}.mapping.decompose
@@ -176,7 +177,8 @@ Optional
 Type: String
 
 This is the character, or combination of characters used to represent the
-diacritic character (e.g. `ö` decomposes into `oe` in German).
+diacritic (e.g. `ö` decomposes into `oe` in German), ligature (e.g. `æ`
+decomposes into `ae`), or symbol (e.g. `‽` decomposes into `?!`).
 
 ## 3. Dist Branch
 
@@ -208,11 +210,11 @@ languages are included (truncated to avoid repetition):
 }
 ```
 
-#### 3.1.1 Visual Diacritic Equivalents
+#### 3.1.1 Visual Equivalents
 
-Beside of generating all the data into one file the build _automatically_ adds visual diacritic equivalents to `diacritics.json`. Behind each diacritic may be several identical looking characters that have a different Unicode code point. To make sure the mapping process will catch all of them, these equivalents need to be mapped too.
+Beside of generating all the data into one file the build _automatically_ adds visual equivalents to `diacritics.json`. Behind each diacritic, ligature or symbol may be several identical looking characters that have a different Unicode code point. To make sure the mapping process will catch all of them, these equivalents need to be mapped too.
 
-These equivalents are added to the language file under `data.{character}.equivalents` (`{character}` is a placeholder for a diacritic).
+These equivalents are added to the language file under `data.{character}.equivalents` (`{character}` is a placeholder for a character).
 
 Example (only showing one lower case diacritic):
 
@@ -254,7 +256,7 @@ Example (only showing one lower case diacritic):
 Required  
 Type: `Array`
 
-Contains an array containing equivalents objects consisting of the original diacritic character and any additional characters created through normalization.
+Contains an array containing equivalents objects consisting of the original character and any additional characters created through normalization.
 
 ##### equivalents[index].raw
 
