@@ -138,10 +138,10 @@ The associated language written in the native language.
 
 ###### metadata.sources
 
-Required  
+Optional  
 Type: `Array`
 
-An array containing links to diacritic, ligature and symbol sources which includes mapping and other details. Include an empty array if no sources are to be listed.
+An array containing links to diacritic, ligature and symbol sources which includes mapping and other details.
 
 ###### data
 

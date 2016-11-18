@@ -13,21 +13,31 @@
             "properties": {
                 "alphabet": {
                     "type": "string",
-                    "minlength": 4,
-                    "maxlength": 4
+                    "pattern": "^[A-Z]{1}[a-z]{3}$"
                 },
                 "continent": {
-                    "type": "string",
-                    "minimum": 4,
-                    "maximum": 4
+                    "anyOf": [{
+                        "type": "string",
+                        "pattern": "^[A-Z]{2}$"
+                    }, {
+                        "type": "array",
+                        "items": {
+                            "type": "string",
+                            "pattern": "^[A-Z]{2}$"
+                        }
+                    }]
                 },
                 "language": {
                     "type": "string",
-                    "minlength": 1
+                    "pattern": "^[A-Za-z]+$"
+                },
+                "variant": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z ]+$"
                 },
                 "native": {
                     "type": "string",
-                    "minlength": 1
+                    "pattern": "^[\\S]+$"
                 },
                 "sources": {
                     "type": "array",
@@ -50,15 +60,13 @@
                         "properties": {
                             "base": {
                                 "type": "string",
-                                "minimum": 1,
-                                "maximum": 1
+                                "pattern": "^[\\S]{1}$"
                             },
                             "decompose": {
                                 "type": "string",
-                                "minimum": 1
+                                "pattern": "^[\\S]+$"
                             }
-                        },
-                        "required": ["base", "decompose"]
+                        }
                     }
                 },
                 "required": ["mapping"]
