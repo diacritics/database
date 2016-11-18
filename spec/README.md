@@ -67,7 +67,7 @@ Example structure for the German language file, which only contains lower case c
         "alphabet": "Latn",
         "continent": "EU",
         "language": "German",
-        "variant": "",
+        // "variant": "", do not include empty entries
         "native": "Deutsch",
         "sources": [
             "https://en.wikipedia.org/wiki/German_orthography#Special_characters",
