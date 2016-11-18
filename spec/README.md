@@ -127,7 +127,7 @@ The associated language written in English.
 Optional  
 Type: `String`
 
-The associated language variant written in English, if applicable. For example, if the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code is `de_AT`, this entry would include the full name of the variant country, `"Austria"` for the `AT` variant.
+The associated language variant written in English, if applicable. For example, if the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code is `de_AT`, this entry would include the full name of the variant country, `Austria` for the `AT` variant.
 
 ###### metadata.native
 
