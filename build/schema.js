@@ -31,6 +31,10 @@
                     "type": "string",
                     "pattern": "^[A-Za-z]+$"
                 },
+                "variant": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z ]+$"
+                },
                 "native": {
                     "type": "string",
                     "pattern": "^[\\S]+$"
