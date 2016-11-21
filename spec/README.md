@@ -183,17 +183,21 @@ While the dist branch contains all data, a server-side component is used to serv
 
 ### 3.1 diacritics.json
 
-The structure will use the language file name ([ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)) as the key, and the internal file data as the value. In this example, German and French languages are included (truncated to avoid repetition):
+The structure will use the language folder name ([ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)) as the key. Each entry will contain the language file name as a key and the internal file data as the value. In this example, German and French languages are included (truncated to avoid repetition):
 
 ```js
 {
     "de": {
-        "metadata": {...},
-        "data": {...}
+        "de": {
+            "metadata": {...},
+            "data": {...}
+        }
     },
     "fr": {
-        "metadata": {...},
-        "data": {...}
+         "fr": {
+            "metadata": {...},
+            "data": {...}
+          }
     }
 }
 ```
@@ -209,30 +213,32 @@ Example (only showing one lower case diacritic):
 ```javascript
 {
     "de": {
-        "metadata": {...},
-        "data": {
-            "ü": {
-                "mapping": {
-                    "base": "u",
-                    "decompose": "ue"
-                },
-                "equivalents": [
-                    {
-                        "raw": "ü"
-                        "unicode": "\\u00fc",
-                        "html_decimal": "&#252;",
-                        "html_hex": "&#xfc;",
-                        "encoded_uri": "%C3%BC",
-                        "html_entity": "&uuml;"
+        "de": {
+            "metadata": {...},
+            "data": {
+                "ü": {
+                    "mapping": {
+                        "base": "u",
+                        "decompose": "ue"
                     },
-                    {
-                        "raw": "ü",
-                        "unicode": "u\\u0308",
-                        "html_decimal": "u&#776;",
-                        "html_hex": "u&#x0308;",
-                        "encoded_uri": "u%CC%88"
-                    }
-                ]
+                    "equivalents": [
+                        {
+                            "raw": "ü"
+                            "unicode": "\\u00fc",
+                            "html_decimal": "&#252;",
+                            "html_hex": "&#xfc;",
+                            "encoded_uri": "%C3%BC",
+                            "html_entity": "&uuml;"
+                        },
+                        {
+                            "raw": "ü",
+                            "unicode": "u\\u0308",
+                            "html_decimal": "u&#776;",
+                            "html_hex": "u&#x0308;",
+                            "encoded_uri": "u%CC%88"
+                        }
+                    ]
+                }
             }
         }
     }
