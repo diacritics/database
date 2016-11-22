@@ -48,12 +48,14 @@ src/
     └── fr.js
 ```
 
-- As there might be multiple files for a language, each language has its own folder
-- The language files in this folder will be in a `.js` format to allow comments and to make sure text editors allow formatting them. The containing source is JSON though
-- Folder and file names must be according to [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
-- Each language variant has its own file. If the variants (e.g. de_DE, de_AT, de_CH) don't have any differences, only one file must be added
-- When creating a language variant file all mappings need to be created (redundant) – not incrementally
-- Changes should only be done within the source files
+**NOTE**: German does not have a language variant that differs from the root language; therefore the `at.js` and `ch.js` files do not actually exist.
+
+- As there might be multiple files for a language, each language has its own folder.
+- The language files in this folder will be in a `.js` format to allow comments and to make sure text editors allow formatting them. The containing source is JSON though.
+- Folder and file names must be according to [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
+- Each language variant has its own file. If the variants (e.g. `de_DE`, `de_AT`, `de_CH`) don't have any differences, only one file must be added.
+- When creating a language variant file all mappings need to be created (redundant) – not incrementally.
+- Changes should only be done within the source files.
 
 Files within the `src/` folder are called **language files**.
 
@@ -183,20 +185,37 @@ While the dist branch contains all data, a server-side component is used to serv
 
 ### 3.1 diacritics.json
 
-The structure will use the language file name ([ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)) as the key, and the internal file data as the value. In this example, German and French languages are included (truncated to avoid repetition):
+The structure will use the language folder name ([ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)) as the key. This key will contain data for the root language and any variants. This structure is used to simplify access to the data through the API; see the [API spec](https://github.com/diacritics/api) for more details.
+
+Within each language entry:
+
+- The root language code will be added as an entry that uses the same language code (e.g. `"de": { "de": {...} }`). The value will contain the internal file data (e.g. from `de/de.js`) as the value.
+- Any variants of the language that differ from the root language will also be included. The value will contain the internal file data of the named variant file.
+
+In this example, German and French languages are included:
 
 ```js
 {
     "de": {
-        "metadata": {...},
-        "data": {...}
+        "de": {
+            "metadata": {...},
+            "data": {...}
+        },
+        "at": {
+            "metadata": {...},
+            "data": {...}
+        }
     },
     "fr": {
-        "metadata": {...},
-        "data": {...}
+         "fr": {
+            "metadata": {...},
+            "data": {...}
+          }
     }
 }
 ```
+
+**NOTE**: German does not have a language variant that differs from the root, so the `at` entry would *not* exist in the final data. It is shown here only as an example!
 
 #### 3.1.1 Visual Equivalents
 
@@ -209,30 +228,32 @@ Example (only showing one lower case diacritic):
 ```javascript
 {
     "de": {
-        "metadata": {...},
-        "data": {
-            "ü": {
-                "mapping": {
-                    "base": "u",
-                    "decompose": "ue"
-                },
-                "equivalents": [
-                    {
-                        "raw": "ü"
-                        "unicode": "\\u00fc",
-                        "html_decimal": "&#252;",
-                        "html_hex": "&#xfc;",
-                        "encoded_uri": "%C3%BC",
-                        "html_entity": "&uuml;"
+        "de": {
+            "metadata": {...},
+            "data": {
+                "ü": {
+                    "mapping": {
+                        "base": "u",
+                        "decompose": "ue"
                     },
-                    {
-                        "raw": "ü",
-                        "unicode": "u\\u0308",
-                        "html_decimal": "u&#776;",
-                        "html_hex": "u&#x0308;",
-                        "encoded_uri": "u%CC%88"
-                    }
-                ]
+                    "equivalents": [
+                        {
+                            "raw": "ü"
+                            "unicode": "\\u00fc",
+                            "html_decimal": "&#252;",
+                            "html_hex": "&#xfc;",
+                            "encoded_uri": "%C3%BC",
+                            "html_entity": "&uuml;"
+                        },
+                        {
+                            "raw": "ü",
+                            "unicode": "u\\u0308",
+                            "html_decimal": "u&#776;",
+                            "html_hex": "u&#x0308;",
+                            "encoded_uri": "u%CC%88"
+                        }
+                    ]
+                }
             }
         }
     }
