@@ -246,16 +246,14 @@ class Build {
      */
     addEquivalents(json) {
         let clone = JSON.parse(JSON.stringify(json));
-        for(let lang in json) {
-            if(json.hasOwnProperty(lang)) {
-                for(let char in json[lang]["data"]) {
-                    if(json[lang]["data"].hasOwnProperty(char)) {
-                        const eq = this.generateEquivalents(char);
-                        clone[lang]["data"][char]["equivalents"] = eq;
-                    }
-                }
-            }
-        }
+        Object.keys(json).forEach(lang => {
+            Object.keys(json[lang]).forEach(variant => {
+                Object.keys(json[lang][variant]["data"]).forEach(char => {
+                    const eq = this.generateEquivalents(char);
+                    clone[lang][variant]["data"][char]["equivalents"] = eq;
+                });
+            });
+        });
         return clone;
     }
 
