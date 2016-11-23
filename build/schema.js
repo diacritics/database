@@ -18,12 +18,12 @@
                 "continent": {
                     "anyOf": [{
                         "type": "string",
-                        "pattern": "^[A-Z]{2}$"
+                        "pattern": "^(AF|AS|EU|NA|SA|OC|AN)$"
                     }, {
                         "type": "array",
                         "items": {
                             "type": "string",
-                            "pattern": "^[A-Z]{2}$"
+                            "pattern": "^(AF|AS|EU|NA|SA|OC|AN)$"
                         }
                     }]
                 },

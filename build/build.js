@@ -297,15 +297,11 @@ class Build {
                 );
             }
 
-            if(folderName === fileName) { // no language variant
-                out[fileName] = this.readJSON(file);
-            } else {
-                if(typeof out[folderName] === "undefined") {
-                    out[folderName] = {};
-                }
-                out[folderName][fileName] = this.readJSON(file);
+            // add language & any variants
+            if(typeof out[folderName] === "undefined") {
+                out[folderName] = {};
             }
-
+            out[folderName][fileName] = this.readJSON(file);
             out = this.addEquivalents(out);
         });
         this.writeOutput(out);
