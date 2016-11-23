@@ -1,0 +1,614 @@
+{
+    "de": {
+        "de": {
+            "metadata": {
+                "alphabet": "Latn",
+                "continent": "EU",
+                "language": "German",
+                "native": "Deutsch",
+                "sources": [
+                    "https://en.wikipedia.org/wiki/German_orthography#Special_characters"
+                ]
+            },
+            "data": {
+                "ü": {
+                    "mapping": {
+                        "base": "u",
+                        "decompose": "ue"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "ü",
+                            "unicode": "\\u00FC",
+                            "html_decimal": "&#252;",
+                            "html_hex": "&#x00FC;",
+                            "encoded_uri": "%C3%BC",
+                            "html_entity": "&uuml;"
+                        },
+                        {
+                            "raw": "ü",
+                            "unicode": "u\\u0308",
+                            "html_decimal": "u&#776;",
+                            "html_hex": "u&#x0308;",
+                            "encoded_uri": "u%CC%88"
+                        }
+                    ]
+                },
+                "Ü": {
+                    "mapping": {
+                        "base": "U",
+                        "decompose": "UE"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "Ü",
+                            "unicode": "\\u00DC",
+                            "html_decimal": "&#220;",
+                            "html_hex": "&#x00DC;",
+                            "encoded_uri": "%C3%9C",
+                            "html_entity": "&Uuml;"
+                        },
+                        {
+                            "raw": "Ü",
+                            "unicode": "U\\u0308",
+                            "html_decimal": "U&#776;",
+                            "html_hex": "U&#x0308;",
+                            "encoded_uri": "U%CC%88"
+                        }
+                    ]
+                },
+                "ö": {
+                    "mapping": {
+                        "base": "o",
+                        "decompose": "oe"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "ö",
+                            "unicode": "\\u00F6",
+                            "html_decimal": "&#246;",
+                            "html_hex": "&#x00F6;",
+                            "encoded_uri": "%C3%B6",
+                            "html_entity": "&ouml;"
+                        },
+                        {
+                            "raw": "ö",
+                            "unicode": "o\\u0308",
+                            "html_decimal": "o&#776;",
+                            "html_hex": "o&#x0308;",
+                            "encoded_uri": "o%CC%88"
+                        }
+                    ]
+                },
+                "Ö": {
+                    "mapping": {
+                        "base": "O",
+                        "decompose": "OE"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "Ö",
+                            "unicode": "\\u00D6",
+                            "html_decimal": "&#214;",
+                            "html_hex": "&#x00D6;",
+                            "encoded_uri": "%C3%96",
+                            "html_entity": "&Ouml;"
+                        },
+                        {
+                            "raw": "Ö",
+                            "unicode": "O\\u0308",
+                            "html_decimal": "O&#776;",
+                            "html_hex": "O&#x0308;",
+                            "encoded_uri": "O%CC%88"
+                        }
+                    ]
+                },
+                "ä": {
+                    "mapping": {
+                        "base": "a",
+                        "decompose": "ae"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "ä",
+                            "unicode": "\\u00E4",
+                            "html_decimal": "&#228;",
+                            "html_hex": "&#x00E4;",
+                            "encoded_uri": "%C3%A4",
+                            "html_entity": "&auml;"
+                        },
+                        {
+                            "raw": "ä",
+                            "unicode": "a\\u0308",
+                            "html_decimal": "a&#776;",
+                            "html_hex": "a&#x0308;",
+                            "encoded_uri": "a%CC%88"
+                        }
+                    ]
+                },
+                "Ä": {
+                    "mapping": {
+                        "base": "A",
+                        "decompose": "AE"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "Ä",
+                            "unicode": "\\u00C4",
+                            "html_decimal": "&#196;",
+                            "html_hex": "&#x00C4;",
+                            "encoded_uri": "%C3%84",
+                            "html_entity": "&Auml;"
+                        },
+                        {
+                            "raw": "Ä",
+                            "unicode": "A\\u0308",
+                            "html_decimal": "A&#776;",
+                            "html_hex": "A&#x0308;",
+                            "encoded_uri": "A%CC%88"
+                        }
+                    ]
+                },
+                "ß": {
+                    "mapping": {
+                        "base": "ß",
+                        "decompose": "ss"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "ß",
+                            "unicode": "\\u00DF",
+                            "html_decimal": "&#223;",
+                            "html_hex": "&#x00DF;",
+                            "encoded_uri": "%C3%9F",
+                            "html_entity": "&szlig;"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "es": {
+        "es": {
+            "metadata": {
+                "alphabet": "Latn",
+                "continent": [
+                    "NA",
+                    "SA",
+                    "EU",
+                    "OC",
+                    "AF",
+                    "AN"
+                ],
+                "language": "Spanish",
+                "native": "Español",
+                "sources": [
+                    "https://en.wikipedia.org/wiki/Spanish_orthography#Keyboard_requirements",
+                    "https://en.wikipedia.org/wiki/Spanish_language#Estimated_number_of_speakers",
+                    "https://commons.wikimedia.org/wiki/File:Idioma_espa%C3%B1ol_en_el_mundo.PNG",
+                    "https://en.wikipedia.org/wiki/Inverted_question_and_exclamation_marks"
+                ]
+            },
+            "data": {
+                "á": {
+                    "mapping": {
+                        "base": "a"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "á",
+                            "unicode": "\\u00E1",
+                            "html_decimal": "&#225;",
+                            "html_hex": "&#x00E1;",
+                            "encoded_uri": "%C3%A1",
+                            "html_entity": "&aacute;"
+                        },
+                        {
+                            "raw": "á",
+                            "unicode": "a\\u0301",
+                            "html_decimal": "a&#769;",
+                            "html_hex": "a&#x0301;",
+                            "encoded_uri": "a%CC%81"
+                        }
+                    ]
+                },
+                "Á": {
+                    "mapping": {
+                        "base": "A"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "Á",
+                            "unicode": "\\u00C1",
+                            "html_decimal": "&#193;",
+                            "html_hex": "&#x00C1;",
+                            "encoded_uri": "%C3%81",
+                            "html_entity": "&Aacute;"
+                        },
+                        {
+                            "raw": "Á",
+                            "unicode": "A\\u0301",
+                            "html_decimal": "A&#769;",
+                            "html_hex": "A&#x0301;",
+                            "encoded_uri": "A%CC%81"
+                        }
+                    ]
+                },
+                "é": {
+                    "mapping": {
+                        "base": "e"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "é",
+                            "unicode": "\\u00E9",
+                            "html_decimal": "&#233;",
+                            "html_hex": "&#x00E9;",
+                            "encoded_uri": "%C3%A9",
+                            "html_entity": "&eacute;"
+                        },
+                        {
+                            "raw": "é",
+                            "unicode": "e\\u0301",
+                            "html_decimal": "e&#769;",
+                            "html_hex": "e&#x0301;",
+                            "encoded_uri": "e%CC%81"
+                        }
+                    ]
+                },
+                "É": {
+                    "mapping": {
+                        "base": "E"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "É",
+                            "unicode": "\\u00C9",
+                            "html_decimal": "&#201;",
+                            "html_hex": "&#x00C9;",
+                            "encoded_uri": "%C3%89",
+                            "html_entity": "&Eacute;"
+                        },
+                        {
+                            "raw": "É",
+                            "unicode": "E\\u0301",
+                            "html_decimal": "E&#769;",
+                            "html_hex": "E&#x0301;",
+                            "encoded_uri": "E%CC%81"
+                        }
+                    ]
+                },
+                "í": {
+                    "mapping": {
+                        "base": "i"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "í",
+                            "unicode": "\\u00ED",
+                            "html_decimal": "&#237;",
+                            "html_hex": "&#x00ED;",
+                            "encoded_uri": "%C3%AD",
+                            "html_entity": "&iacute;"
+                        },
+                        {
+                            "raw": "í",
+                            "unicode": "i\\u0301",
+                            "html_decimal": "i&#769;",
+                            "html_hex": "i&#x0301;",
+                            "encoded_uri": "i%CC%81"
+                        }
+                    ]
+                },
+                "Í": {
+                    "mapping": {
+                        "base": "I"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "Í",
+                            "unicode": "\\u00CD",
+                            "html_decimal": "&#205;",
+                            "html_hex": "&#x00CD;",
+                            "encoded_uri": "%C3%8D",
+                            "html_entity": "&Iacute;"
+                        },
+                        {
+                            "raw": "Í",
+                            "unicode": "I\\u0301",
+                            "html_decimal": "I&#769;",
+                            "html_hex": "I&#x0301;",
+                            "encoded_uri": "I%CC%81"
+                        }
+                    ]
+                },
+                "ï": {
+                    "mapping": {
+                        "base": "i"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "ï",
+                            "unicode": "\\u00EF",
+                            "html_decimal": "&#239;",
+                            "html_hex": "&#x00EF;",
+                            "encoded_uri": "%C3%AF",
+                            "html_entity": "&iuml;"
+                        },
+                        {
+                            "raw": "ï",
+                            "unicode": "i\\u0308",
+                            "html_decimal": "i&#776;",
+                            "html_hex": "i&#x0308;",
+                            "encoded_uri": "i%CC%88"
+                        }
+                    ]
+                },
+                "ñ": {
+                    "mapping": {
+                        "base": "n"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "ñ",
+                            "unicode": "\\u00F1",
+                            "html_decimal": "&#241;",
+                            "html_hex": "&#x00F1;",
+                            "encoded_uri": "%C3%B1",
+                            "html_entity": "&ntilde;"
+                        },
+                        {
+                            "raw": "ñ",
+                            "unicode": "n\\u0303",
+                            "html_decimal": "n&#771;",
+                            "html_hex": "n&#x0303;",
+                            "encoded_uri": "n%CC%83"
+                        }
+                    ]
+                },
+                "Ñ": {
+                    "mapping": {
+                        "base": "N"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "Ñ",
+                            "unicode": "\\u00D1",
+                            "html_decimal": "&#209;",
+                            "html_hex": "&#x00D1;",
+                            "encoded_uri": "%C3%91",
+                            "html_entity": "&Ntilde;"
+                        },
+                        {
+                            "raw": "Ñ",
+                            "unicode": "N\\u0303",
+                            "html_decimal": "N&#771;",
+                            "html_hex": "N&#x0303;",
+                            "encoded_uri": "N%CC%83"
+                        }
+                    ]
+                },
+                "ó": {
+                    "mapping": {
+                        "base": "o"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "ó",
+                            "unicode": "\\u00F3",
+                            "html_decimal": "&#243;",
+                            "html_hex": "&#x00F3;",
+                            "encoded_uri": "%C3%B3",
+                            "html_entity": "&oacute;"
+                        },
+                        {
+                            "raw": "ó",
+                            "unicode": "o\\u0301",
+                            "html_decimal": "o&#769;",
+                            "html_hex": "o&#x0301;",
+                            "encoded_uri": "o%CC%81"
+                        }
+                    ]
+                },
+                "Ó": {
+                    "mapping": {
+                        "base": "O"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "Ó",
+                            "unicode": "\\u00D3",
+                            "html_decimal": "&#211;",
+                            "html_hex": "&#x00D3;",
+                            "encoded_uri": "%C3%93",
+                            "html_entity": "&Oacute;"
+                        },
+                        {
+                            "raw": "Ó",
+                            "unicode": "O\\u0301",
+                            "html_decimal": "O&#769;",
+                            "html_hex": "O&#x0301;",
+                            "encoded_uri": "O%CC%81"
+                        }
+                    ]
+                },
+                "ú": {
+                    "mapping": {
+                        "base": "u"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "ú",
+                            "unicode": "\\u00FA",
+                            "html_decimal": "&#250;",
+                            "html_hex": "&#x00FA;",
+                            "encoded_uri": "%C3%BA",
+                            "html_entity": "&uacute;"
+                        },
+                        {
+                            "raw": "ú",
+                            "unicode": "u\\u0301",
+                            "html_decimal": "u&#769;",
+                            "html_hex": "u&#x0301;",
+                            "encoded_uri": "u%CC%81"
+                        }
+                    ]
+                },
+                "Ú": {
+                    "mapping": {
+                        "base": "U"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "Ú",
+                            "unicode": "\\u00DA",
+                            "html_decimal": "&#218;",
+                            "html_hex": "&#x00DA;",
+                            "encoded_uri": "%C3%9A",
+                            "html_entity": "&Uacute;"
+                        },
+                        {
+                            "raw": "Ú",
+                            "unicode": "U\\u0301",
+                            "html_decimal": "U&#769;",
+                            "html_hex": "U&#x0301;",
+                            "encoded_uri": "U%CC%81"
+                        }
+                    ]
+                },
+                "ü": {
+                    "mapping": {
+                        "base": "u"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "ü",
+                            "unicode": "\\u00FC",
+                            "html_decimal": "&#252;",
+                            "html_hex": "&#x00FC;",
+                            "encoded_uri": "%C3%BC",
+                            "html_entity": "&uuml;"
+                        },
+                        {
+                            "raw": "ü",
+                            "unicode": "u\\u0308",
+                            "html_decimal": "u&#776;",
+                            "html_hex": "u&#x0308;",
+                            "encoded_uri": "u%CC%88"
+                        }
+                    ]
+                },
+                "Ü": {
+                    "mapping": {
+                        "base": "U"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "Ü",
+                            "unicode": "\\u00DC",
+                            "html_decimal": "&#220;",
+                            "html_hex": "&#x00DC;",
+                            "encoded_uri": "%C3%9C",
+                            "html_entity": "&Uuml;"
+                        },
+                        {
+                            "raw": "Ü",
+                            "unicode": "U\\u0308",
+                            "html_decimal": "U&#776;",
+                            "html_hex": "U&#x0308;",
+                            "encoded_uri": "U%CC%88"
+                        }
+                    ]
+                },
+                "ý": {
+                    "mapping": {
+                        "base": "y"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "ý",
+                            "unicode": "\\u00FD",
+                            "html_decimal": "&#253;",
+                            "html_hex": "&#x00FD;",
+                            "encoded_uri": "%C3%BD",
+                            "html_entity": "&yacute;"
+                        },
+                        {
+                            "raw": "ý",
+                            "unicode": "y\\u0301",
+                            "html_decimal": "y&#769;",
+                            "html_hex": "y&#x0301;",
+                            "encoded_uri": "y%CC%81"
+                        }
+                    ]
+                },
+                "Ý": {
+                    "mapping": {
+                        "base": "Y"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "Ý",
+                            "unicode": "\\u00DD",
+                            "html_decimal": "&#221;",
+                            "html_hex": "&#x00DD;",
+                            "encoded_uri": "%C3%9D",
+                            "html_entity": "&Yacute;"
+                        },
+                        {
+                            "raw": "Ý",
+                            "unicode": "Y\\u0301",
+                            "html_decimal": "Y&#769;",
+                            "html_hex": "Y&#x0301;",
+                            "encoded_uri": "Y%CC%81"
+                        }
+                    ]
+                },
+                "¿": {
+                    "mapping": {
+                        "decompose": "?"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "¿",
+                            "unicode": "\\u00BF",
+                            "html_decimal": "&#191;",
+                            "html_hex": "&#x00BF;",
+                            "encoded_uri": "%C2%BF",
+                            "html_entity": "&iquest;"
+                        }
+                    ]
+                },
+                "¡": {
+                    "mapping": {
+                        "decompose": "!"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "¡",
+                            "unicode": "\\u00A1",
+                            "html_decimal": "&#161;",
+                            "html_hex": "&#x00A1;",
+                            "encoded_uri": "%C2%A1",
+                            "html_entity": "&iexcl;"
+                        }
+                    ]
+                },
+                "⸘": {
+                    "mapping": {
+                        "decompose": "?!"
+                    },
+                    "equivalents": [
+                        {
+                            "raw": "⸘",
+                            "unicode": "\\u2E18",
+                            "html_decimal": "&#11800;",
+                            "html_hex": "&#x2E18;",
+                            "encoded_uri": "%E2%B8%98"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
