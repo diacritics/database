@@ -280,13 +280,16 @@ class Build {
                 // languageData contains ALL territories where a language is
                 // spoken, so we will cross-reference with the territoryInfo
                 // to only find offical languages
-                languages[variant]["_territories"].forEach(trty => {
-                    const vrnt = territories[trty].languagePopulation[variant];
-                    // official or official_regional language if defined
-                    if(vrnt["_officialStatus"]) {
-                        official.push(trty);
-                    }
-                });
+                if(languages[variant]["_territories"]) {
+                    languages[variant]["_territories"].forEach(trty => {
+                        const vrnt =
+                            territories[trty].languagePopulation[variant];
+                        // official or official_regional language if defined
+                        if(vrnt["_officialStatus"]) {
+                            official.push(trty);
+                        }
+                    });
+                }
                 if(meta.official && Array.isArray(meta.official)) {
                     meta.official.concat(official);
                 } else {
