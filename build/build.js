@@ -9,7 +9,13 @@ const fs = require("fs"), // file system
     glob = require("glob"), // match files using patterns
     del = require("del"), // delete files using patterns
     stripJsonComments = require("strip-json-comments"), // remove JSON comments
-    Ajv = require("ajv"); // json schema validation
+    Ajv = require("ajv"), // json schema validation
+
+    // Official language references
+    // unicode-cldr/cldr-core/master/supplemental/languageData.json
+    officialLang = require("cldr-data/supplemental/languageData"),
+    // unicode-cldr/cldr-core/master/supplemental/territoryInfo.json
+    territoryInfo = require("cldr-data/supplemental/territoryInfo");
 
 /**
  * Build
@@ -258,6 +264,40 @@ class Build {
     }
 
     /**
+     * Iterates over all languages in the database and adds a list of countries
+     * where the given language is the or an official language
+     * @param {object} json - The JSON object
+     * @return {object}
+     */
+    addOfficialLang(json) {
+        let clone = JSON.parse(JSON.stringify(json));
+        const languages = officialLang.supplemental.languageData,
+            territories = territoryInfo.supplemental.territoryInfo;
+        Object.keys(json).forEach(lang => {
+            Object.keys(json[lang]).forEach(variant => {
+                const meta = clone[lang][variant].metadata;
+                let official = [];
+                // languageData contains ALL territories where a language is
+                // spoken, so we will cross-reference with the territoryInfo
+                // to only find offical languages
+                languages[variant]["_territories"].forEach(trty => {
+                    const vrnt = territories[trty].languagePopulation[variant];
+                    // official or official_regional language if defined
+                    if(vrnt["_officialStatus"]) {
+                        official.push(trty);
+                    }
+                });
+                if(meta.official && Array.isArray(meta.official)) {
+                    meta.official.concat(official);
+                } else {
+                    meta.official = official;
+                }
+            });
+        });
+        return clone;
+    }
+
+    /**
      * Writes the defined content into ./build/out/[version]/diacritics.json
      * @param {string} content - The file content
      */
@@ -301,6 +341,7 @@ class Build {
             }
             out[folderName][fileName] = this.readJSON(file);
             out = this.addEquivalents(out);
+            out = this.addOfficialLang(out);
         });
         this.writeOutput(out);
     }
