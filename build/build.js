@@ -11,7 +11,7 @@ const fs = require("fs"), // file system
     stripJsonComments = require("strip-json-comments"), // remove JSON comments
     Ajv = require("ajv"), // json schema validation
     // official language references
-    officialLang = require("cldr-data/supplemental/languageData"),
+    languageData = require("cldr-data/supplemental/languageData"),
     territoryInfo = require("cldr-data/supplemental/territoryInfo");
 
 /**
@@ -268,26 +268,26 @@ class Build {
      */
     addOfficialLang(json) {
         let clone = JSON.parse(JSON.stringify(json));
-        const languages = officialLang.supplemental.languageData,
+        const languages = languageData.supplemental.languageData,
             territories = territoryInfo.supplemental.territoryInfo;
         Object.keys(json).forEach(lang => {
             Object.keys(json[lang]).forEach(variant => {
                 const meta = clone[lang][variant].metadata;
-                let official = [];
+                let countries = [];
                 // languageData contains ALL territories where a language is
                 // spoken, so we will cross-reference with the territoryInfo
                 // to only find offical languages
                 if(languages[variant]["_territories"]) {
-                    languages[variant]["_territories"].forEach(trty => {
+                    languages[variant]["_territories"].forEach(territory => {
                         const vrnt =
-                            territories[trty].languagePopulation[variant];
+                            territories[territory].languagePopulation[variant];
                         // official or official_regional language if defined
                         if(vrnt["_officialStatus"]) {
-                            official.push(trty);
+                            countries.push(territory);
                         }
                     });
                 }
-                meta.official = official;
+                meta.countries = countries;
             });
         });
         return clone;

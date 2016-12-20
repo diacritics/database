@@ -138,12 +138,14 @@ Type: `String`
 
 The associated language written in the native language.
 
-###### metadata.official
+###### metadata.countries
 
 Optional
 Type: `Array`
 
-An array of territories where the given language is officially spoken. This entry is automatically added by the build script, with information obtained directly from the [languageData](https://github.com/unicode-cldr/cldr-core/blob/master/supplemental/languageData.json) and [territoryInfo](https://github.com/unicode-cldr/cldr-core/blob/master/supplemental/territoryInfo.json) provided by the unicode-CLDR database.
+An array of countries where the given language is officially spoken. This entry is automatically added by the build script, with information obtained directly from the [languageData](https://github.com/unicode-cldr/cldr-core/blob/master/supplemental/languageData.json) and [territoryInfo](https://github.com/unicode-cldr/cldr-core/blob/master/supplemental/territoryInfo.json) provided by the unicode-CLDR database.
+
+The standard Unicode language identifiers follow [IETF BCP 47](https://tools.ietf.org/html/bcp47) with some small differences; please see the [CLDR spec](http://cldr.unicode.org/index/cldr-spec/picking-the-right-language-code) for more details.
 
 ###### metadata.sources
 
