@@ -287,11 +287,7 @@ class Build {
                         }
                     });
                 }
-                if(meta.official && Array.isArray(meta.official)) {
-                    meta.official.concat(official);
-                } else {
-                    meta.official = official;
-                }
+                meta.official = official;
             });
         });
         return clone;
