@@ -10,11 +10,8 @@ const fs = require("fs"), // file system
     del = require("del"), // delete files using patterns
     stripJsonComments = require("strip-json-comments"), // remove JSON comments
     Ajv = require("ajv"), // json schema validation
-
-    // Official language references
-    // unicode-cldr/cldr-core/master/supplemental/languageData.json
+    // official language references
     officialLang = require("cldr-data/supplemental/languageData"),
-    // unicode-cldr/cldr-core/master/supplemental/territoryInfo.json
     territoryInfo = require("cldr-data/supplemental/territoryInfo");
 
 /**
