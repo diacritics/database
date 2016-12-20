@@ -70,7 +70,6 @@ Example structure for the German language file, which only contains lower case c
         "continent": "EU",
         "language": "German",
         "native": "Deutsch",
-        "official": [],
         "sources": [
             "https://en.wikipedia.org/wiki/German_orthography#Special_characters",
             "https://en.wikipedia.org/wiki/German_orthography#Sorting"
@@ -145,8 +144,6 @@ Optional
 Type: `Array`
 
 An array of territories where the given language is officially spoken. This entry is automatically added by the build script, with information obtained directly from the [languageData](https://github.com/unicode-cldr/cldr-core/blob/master/supplemental/languageData.json) and [territoryInfo](https://github.com/unicode-cldr/cldr-core/blob/master/supplemental/territoryInfo.json) provided by the unicode-CLDR database.
-
-Any entries in the `src` language file will be overwritten by this list.
 
 ###### metadata.sources
 

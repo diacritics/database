@@ -31,14 +31,6 @@
                     "type": "string",
                     "pattern": "^[A-Za-z]+$"
                 },
-                "official": {
-                    "type": "array",
-                    "items": {
-                        "type": "string",
-                        "pattern": "^[A-Z]{2}$"
-                    },
-                    "uniqueItems": true
-                },
                 "variant": {
                     "type": "string",
                     "pattern": "^[A-Za-z ]+$"
