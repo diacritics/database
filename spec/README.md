@@ -138,15 +138,6 @@ Type: `String`
 
 The associated language written in the native language.
 
-###### metadata.countries
-
-Optional
-Type: `Array`
-
-An array of countries where the given language is officially spoken. This entry is automatically added by the build script, with language information obtained directly from Unicode's CLDR supplemental [languageData](https://github.com/unicode-cldr/cldr-core/blob/master/supplemental/languageData.json) and cross-referenced with supplemental [territoryInfo](https://github.com/unicode-cldr/cldr-core/blob/master/supplemental/territoryInfo.json) databases.
-
-The provided language tags are based on [IETF BCP 47](https://www.w3.org/International/articles/language-tags/) with some minor differences; please see the [CLDR spec](http://cldr.unicode.org/index/cldr-spec/picking-the-right-language-code) for more details. For a quick reference, use this [IETF-language-tags](http://data.okfn.org/data/core/language-codes#resource-ietf-language-tags) searchable table.
-
 ###### metadata.sources
 
 Optional  
@@ -317,3 +308,14 @@ Required
 Type: `String`
 
 Contains a URL encoded value (e.g. `%C3%B6`) - see [percent encoding](https://en.wikipedia.org/wiki/Percent-encoding).
+
+#### 3.1.2 Other Automatically Generated Data
+
+##### metadata.countries
+
+Required  
+Type: `Array`
+
+An array of countries where the given language is officially spoken. This entry is automatically added by the build script, with language information obtained directly from Unicode's CLDR supplemental [languageData](https://github.com/unicode-cldr/cldr-core/blob/master/supplemental/languageData.json) and cross-referenced with supplemental [territoryInfo](https://github.com/unicode-cldr/cldr-core/blob/master/supplemental/territoryInfo.json) databases.
+
+The provided language tags are based on [IETF BCP 47](https://www.w3.org/International/articles/language-tags/) with some minor differences; please see the [CLDR spec](http://cldr.unicode.org/index/cldr-spec/picking-the-right-language-code) for more details. For a quick reference, use this [IETF-language-tags](http://data.okfn.org/data/core/language-codes#resource-ietf-language-tags) searchable table ("territory" column).
