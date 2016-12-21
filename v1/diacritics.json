@@ -8,6 +8,14 @@
                 "native": "Deutsch",
                 "sources": [
                     "https://en.wikipedia.org/wiki/German_orthography#Special_characters"
+                ],
+                "countries": [
+                    "AT",
+                    "BE",
+                    "CH",
+                    "DE",
+                    "LI",
+                    "LU"
                 ]
             },
             "data": {
@@ -187,6 +195,31 @@
                     "https://en.wikipedia.org/wiki/Spanish_language#Estimated_number_of_speakers",
                     "https://commons.wikimedia.org/wiki/File:Idioma_espa%C3%B1ol_en_el_mundo.PNG",
                     "https://en.wikipedia.org/wiki/Inverted_question_and_exclamation_marks"
+                ],
+                "countries": [
+                    "AR",
+                    "BO",
+                    "CL",
+                    "CO",
+                    "CR",
+                    "CU",
+                    "DO",
+                    "EA",
+                    "EC",
+                    "ES",
+                    "GQ",
+                    "GT",
+                    "HN",
+                    "IC",
+                    "MX",
+                    "NI",
+                    "PA",
+                    "PE",
+                    "PR",
+                    "PY",
+                    "SV",
+                    "UY",
+                    "VE"
                 ]
             },
             "data": {
