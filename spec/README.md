@@ -143,9 +143,9 @@ The associated language written in the native language.
 Optional
 Type: `Array`
 
-An array of countries where the given language is officially spoken. This entry is automatically added by the build script, with information obtained directly from the [languageData](https://github.com/unicode-cldr/cldr-core/blob/master/supplemental/languageData.json) and [territoryInfo](https://github.com/unicode-cldr/cldr-core/blob/master/supplemental/territoryInfo.json) provided by the unicode-CLDR database.
+An array of countries where the given language is officially spoken. This entry is automatically added by the build script, with language information obtained directly from Unicode's CLDR supplemental [languageData](https://github.com/unicode-cldr/cldr-core/blob/master/supplemental/languageData.json) and cross-referenced with supplemental [territoryInfo](https://github.com/unicode-cldr/cldr-core/blob/master/supplemental/territoryInfo.json) databases.
 
-The standard Unicode language identifiers follow [IETF BCP 47](https://tools.ietf.org/html/bcp47) with some small differences; please see the [CLDR spec](http://cldr.unicode.org/index/cldr-spec/picking-the-right-language-code) for more details. For a quick reference, use this [IETF-language-tags](http://data.okfn.org/data/core/language-codes) searchable table.
+The provided language tags are based on [IETF BCP 47](https://www.w3.org/International/articles/language-tags/) with some minor differences; please see the [CLDR spec](http://cldr.unicode.org/index/cldr-spec/picking-the-right-language-code) for more details. For a quick reference, use this [IETF-language-tags](http://data.okfn.org/data/core/language-codes#resource-ietf-language-tags) searchable table.
 
 ###### metadata.sources
 
