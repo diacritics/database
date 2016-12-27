@@ -28,7 +28,7 @@
                 },
                 "variant": {
                     "type": "string",
-                    "pattern": "^[A-Za-z ]+$"
+                    "pattern": "^[A-Za-z ,\\-\\(\\)\\'\\.]+$"
                 },
                 "native": {
                     "type": "string",
