@@ -16,16 +16,11 @@
                     "pattern": "^[A-Z]{1}[a-z]{3}$"
                 },
                 "continent": {
-                    "anyOf": [{
+                    "type": "array",
+                    "items": {
                         "type": "string",
                         "pattern": "^(AF|AS|EU|NA|SA|OC|AN)$"
-                    }, {
-                        "type": "array",
-                        "items": {
-                            "type": "string",
-                            "pattern": "^(AF|AS|EU|NA|SA|OC|AN)$"
-                        }
-                    }]
+                    }
                 },
                 "language": {
                     "type": "string",

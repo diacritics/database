@@ -61,18 +61,19 @@ Files within the `src/` folder are called **language files**.
 
 ##### 2.1.2.1 Language File Specification
 
-Example structure for the German language file, which only contains lower case characters for brevity:
+Example structure for the German language source file, which only contains lower case characters for brevity:
 
 ```javascript
 {
     "metadata": {
         "alphabet": "Latn",
-        "continent": "EU",
+        "continent": [
+            "EU"
+        ],
         "language": "German",
         "native": "Deutsch",
         "sources": [
-            "https://en.wikipedia.org/wiki/German_orthography#Special_characters",
-            "https://en.wikipedia.org/wiki/German_orthography#Sorting"
+            "https://en.wikipedia.org/wiki/German_orthography#Special_characters"
         ]
     },
     "data": {
@@ -113,9 +114,9 @@ An alphabet code based on [ISO 15924](https://en.wikipedia.org/wiki/ISO_15924) t
 ###### metadata.continent
 
 Required  
-Type: `String` or `Array` of `String`
+Type: `Array`
 
-A continent code based on [ISO-3166](https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_continent_%28data_file%29) that specifies the associated continent.
+A array of continent codes based on [ISO-3166](https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_continent_%28data_file%29) that specifies the associated continent.
 
 ###### metadata.language
 

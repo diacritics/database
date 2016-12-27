@@ -1,7 +1,9 @@
 {
     "metadata": {
         "alphabet": "Latn",
-        "continent": "EU",
+        "continent": [
+            "EU"
+        ],
         "language": "German",
         "native": "Deutsch",
         "sources": [
