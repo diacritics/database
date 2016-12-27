@@ -2,6 +2,37 @@
 
 > File specification for the diacritics database
 
+## Table of Contents
+
+- [1. What Information Must Be Collected](#1-what-information-must-be-collected)
+- [2. Master Branch](#2-master-branch)
+  - [2.1 Project Structure](#21-project-structure)
+  - [2.1.1. `spec/` Folder](#211-spec-folder)
+  - [2.1.2. `src/` Folder](#212-src-folder)
+  - [2.1.2.1. Language File Specification](#2121-language-file-specification)
+    - [metadata.alphabet](#metadataalphabet)
+    - [metadata.continent](#metadatacontinent)
+    - [metadata.language](#metadatalanguage)
+    - [metadata.variant](#metadatavariant)
+    - [metadata.native](#metadatanative)
+    - [metadata.source](#metadatasource)
+    - [data](#data)
+    - [data.{character}.mapping](#datacharactermapping)
+    - [data.{character}.mapping.base](#datacharactermappingbase)
+    - [data.{character}.mapping.decompose](#datacharactermappingdecompose)
+- [3. Dist Branch](#3-dist-branch)
+  - [3.1. diacritics.json](#31-diacriticsjson)
+  - [3.1.1. Visual Equivalents](#311-visual-equivalents)
+    - [equivalents](#equivalents)
+    - [equivalents[index].raw](#equivalentsindexraw)
+    - [equivalents[index].unicode](#equivalentsindexunicode)
+    - [equivalents[index].html_decimal](#equivalentsindexhtml_decimal)
+    - [equivalents[index].html_hex](#equivalentsindexhtml_hex)
+    - [equivalents[index].html_entity](#equivalentsindexhtml_entity)
+    - [equivalents[index].encoded_uri](#equivalentsindexencoded_uri)
+  - [3.1.2. Other Automatically Generated Data](#312-other-automatically-generated-data)
+    - [metadata.country](#metadatacountry)
+
 ## 1. What Information Must Be Collected?
 
 Since there's no trustworthy and complete source, it's necessary to collect all diacritics, ligatures and symbols mapping information manually. It's also necessary to collect meta information for each language such as links to sources documenting the characters.
