@@ -34,7 +34,7 @@
                     "type": "string",
                     "pattern": "^[\\S]+$"
                 },
-                "sources": {
+                "source": {
                     "type": "array",
                     "items": {
                         "type": "string",

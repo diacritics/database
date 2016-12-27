@@ -76,7 +76,7 @@ Example structure for the German language source file, which only contains lower
         ],
         "language": "German",
         "native": "Deutsch",
-        "sources": [
+        "source": [
             "https://en.wikipedia.org/wiki/German_orthography#Special_characters"
         ]
     },
@@ -143,7 +143,7 @@ Type: `String`
 
 The associated language written in the native language.
 
-###### metadata.sources
+###### metadata.source
 
 Optional  
 Type: `Array`
