@@ -36,12 +36,12 @@
   },
   "private": true,
   "devDependencies": {
-    "ajv": "^4.8.2",
-    "cldr-data": "^30.0.1",
+    "ajv": "^4.10.3",
+    "cldr-data": "^30.0.2",
     "del": "^2.2.2",
     "glob": "^7.1.1",
     "node-fs-extra": "^0.8.1",
-    "simple-git": "^1.62.0",
+    "simple-git": "^1.65.0",
     "strip-json-comments": "^2.0.1"
   }
 }
