@@ -85,10 +85,10 @@ src/
 - The language files in this folder will be in a `.js` format to allow comments and to make sure text editors allow formatting them. The containing source is JSON though.
 - Folder and file names must be according to [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the root language.
 - Each language variant has its own file:
-  - If the variants (e.g. `de-DE`, `de-AT`, `de-CH`) don't have any differences from the root language, only one root file must be added.
+  - If the variants (e.g. `de-DE`, `de-AT`, `de-CH`) don't have any differences from the root language, then only the root file is necessary.
   - When creating a language variant file all mappings need to be created (redundant) – not incrementally.
   - Any variant file will be contained within the root language folder.
-  - The variant file is named according to [IETF language tag](https://www.w3.org/International/articles/language-tags/) extended language (`extlang`) subtag. So, _if_ a `de_AT` was necessary, then the file would be named `at.js`; by the extended language subtag and in all lower-case.
+  - The variant file will be named according to [IETF language tag](https://www.w3.org/International/articles/language-tags/) extended language (`extlang`) subtag. So, _if_ a `de_AT` would be necessary, then the file would be named `at.js`; by the extended language subtag and in all lower-case.
   - See [this table](http://data.okfn.org/data/core/language-codes#resource-ietf-language-tags) for a quick reference of available IETF language tags.
 - Changes should only be done within the source files.
 
@@ -151,7 +151,7 @@ An alphabet code based on [ISO 15924](https://en.wikipedia.org/wiki/ISO_15924) t
 Required  
 Type: `Array`
 
-A array of continent codes based on [ISO-3166](https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_continent_%28data_file%29) that specifies the associated continent.
+An array of continent codes based on [ISO-3166](https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_continent_%28data_file%29) that specifies the associated continent.
 
 ###### metadata.language
 
