@@ -316,7 +316,7 @@ Contains a URL encoded value (e.g. `%C3%B6`) - see [percent encoding](https://en
 
 #### 3.1.2 Other Automatically Generated Data
 
-##### metadata.countries
+##### metadata.country
 
 Required  
 Type: `Array`
