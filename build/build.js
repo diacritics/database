@@ -273,7 +273,7 @@ class Build {
         Object.keys(json).forEach(lang => {
             Object.keys(json[lang]).forEach(variant => {
                 const meta = clone[lang][variant].metadata;
-                let countries = [];
+                let country = [];
                 // languageData contains ALL territories where a language is
                 // spoken, so we will cross-reference with the territoryInfo
                 // to only find offical languages
@@ -283,11 +283,11 @@ class Build {
                             territories[territory].languagePopulation[variant];
                         // official or official_regional language if defined
                         if(vrnt["_officialStatus"]) {
-                            countries.push(territory);
+                            country.push(territory);
                         }
                     });
                 }
-                meta.countries = countries;
+                meta.country = country;
             });
         });
         return clone;

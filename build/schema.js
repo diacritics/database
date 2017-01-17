@@ -16,16 +16,11 @@
                     "pattern": "^[A-Z]{1}[a-z]{3}$"
                 },
                 "continent": {
-                    "anyOf": [{
+                    "type": "array",
+                    "items": {
                         "type": "string",
                         "pattern": "^(AF|AS|EU|NA|SA|OC|AN)$"
-                    }, {
-                        "type": "array",
-                        "items": {
-                            "type": "string",
-                            "pattern": "^(AF|AS|EU|NA|SA|OC|AN)$"
-                        }
-                    }]
+                    }
                 },
                 "language": {
                     "type": "string",
@@ -33,13 +28,13 @@
                 },
                 "variant": {
                     "type": "string",
-                    "pattern": "^[A-Za-z ]+$"
+                    "pattern": "^[A-Za-z ,\\-\\(\\)\\'\\.]+$"
                 },
                 "native": {
                     "type": "string",
                     "pattern": "^[\\S]+$"
                 },
-                "sources": {
+                "source": {
                     "type": "array",
                     "items": {
                         "type": "string",

@@ -4,7 +4,7 @@
         "continent": ["NA", "SA", "EU", "OC", "AF", "AN"],
         "language": "Spanish",
         "native": "Español",
-        "sources": [
+        "source": [
             "https://en.wikipedia.org/wiki/Spanish_orthography#Keyboard_requirements",
             // Spanish is the official or national language in Spain (EU),
             // Equatorial Guinea (AF), and 19 countries in the Americas...

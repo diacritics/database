@@ -2,6 +2,37 @@
 
 > File specification for the diacritics database
 
+## Table of Contents
+
+- [1. What Information Must Be Collected](#1-what-information-must-be-collected)
+- [2. Master Branch](#2-master-branch)
+  - [2.1 Project Structure](#21-project-structure)
+  - [2.1.1. `spec/` Folder](#211-spec-folder)
+  - [2.1.2. `src/` Folder](#212-src-folder)
+  - [2.1.2.1. Language File Specification](#2121-language-file-specification)
+    - [metadata.alphabet](#metadataalphabet)
+    - [metadata.continent](#metadatacontinent)
+    - [metadata.language](#metadatalanguage)
+    - [metadata.variant](#metadatavariant)
+    - [metadata.native](#metadatanative)
+    - [metadata.source](#metadatasource)
+    - [data](#data)
+    - [data.{character}.mapping](#datacharactermapping)
+    - [data.{character}.mapping.base](#datacharactermappingbase)
+    - [data.{character}.mapping.decompose](#datacharactermappingdecompose)
+- [3. Dist Branch](#3-dist-branch)
+  - [3.1. diacritics.json](#31-diacriticsjson)
+  - [3.1.1. Visual Equivalents](#311-visual-equivalents)
+    - [equivalents](#equivalents)
+    - [equivalents[index].raw](#equivalentsindexraw)
+    - [equivalents[index].unicode](#equivalentsindexunicode)
+    - [equivalents[index].html_decimal](#equivalentsindexhtml_decimal)
+    - [equivalents[index].html_hex](#equivalentsindexhtml_hex)
+    - [equivalents[index].html_entity](#equivalentsindexhtml_entity)
+    - [equivalents[index].encoded_uri](#equivalentsindexencoded_uri)
+  - [3.1.2. Other Automatically Generated Data](#312-other-automatically-generated-data)
+    - [metadata.country](#metadatacountry)
+
 ## 1. What Information Must Be Collected?
 
 Since there's no trustworthy and complete source, it's necessary to collect all diacritics, ligatures and symbols mapping information manually. It's also necessary to collect meta information for each language such as links to sources documenting the characters.
@@ -52,27 +83,32 @@ src/
 
 - As there might be multiple files for a language, each language has its own folder.
 - The language files in this folder will be in a `.js` format to allow comments and to make sure text editors allow formatting them. The containing source is JSON though.
-- Folder and file names must be according to [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
-- Each language variant has its own file. If the variants (e.g. `de_DE`, `de_AT`, `de_CH`) don't have any differences, only one file must be added.
-- When creating a language variant file all mappings need to be created (redundant) – not incrementally.
+- Folder and file names must be according to [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the root language.
+- Each language variant has its own file:
+  - If the variants (e.g. `de-DE`, `de-AT`, `de-CH`) don't have any differences from the root language, then only the root file is necessary.
+  - When creating a language variant file all mappings need to be created (redundant) – not incrementally.
+  - Any variant file will be contained within the root language folder.
+  - The variant file will be named according to [IETF language tag](https://www.w3.org/International/articles/language-tags/) extended language (`extlang`) subtag. So, _if_ a `de_AT` would be necessary, then the file would be named `at.js`; by the extended language subtag and in all lower-case.
+  - See [this table](http://data.okfn.org/data/core/language-codes#resource-ietf-language-tags) for a quick reference of available IETF language tags.
 - Changes should only be done within the source files.
 
 Files within the `src/` folder are called **language files**.
 
 ##### 2.1.2.1 Language File Specification
 
-Example structure for the German language file, which only contains lower case characters for brevity:
+Example structure for the German language source file, which only contains lower case characters for brevity:
 
 ```javascript
 {
     "metadata": {
         "alphabet": "Latn",
-        "continent": "EU",
+        "continent": [
+            "EU"
+        ],
         "language": "German",
         "native": "Deutsch",
-        "sources": [
-            "https://en.wikipedia.org/wiki/German_orthography#Special_characters",
-            "https://en.wikipedia.org/wiki/German_orthography#Sorting"
+        "source": [
+            "https://en.wikipedia.org/wiki/German_orthography#Special_characters"
         ]
     },
     "data": {
@@ -113,9 +149,9 @@ An alphabet code based on [ISO 15924](https://en.wikipedia.org/wiki/ISO_15924) t
 ###### metadata.continent
 
 Required  
-Type: `String` or `Array` of `String`
+Type: `Array`
 
-A continent code based on [ISO-3166](https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_continent_%28data_file%29) that specifies the associated continent.
+An array of continent codes based on [ISO-3166](https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_continent_%28data_file%29) that specifies the associated continent.
 
 ###### metadata.language
 
@@ -129,7 +165,7 @@ The associated language written in English.
 Optional  
 Type: `String`
 
-The associated language variant written in English, if applicable. For example, if the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code is `de_AT`, this entry would include the full name of the variant country, `Austria` for the `AT` variant.
+The associated language variant written in English, if applicable. For example, if the [IETF language tag](https://www.w3.org/International/articles/language-tags/) was `de_AT`, this entry would include the full name of the variant country, `Austria` for the `AT` variant.
 
 ###### metadata.native
 
@@ -138,7 +174,7 @@ Type: `String`
 
 The associated language written in the native language.
 
-###### metadata.sources
+###### metadata.source
 
 Optional  
 Type: `Array`
@@ -311,7 +347,7 @@ Contains a URL encoded value (e.g. `%C3%B6`) - see [percent encoding](https://en
 
 #### 3.1.2 Other Automatically Generated Data
 
-##### metadata.countries
+##### metadata.country
 
 Required  
 Type: `Array`

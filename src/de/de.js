@@ -1,10 +1,12 @@
 {
     "metadata": {
         "alphabet": "Latn",
-        "continent": "EU",
+        "continent": [
+            "EU"
+        ],
         "language": "German",
         "native": "Deutsch",
-        "sources": [
+        "source": [
             "https://en.wikipedia.org/wiki/German_orthography#Special_characters"
         ]
     },
