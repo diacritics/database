@@ -1,7 +1,7 @@
 /*!***************************************************
  * diacritics
  * http://diacritics.io/
- * Copyright (c) 2016, Julian Motz
+ * Copyright (c) 2016–2017 The Diacritics Authors
  * Released under the MIT license https://git.io/vXg2H
  *****************************************************/
 {

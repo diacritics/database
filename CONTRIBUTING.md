@@ -16,5 +16,10 @@ As described in the [spec][spec] the build will automatically update the `dist` 
 $ npm run build
 ```
 
+## Contribution and License Agreement
+
+If you contribute to this project, you are implicitly allowing your code to be distributed under [this license][license]. You are also implicitly verifying that all code is your original work.
+
 [node-js]: https://nodejs.org/en/
 [spec]: ./spec/
+[license]: https://git.io/vXg2H
