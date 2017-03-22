@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "ajv": "^4.10.4",
-    "cldr-data": "^30.0.4",
+    "cldr-data": "^31.0.1",
     "del": "^2.2.2",
     "glob": "^7.1.1",
     "node-fs-extra": "^0.8.1",
