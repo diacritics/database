@@ -33,12 +33,12 @@
     "deploy": "node build/deploy.js"
   },
   "devDependencies": {
-    "ajv": "^5.0.0",
+    "ajv": "^5.1.2",
     "cldr-data": "^31.0.2",
     "del": "^2.2.2",
-    "glob": "^7.1.1",
+    "glob": "^7.1.2",
     "node-fs-extra": "^0.8.2",
-    "simple-git": "^1.70.0",
+    "simple-git": "^1.73.0",
     "strip-json-comments": "^2.0.1"
   },
   "private": true
