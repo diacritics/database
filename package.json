@@ -33,7 +33,7 @@
     "deploy": "node build/deploy.js"
   },
   "devDependencies": {
-    "ajv": "^5.1.2",
+    "ajv": "^5.1.3",
     "cldr-data": "^31.0.2",
     "del": "^2.2.2",
     "glob": "^7.1.2",
