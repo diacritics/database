@@ -24,7 +24,7 @@
                 },
                 "language": {
                     "type": "string",
-                    "pattern": "^[A-Za-z]+$"
+                    "pattern": "^.+$"
                 },
                 "variant": {
                     "type": "string",
@@ -32,7 +32,7 @@
                 },
                 "native": {
                     "type": "string",
-                    "pattern": "^[\\S]+$"
+                    "pattern": "^.+$"
                 },
                 "source": {
                     "type": "array",
@@ -55,7 +55,7 @@
                         "properties": {
                             "base": {
                                 "type": "string",
-                                "pattern": "^[\\S]{1}$"
+                                "pattern": "^[\\S]+$"
                             },
                             "decompose": {
                                 "type": "string",

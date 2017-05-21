@@ -61,6 +61,7 @@ class Build {
 
     /**
      * Reads a JSON file, removes comments and parses it
+     * @param {string} file - path to json file
      * @return {object}
      */
     readJSON(file) {
