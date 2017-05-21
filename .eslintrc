@@ -1,0 +1,69 @@
+{
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "parser": "babel-eslint",
+    "extends": [
+        "eslint:recommended"
+    ],
+    "rules": {
+        "no-console": 0,
+        "max-len": [
+            "error", {
+                "ignoreStrings": false,
+                "ignoreTrailingComments": false,
+                "ignoreComments": false
+            }
+        ],
+        "indent": [
+            "error",
+            4
+        ],
+        "valid-jsdoc": [
+            "error", {
+                "prefer": {
+                    "arg": "param"
+                },
+                "requireReturn": false,
+                "requireReturnDescription": false,
+                "requireParamDescription": false,
+                "preferType": {
+                    "Boolean": "boolean",
+                    "Number": "number",
+                    "Object": "object",
+                    "String": "string"
+                }
+            }
+        ],
+        "consistent-return": "error",
+        "curly": "warn",
+        "dot-location": [
+            "error",
+            "property"
+        ],
+        "eqeqeq": "warn",
+        "no-alert": "error",
+        "no-eval": "error",
+        "no-with": "error",
+        "brace-style": "error",
+        "camelcase": "error",
+        "consistent-this": "error",
+        "no-tabs": "error",
+        "comma-dangle": ["error", "never"],
+        "arrow-spacing": "error",
+        "one-var": "error",
+        "complexity": [
+            "error",
+            10
+        ],
+        "max-depth": [
+            "error",
+            8
+        ],
+        "global-require": "error",
+        "no-new-require": "error",
+        "no-lonely-if": "warn",
+        "no-var": "warn"
+    }
+}
