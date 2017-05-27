@@ -257,7 +257,8 @@ class Extract {
                 unvalidatedMessage + JSON.stringify(data, null, 4) + "\n",
                 "utf8"
             );
-        } else {
+        } else if (language !== "sr") {
+            // don't log "sr" (single exception)
             console.log(`ERROR: ${language} file already exists`);
         }
     }
