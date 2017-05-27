@@ -1,8 +1,3 @@
-/**
- * This file was automatically generated and contains unvalidated content
- * Once verified, add the base IETF language tag to the array in the
- * build/validated-languages.json file and remove this comment
- */
 {
     "metadata": {
         "alphabet": "Latn",
@@ -13,7 +8,9 @@
         "language": "Vietnamese",
         "native": "Tiếng Việt",
         "source": [
-            "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
+            "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html",
+            "http://diacritics.typo.cz/index.php?id=59",
+            "http://vietnamese.typeit.org/"
         ]
     },
     "data": {
@@ -100,6 +97,11 @@
         "ậ": {
             "mapping": {
                 "base": "a"
+            }
+        },
+        "đ": {
+            "mapping": {
+                "base": "d"
             }
         },
         "è": {
@@ -430,6 +432,11 @@
         "Ậ": {
             "mapping": {
                 "base": "A"
+            }
+        },
+        "Đ": {
+            "mapping": {
+                "base": "D"
             }
         },
         "È": {

@@ -1,8 +1,3 @@
-/**
- * This file was automatically generated and contains unvalidated content
- * Once verified, add the base IETF language tag to the array in the
- * build/validated-languages.json file and remove this comment
- */
 {
     "metadata": {
         "alphabet": "Latn",
@@ -12,7 +7,9 @@
         "language": "Norwegian Bokmål",
         "native": "norsk bokmål",
         "source": [
-            "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
+            "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html",
+            "http://diacritics.typo.cz/index.php?id=38",
+            "https://en.wikipedia.org/wiki/Norwegian_language#Alphabet"
         ]
     },
     "data": {
@@ -21,7 +18,27 @@
                 "base": "a"
             }
         },
+        "å": {
+            "mapping": {
+                "base": "a"
+            }
+        },
+        "æ": {
+            "mapping": {
+                "decompose": "ae"
+            }
+        },
         "é": {
+            "mapping": {
+                "base": "e"
+            }
+        },
+        "è": {
+            "mapping": {
+                "base": "e"
+            }
+        },
+        "ê": {
             "mapping": {
                 "base": "e"
             }
@@ -41,9 +58,9 @@
                 "base": "o"
             }
         },
-        "å": {
+        "ø": {
             "mapping": {
-                "base": "a"
+                "base": "o"
             }
         },
         "À": {
@@ -51,7 +68,27 @@
                 "base": "A"
             }
         },
+        "Å": {
+            "mapping": {
+                "base": "A"
+            }
+        },
+        "Æ": {
+            "mapping": {
+                "decompose": "Ae"
+            }
+        },
         "É": {
+            "mapping": {
+                "base": "E"
+            }
+        },
+        "È": {
+            "mapping": {
+                "base": "E"
+            }
+        },
+        "Ê": {
             "mapping": {
                 "base": "E"
             }
@@ -71,9 +108,9 @@
                 "base": "O"
             }
         },
-        "Å": {
+        "Ø": {
             "mapping": {
-                "base": "A"
+                "base": "O"
             }
         }
     }

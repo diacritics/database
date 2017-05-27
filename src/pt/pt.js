@@ -1,8 +1,3 @@
-/**
- * This file was automatically generated and contains unvalidated content
- * Once verified, add the base IETF language tag to the array in the
- * build/validated-languages.json file and remove this comment
- */
 {
     "metadata": {
         "alphabet": "Latn",
@@ -15,7 +10,10 @@
         "language": "Portuguese",
         "native": "português",
         "source": [
-            "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
+            "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html",
+            "http://diacritics.typo.cz/index.php?id=51",
+            "http://portuguese.typeit.org/",
+            "https://en.wikipedia.org/wiki/Portuguese_orthography#Diacritics_2"
         ]
     },
     "data": {
@@ -64,6 +62,7 @@
                 "base": "o"
             }
         },
+        // added by the unicode build, not found in other references
         "ò": {
             "mapping": {
                 "base": "o"
@@ -80,6 +79,12 @@
             }
         },
         "ú": {
+            "mapping": {
+                "base": "u"
+            }
+        },
+        // found only on typeit.org
+        "ü": {
             "mapping": {
                 "base": "u"
             }
@@ -129,6 +134,7 @@
                 "base": "O"
             }
         },
+        // added by the unicode build, not found in other references
         "Ò": {
             "mapping": {
                 "base": "O"
@@ -145,6 +151,12 @@
             }
         },
         "Ú": {
+            "mapping": {
+                "base": "U"
+            }
+        },
+        // found only on typeit.org
+        "Ü": {
             "mapping": {
                 "base": "U"
             }

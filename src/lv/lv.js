@@ -1,8 +1,3 @@
-/**
- * This file was automatically generated and contains unvalidated content
- * Once verified, add the base IETF language tag to the array in the
- * build/validated-languages.json file and remove this comment
- */
 {
     "metadata": {
         "alphabet": "Latn",
@@ -12,7 +7,8 @@
         "language": "Latvian",
         "native": "latviešu",
         "source": [
-            "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
+            "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html",
+            "http://diacritics.typo.cz/index.php?id=42"
         ]
     },
     "data": {
@@ -71,6 +67,16 @@
                 "base": "z"
             }
         },
+        "ō": {
+            "mapping": {
+                "base": "o"
+            }
+        },
+        "ŗ": {
+            "mapping": {
+                "base": "r"
+            }
+        },
         "Ā": {
             "mapping": {
                 "base": "A"
@@ -124,6 +130,16 @@
         "Ž": {
             "mapping": {
                 "base": "Z"
+            }
+        },
+        "Ō": {
+            "mapping": {
+                "base": "O"
+            }
+        },
+        "Ŗ": {
+            "mapping": {
+                "base": "R"
             }
         }
     }

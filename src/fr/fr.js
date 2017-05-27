@@ -1,8 +1,3 @@
-/**
- * This file was automatically generated and contains unvalidated content
- * Once verified, add the base IETF language tag to the array in the
- * build/validated-languages.json file and remove this comment
- */
 {
     "metadata": {
         "alphabet": "Latn",
@@ -18,7 +13,9 @@
         "language": "French",
         "native": "français",
         "source": [
-            "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
+            "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html",
+            "http://diacritics.typo.cz/index.php?id=33",
+            "http://french.typeit.org/"
         ]
     },
     "data": {
@@ -30,6 +27,11 @@
         "â": {
             "mapping": {
                 "base": "a"
+            }
+        },
+        "æ": {
+            "mapping": {
+                "decompose": "ae"
             }
         },
         "ç": {
@@ -72,6 +74,11 @@
                 "base": "o"
             }
         },
+        "œ": {
+            "mapping": {
+                "decompose": "oe"
+            }
+        },
         "ù": {
             "mapping": {
                 "base": "u"
@@ -100,6 +107,11 @@
         "Â": {
             "mapping": {
                 "base": "A"
+            }
+        },
+        "Æ": {
+            "mapping": {
+                "decompose": "Ae"
             }
         },
         "Ç": {
@@ -140,6 +152,11 @@
         "Ô": {
             "mapping": {
                 "base": "O"
+            }
+        },
+        "Œ": {
+            "mapping": {
+                "decompose": "Oe"
             }
         },
         "Ù": {

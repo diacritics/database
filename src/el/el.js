@@ -1,8 +1,3 @@
-/**
- * This file was automatically generated and contains unvalidated content
- * Once verified, add the base IETF language tag to the array in the
- * build/validated-languages.json file and remove this comment
- */
 {
     "metadata": {
         "alphabet": "Grek",
@@ -13,7 +8,9 @@
         "language": "Greek",
         "native": "Ελληνικά",
         "source": [
-            "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
+            "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html",
+            "http://diacritics.typo.cz/index.php?id=67",
+            "http://greek.typeit.org/"
         ]
     },
     "data": {
@@ -42,6 +39,7 @@
                 "base": "ι"
             }
         },
+        // same as upper case?
         "ΐ": {
             "mapping": {
                 "base": "ι"
@@ -97,7 +95,8 @@
                 "base": "Ι"
             }
         },
-        "Ϊ́": {
+        // same as lower case?
+        "ΐ": {
             "mapping": {
                 "base": "Ι"
             }

@@ -1,8 +1,3 @@
-/**
- * This file was automatically generated and contains unvalidated content
- * Once verified, add the base IETF language tag to the array in the
- * build/validated-languages.json file and remove this comment
- */
 {
     "metadata": {
         "alphabet": "Latn",
@@ -12,13 +7,25 @@
         "language": "Icelandic",
         "native": "íslenska",
         "source": [
-            "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
+            "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html",
+            "http://diacritics.typo.cz/index.php?id=32",
+            "http://icelandic.typeit.org/"
         ]
     },
     "data": {
         "á": {
             "mapping": {
                 "base": "a"
+            }
+        },
+        "æ": {
+            "mapping": {
+                "decompose": "ae"
+            }
+        },
+        "ð": {
+            "mapping": {
+                "base": "d"
             }
         },
         "é": {
@@ -36,6 +43,11 @@
                 "base": "o"
             }
         },
+        "ö": {
+            "mapping": {
+                "base": "o"
+            }
+        },
         "ú": {
             "mapping": {
                 "base": "u"
@@ -46,14 +58,24 @@
                 "base": "y"
             }
         },
-        "ö": {
+        "þ": {
             "mapping": {
-                "base": "o"
+                "decompose": "th"
             }
         },
         "Á": {
             "mapping": {
                 "base": "A"
+            }
+        },
+        "Æ": {
+            "mapping": {
+                "decompose": "Ae"
+            }
+        },
+        "Ð": {
+            "mapping": {
+                "base": "D"
             }
         },
         "É": {
@@ -71,6 +93,11 @@
                 "base": "O"
             }
         },
+        "Ö": {
+            "mapping": {
+                "base": "O"
+            }
+        },
         "Ú": {
             "mapping": {
                 "base": "U"
@@ -81,9 +108,9 @@
                 "base": "Y"
             }
         },
-        "Ö": {
+        "Þ": {
             "mapping": {
-                "base": "O"
+                "decompose": "Th"
             }
         }
     }

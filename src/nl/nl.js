@@ -1,8 +1,3 @@
-/**
- * This file was automatically generated and contains unvalidated content
- * Once verified, add the base IETF language tag to the array in the
- * build/validated-languages.json file and remove this comment
- */
 {
     "metadata": {
         "alphabet": "Latn",
@@ -14,11 +9,18 @@
         "language": "Dutch",
         "native": "Nederlands",
         "source": [
-            "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
+            "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html",
+            "http://diacritics.typo.cz/index.php?id=47",
+            "http://dutch.typeit.org/"
         ]
     },
     "data": {
         "á": {
+            "mapping": {
+                "base": "a"
+            }
+        },
+        "à": {
             "mapping": {
                 "base": "a"
             }
@@ -29,6 +31,11 @@
             }
         },
         "é": {
+            "mapping": {
+                "base": "e"
+            }
+        },
+        "è": {
             "mapping": {
                 "base": "e"
             }
@@ -46,6 +53,11 @@
         "ï": {
             "mapping": {
                 "base": "i"
+            }
+        },
+        "ĳ": {
+            "mapping": {
+                "decompose": "ij"
             }
         },
         "ó": {
@@ -96,6 +108,11 @@
         "Ï": {
             "mapping": {
                 "base": "I"
+            }
+        },
+        "Ĳ": {
+            "mapping": {
+                "decompose": "IJ"
             }
         },
         "Ó": {
