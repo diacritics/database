@@ -12,6 +12,16 @@
         ]
     },
     "data": {
+        "â": {
+            "mapping": {
+                "base": "a"
+            }
+        },
+        "Â": {
+            "mapping": {
+                "base": "A"
+            }
+        },
         "ç": {
             "mapping": {
                 "base": "c"
@@ -42,6 +52,16 @@
                 "base": "I"
             }
         },
+        "î": {
+            "mapping": {
+                "base": "i"
+            }
+        },
+        "Î": {
+            "mapping": {
+                "base": "I"
+            }
+        },
         "ö": {
             "mapping": {
                 "base": "o"
@@ -68,6 +88,16 @@
             }
         },
         "Ü": {
+            "mapping": {
+                "base": "U"
+            }
+        },
+        "û": {
+            "mapping": {
+                "base": "u"
+            }
+        },
+        "Û": {
             "mapping": {
                 "base": "U"
             }
