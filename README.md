@@ -14,3 +14,8 @@ This repository contains the database of the project.
 ## Documentation
 
 The specification can be found in the [spec folder](./spec/).
+
+## Contributing
+
+Thanks for contributing! All data is user-contributed so your help is really much appreciated.  
+To get started, please read the documentation. It gives you the basic idea of the database structure. You can also view the [existing files](./src/). Then you can start providing your data and submit a PR.
