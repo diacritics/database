@@ -20,14 +20,7 @@ const fs = require("fs"), // file system
         .main.en.localeDisplayNames.languages,
 
     // CLDR data path
-    cldrData = "node_modules/cldr-data/",
-    // message added to beginning of generated files
-    unvalidatedMessage = `/**
- * This file was automatically generated and contains unvalidated content
- * Once verified, add the base IETF language tag to the array in the
- * build/validated-languages.json file and remove this comment
- */
-`;
+    cldrData = "node_modules/cldr-data/";
 
 /**
  * Extract
@@ -37,6 +30,13 @@ class Extract {
      * Constructor
      */
     constructor() {
+        // message added to beginning of generated files
+        this.unvalidatedMessage = `/**
+ * This file was automatically generated and contains unvalidated content
+ * Once verified, add the base IETF language tag to the array in the
+ * build/validated-languages.json file and remove this comment
+ */
+`;
         this.run();
     }
 
@@ -101,9 +101,9 @@ class Extract {
         // "[a á â b c d e é è ê ë f g h ... ô ö p q r s t u û v w x y z]"
         let alphabet = data.characters.exemplarCharacters,
             result = alphabet
-            .substring(1, alphabet.length - 1)
-            .replace(/[a-zA-Z]/g, "")
-            .trim();
+                .substring(1, alphabet.length - 1)
+                .replace(/[a-zA-Z]/g, "")
+                .trim();
         // include upper and lower case characters
         return (
             `${result.toLocaleLowerCase()} ${result.toLocaleUpperCase()}`
@@ -254,7 +254,7 @@ class Extract {
         if (!fs.existsSync(temp)) {
             fs.writeFileSync(
                 temp,
-                unvalidatedMessage + JSON.stringify(data, null, 4) + "\n",
+                this.unvalidatedMessage + JSON.stringify(data, null, 4) + "\n",
                 "utf8"
             );
         } else if (language !== "sr") {
