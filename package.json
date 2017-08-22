@@ -34,12 +34,12 @@
     "extract": "node build/extract.js"
   },
   "devDependencies": {
-    "ajv": "^5.1.4",
+    "ajv": "^5.2.2",
     "cldr-data": "^31.0.2",
-    "del": "^2.2.2",
+    "del": "^3.0.0",
     "glob": "^7.1.2",
     "node-fs-extra": "^0.8.2",
-    "simple-git": "^1.73.0",
+    "simple-git": "^1.75.0",
     "strip-combining-marks": "^1.0.0",
     "strip-json-comments": "^2.0.1"
   },
