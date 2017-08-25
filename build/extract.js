@@ -48,7 +48,7 @@ class Extract {
     // get metadata.continents cross-reference
     this.initTSV();
     // load list of validated languages
-    this.validLangs = this.readJSON('./build/validated-languages.json');
+    this.validLangs = this.readJSON('./build/data/validated-languages.json');
   }
 
   /**
@@ -56,7 +56,7 @@ class Extract {
    * https://goo.gl/qt0S54
    */
   initTSV() {
-    const data = fs.readFileSync('./build/continents.tsv', 'utf8');
+    const data = fs.readFileSync('./build/data/continents.tsv', 'utf8');
     this.continents = {
       'AF': [],
       'AS': [],

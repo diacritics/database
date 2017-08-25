@@ -32,7 +32,7 @@ class Build {
    */
   get languageFileSchema() {
     if (!this._languageFileSchema) {
-      this._languageFileSchema = this.readJSON('./build/schema.json');
+      this._languageFileSchema = this.readJSON('./build/data/schema.json');
     }
     return this._languageFileSchema;
   }
@@ -43,7 +43,7 @@ class Build {
    */
   get htmlEntities() {
     if (!this._htmlEntities) {
-      this._htmlEntities = this.readJSON('./build/html-entities.json');
+      this._htmlEntities = this.readJSON('./build/data/html-entities.json');
     }
     return this._htmlEntities;
   }
