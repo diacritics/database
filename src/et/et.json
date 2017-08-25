@@ -7,29 +7,33 @@
   "metadata": {
     "alphabet": "Latn",
     "continent": [
-      "AS",
       "EU"
     ],
-    "language": "Turkish",
-    "native": "Türkçe",
+    "language": "Estonian",
+    "native": "eesti",
     "source": [
       "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
     ]
   },
   "data": {
-    "ç": {
+    "š": {
       "mapping": {
-        "base": "c"
+        "base": "s"
       }
     },
-    "ğ": {
+    "ž": {
       "mapping": {
-        "base": "g"
+        "base": "z"
       }
     },
-    "i̇": {
+    "õ": {
       "mapping": {
-        "base": "i"
+        "base": "o"
+      }
+    },
+    "ä": {
+      "mapping": {
+        "base": "a"
       }
     },
     "ö": {
@@ -37,39 +41,34 @@
         "base": "o"
       }
     },
-    "ş": {
-      "mapping": {
-        "base": "s"
-      }
-    },
     "ü": {
       "mapping": {
         "base": "u"
       }
     },
-    "Ç": {
+    "Š": {
       "mapping": {
-        "base": "C"
+        "base": "S"
       }
     },
-    "Ğ": {
+    "Ž": {
       "mapping": {
-        "base": "G"
+        "base": "Z"
       }
     },
-    "İ": {
+    "Õ": {
       "mapping": {
-        "base": "I"
+        "base": "O"
+      }
+    },
+    "Ä": {
+      "mapping": {
+        "base": "A"
       }
     },
     "Ö": {
       "mapping": {
         "base": "O"
-      }
-    },
-    "Ş": {
-      "mapping": {
-        "base": "S"
       }
     },
     "Ü": {

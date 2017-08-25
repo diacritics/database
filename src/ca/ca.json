@@ -7,39 +7,58 @@
   "metadata": {
     "alphabet": "Latn",
     "continent": [
-      "AS",
       "EU"
     ],
-    "language": "Turkish",
-    "native": "Türkçe",
+    "language": "Catalan",
+    "native": "català",
     "source": [
       "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
     ]
   },
   "data": {
+    "à": {
+      "mapping": {
+        "base": "a"
+      }
+    },
     "ç": {
       "mapping": {
         "base": "c"
       }
     },
-    "ğ": {
+    "é": {
       "mapping": {
-        "base": "g"
+        "base": "e"
       }
     },
-    "i̇": {
+    "è": {
+      "mapping": {
+        "base": "e"
+      }
+    },
+    "í": {
       "mapping": {
         "base": "i"
       }
     },
-    "ö": {
+    "ï": {
+      "mapping": {
+        "base": "i"
+      }
+    },
+    "ó": {
       "mapping": {
         "base": "o"
       }
     },
-    "ş": {
+    "ò": {
       "mapping": {
-        "base": "s"
+        "base": "o"
+      }
+    },
+    "ú": {
+      "mapping": {
+        "base": "u"
       }
     },
     "ü": {
@@ -47,29 +66,49 @@
         "base": "u"
       }
     },
+    "À": {
+      "mapping": {
+        "base": "A"
+      }
+    },
     "Ç": {
       "mapping": {
         "base": "C"
       }
     },
-    "Ğ": {
+    "É": {
       "mapping": {
-        "base": "G"
+        "base": "E"
       }
     },
-    "İ": {
+    "È": {
+      "mapping": {
+        "base": "E"
+      }
+    },
+    "Í": {
       "mapping": {
         "base": "I"
       }
     },
-    "Ö": {
+    "Ï": {
+      "mapping": {
+        "base": "I"
+      }
+    },
+    "Ó": {
       "mapping": {
         "base": "O"
       }
     },
-    "Ş": {
+    "Ò": {
       "mapping": {
-        "base": "S"
+        "base": "O"
+      }
+    },
+    "Ú": {
+      "mapping": {
+        "base": "U"
       }
     },
     "Ü": {

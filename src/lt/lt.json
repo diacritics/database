@@ -7,74 +7,103 @@
   "metadata": {
     "alphabet": "Latn",
     "continent": [
-      "AS",
       "EU"
     ],
-    "language": "Turkish",
-    "native": "Türkçe",
+    "language": "Lithuanian",
+    "native": "lietuvių",
     "source": [
       "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
     ]
   },
   "data": {
-    "ç": {
+    "ą": {
+      "mapping": {
+        "base": "a"
+      }
+    },
+    "č": {
       "mapping": {
         "base": "c"
       }
     },
-    "ğ": {
+    "ę": {
       "mapping": {
-        "base": "g"
+        "base": "e"
       }
     },
-    "i̇": {
+    "ė": {
+      "mapping": {
+        "base": "e"
+      }
+    },
+    "į": {
       "mapping": {
         "base": "i"
       }
     },
-    "ö": {
-      "mapping": {
-        "base": "o"
-      }
-    },
-    "ş": {
+    "š": {
       "mapping": {
         "base": "s"
       }
     },
-    "ü": {
+    "ų": {
       "mapping": {
         "base": "u"
       }
     },
-    "Ç": {
+    "ū": {
+      "mapping": {
+        "base": "u"
+      }
+    },
+    "ž": {
+      "mapping": {
+        "base": "z"
+      }
+    },
+    "Ą": {
+      "mapping": {
+        "base": "A"
+      }
+    },
+    "Č": {
       "mapping": {
         "base": "C"
       }
     },
-    "Ğ": {
+    "Ę": {
       "mapping": {
-        "base": "G"
+        "base": "E"
       }
     },
-    "İ": {
+    "Ė": {
+      "mapping": {
+        "base": "E"
+      }
+    },
+    "Į": {
       "mapping": {
         "base": "I"
       }
     },
-    "Ö": {
-      "mapping": {
-        "base": "O"
-      }
-    },
-    "Ş": {
+    "Š": {
       "mapping": {
         "base": "S"
       }
     },
-    "Ü": {
+    "Ų": {
       "mapping": {
         "base": "U"
+      }
+    },
+    "Ū": {
+      "mapping": {
+        "base": "U"
+      }
+    },
+    "Ž": {
+      "mapping": {
+        "base": "Z"
       }
     }
   }

@@ -7,74 +7,53 @@
   "metadata": {
     "alphabet": "Latn",
     "continent": [
-      "AS",
       "EU"
     ],
-    "language": "Turkish",
-    "native": "Türkçe",
+    "language": "Croatian",
+    "native": "hrvatski",
     "source": [
       "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
     ]
   },
   "data": {
-    "ç": {
+    "č": {
       "mapping": {
         "base": "c"
       }
     },
-    "ğ": {
+    "ć": {
       "mapping": {
-        "base": "g"
+        "base": "c"
       }
     },
-    "i̇": {
-      "mapping": {
-        "base": "i"
-      }
-    },
-    "ö": {
-      "mapping": {
-        "base": "o"
-      }
-    },
-    "ş": {
+    "š": {
       "mapping": {
         "base": "s"
       }
     },
-    "ü": {
+    "ž": {
       "mapping": {
-        "base": "u"
+        "base": "z"
       }
     },
-    "Ç": {
+    "Č": {
       "mapping": {
         "base": "C"
       }
     },
-    "Ğ": {
+    "Ć": {
       "mapping": {
-        "base": "G"
+        "base": "C"
       }
     },
-    "İ": {
-      "mapping": {
-        "base": "I"
-      }
-    },
-    "Ö": {
-      "mapping": {
-        "base": "O"
-      }
-    },
-    "Ş": {
+    "Š": {
       "mapping": {
         "base": "S"
       }
     },
-    "Ü": {
+    "Ž": {
       "mapping": {
-        "base": "U"
+        "base": "Z"
       }
     }
   }

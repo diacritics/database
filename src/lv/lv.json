@@ -7,74 +7,123 @@
   "metadata": {
     "alphabet": "Latn",
     "continent": [
-      "AS",
       "EU"
     ],
-    "language": "Turkish",
-    "native": "Türkçe",
+    "language": "Latvian",
+    "native": "latviešu",
     "source": [
       "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
     ]
   },
   "data": {
-    "ç": {
+    "ā": {
+      "mapping": {
+        "base": "a"
+      }
+    },
+    "č": {
       "mapping": {
         "base": "c"
       }
     },
-    "ğ": {
+    "ē": {
+      "mapping": {
+        "base": "e"
+      }
+    },
+    "ģ": {
       "mapping": {
         "base": "g"
       }
     },
-    "i̇": {
+    "ī": {
       "mapping": {
         "base": "i"
       }
     },
-    "ö": {
+    "ķ": {
       "mapping": {
-        "base": "o"
+        "base": "k"
       }
     },
-    "ş": {
+    "ļ": {
+      "mapping": {
+        "base": "l"
+      }
+    },
+    "ņ": {
+      "mapping": {
+        "base": "n"
+      }
+    },
+    "š": {
       "mapping": {
         "base": "s"
       }
     },
-    "ü": {
+    "ū": {
       "mapping": {
         "base": "u"
       }
     },
-    "Ç": {
+    "ž": {
+      "mapping": {
+        "base": "z"
+      }
+    },
+    "Ā": {
+      "mapping": {
+        "base": "A"
+      }
+    },
+    "Č": {
       "mapping": {
         "base": "C"
       }
     },
-    "Ğ": {
+    "Ē": {
+      "mapping": {
+        "base": "E"
+      }
+    },
+    "Ģ": {
       "mapping": {
         "base": "G"
       }
     },
-    "İ": {
+    "Ī": {
       "mapping": {
         "base": "I"
       }
     },
-    "Ö": {
+    "Ķ": {
       "mapping": {
-        "base": "O"
+        "base": "K"
       }
     },
-    "Ş": {
+    "Ļ": {
+      "mapping": {
+        "base": "L"
+      }
+    },
+    "Ņ": {
+      "mapping": {
+        "base": "N"
+      }
+    },
+    "Š": {
       "mapping": {
         "base": "S"
       }
     },
-    "Ü": {
+    "Ū": {
       "mapping": {
         "base": "U"
+      }
+    },
+    "Ž": {
+      "mapping": {
+        "base": "Z"
       }
     }
   }

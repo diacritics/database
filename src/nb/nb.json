@@ -7,74 +7,73 @@
   "metadata": {
     "alphabet": "Latn",
     "continent": [
-      "AS",
       "EU"
     ],
-    "language": "Turkish",
-    "native": "Türkçe",
+    "language": "Norwegian Bokmål",
+    "native": "norsk bokmål",
     "source": [
       "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
     ]
   },
   "data": {
-    "ç": {
+    "à": {
       "mapping": {
-        "base": "c"
+        "base": "a"
       }
     },
-    "ğ": {
+    "é": {
       "mapping": {
-        "base": "g"
+        "base": "e"
       }
     },
-    "i̇": {
-      "mapping": {
-        "base": "i"
-      }
-    },
-    "ö": {
+    "ó": {
       "mapping": {
         "base": "o"
       }
     },
-    "ş": {
+    "ò": {
       "mapping": {
-        "base": "s"
+        "base": "o"
       }
     },
-    "ü": {
+    "ô": {
       "mapping": {
-        "base": "u"
+        "base": "o"
       }
     },
-    "Ç": {
+    "å": {
       "mapping": {
-        "base": "C"
+        "base": "a"
       }
     },
-    "Ğ": {
+    "À": {
       "mapping": {
-        "base": "G"
+        "base": "A"
       }
     },
-    "İ": {
+    "É": {
       "mapping": {
-        "base": "I"
+        "base": "E"
       }
     },
-    "Ö": {
+    "Ó": {
       "mapping": {
         "base": "O"
       }
     },
-    "Ş": {
+    "Ò": {
       "mapping": {
-        "base": "S"
+        "base": "O"
       }
     },
-    "Ü": {
+    "Ô": {
       "mapping": {
-        "base": "U"
+        "base": "O"
+      }
+    },
+    "Å": {
+      "mapping": {
+        "base": "A"
       }
     }
   }

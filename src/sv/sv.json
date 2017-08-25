@@ -7,29 +7,33 @@
   "metadata": {
     "alphabet": "Latn",
     "continent": [
-      "AS",
       "EU"
     ],
-    "language": "Turkish",
-    "native": "Türkçe",
+    "language": "Swedish",
+    "native": "svenska",
     "source": [
       "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
     ]
   },
   "data": {
-    "ç": {
+    "à": {
       "mapping": {
-        "base": "c"
+        "base": "a"
       }
     },
-    "ğ": {
+    "é": {
       "mapping": {
-        "base": "g"
+        "base": "e"
       }
     },
-    "i̇": {
+    "å": {
       "mapping": {
-        "base": "i"
+        "base": "a"
+      }
+    },
+    "ä": {
+      "mapping": {
+        "base": "a"
       }
     },
     "ö": {
@@ -37,44 +41,29 @@
         "base": "o"
       }
     },
-    "ş": {
+    "À": {
       "mapping": {
-        "base": "s"
+        "base": "A"
       }
     },
-    "ü": {
+    "É": {
       "mapping": {
-        "base": "u"
+        "base": "E"
       }
     },
-    "Ç": {
+    "Å": {
       "mapping": {
-        "base": "C"
+        "base": "A"
       }
     },
-    "Ğ": {
+    "Ä": {
       "mapping": {
-        "base": "G"
-      }
-    },
-    "İ": {
-      "mapping": {
-        "base": "I"
+        "base": "A"
       }
     },
     "Ö": {
       "mapping": {
         "base": "O"
-      }
-    },
-    "Ş": {
-      "mapping": {
-        "base": "S"
-      }
-    },
-    "Ü": {
-      "mapping": {
-        "base": "U"
       }
     }
   }
