@@ -180,6 +180,7 @@ class Extract {
   }
 
   /**
+   * Returns an object with filled-in metadata properties of the given language
    * @param {string} language
    * @return {object}
    */

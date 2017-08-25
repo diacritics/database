@@ -15,7 +15,8 @@ const fs = require('fs'), // file system
   territoryInfo = require('cldr-data/supplemental/territoryInfo');
 
 /**
- * Build
+ * The build generates all src/*.json files into one .json file within
+ * build/out/. Only validated languages will be handled.
  */
 class Build {
 
@@ -80,7 +81,8 @@ class Build {
   }
 
   /**
-   * Returns an array of all language files
+   * Returns an array of all language files. Only those that are included in the
+   * validated-languages.json will be returned.
    * @return {object[]}
    */
   getLanguageFiles() {
