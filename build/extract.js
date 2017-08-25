@@ -7,17 +7,15 @@
 'use strict';
 const fs = require('fs'), // file system
   path = require('path'),
-  // delete files using patterns
   del = require('del'),
-  // remove combining diacritics
-  stripMarks = require('strip-combining-marks'),
-
-  // get metadata.alphabet
-  alphabet = require('cldr-data/supplemental/languageData')
-    .supplemental.languageData,
-  // get metadata.language in English
-  langEn = require('cldr-data/main/en/languages')
-    .main.en.localeDisplayNames.languages,
+  stripMarks = require('strip-combining-marks'), // remove combining diacritics
+  stripJsonComments = require('strip-json-comments'),
+  alphabet = require( // get metadata.alphabet
+    'cldr-data/supplemental/languageData'
+  ).supplemental.languageData,
+  langEn = require( // get metadata.language in English
+    'cldr-data/main/en/languages'
+  ).main.en.localeDisplayNames.languages,
 
   // CLDR data path
   cldrData = 'node_modules/cldr-data/';
@@ -43,12 +41,6 @@ class Extract {
     this.langData = {};
     this.langNative = {};
     this.validLangs = [];
-    this.unvalidatedMessage = `/**
- * This file was automatically generated and contains unvalidated content
- * Once verified, add the base IETF language tag to the array in the
- * build/validated-languages.json file and remove this comment
- */
-`;
     this.run();
   }
 
@@ -99,11 +91,15 @@ class Extract {
 
   /**
    * Reads a JSON file, removes comments and parses it
-   * @param {string} file - path to JSON file
+   * @param {string} file - path to json file
    * @return {object}
    */
   readJSON(file) {
-    return JSON.parse(fs.readFileSync(file, 'utf8'));
+    return JSON.parse(
+      stripJsonComments(
+        fs.readFileSync(file, 'utf8')
+      )
+    );
   }
 
   /**
@@ -297,11 +293,14 @@ class Extract {
     if (!fs.existsSync(temp)) {
       fs.mkdirSync(temp);
     }
-    temp = `./src/${folder}/${language}.js`;
+    temp = `./src/${folder}/${language}.json`;
     if (!fs.existsSync(temp)) {
+      const tpl = fs.readFileSync(
+        './build/templates/extracted-language-variant.json', 'utf8'
+      );
       fs.writeFileSync(
         temp,
-        this.unvalidatedMessage + JSON.stringify(data, null, 2) + '\n',
+        tpl.replace(/\/\/<\%= contents %>/gmi, JSON.stringify(data, null, 2)),
         'utf8'
       );
     } else if (language !== 'sr') {
