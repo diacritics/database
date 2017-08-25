@@ -85,7 +85,7 @@ class Build {
    */
   getLanguageFiles() {
     let ret = [];
-    glob.sync('./src/**/*.json').forEach(file => {
+    glob.sync('./src/*/*.json').forEach(file => {
       const spl = file.split('/'),
         folderName = spl[2],
         fileName = spl[3].split('.')[0];

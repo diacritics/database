@@ -49,7 +49,7 @@ class Extract {
     // get metadata.continents cross-reference
     this.initTSV();
     // load list of validated languages
-    this.validLangs = this.readJSON('./build/data/validated-languages.json');
+    this.validLangs = this.readJSON('./src/validated-languages.json');
   }
 
   /**
