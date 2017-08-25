@@ -38,6 +38,7 @@ class Extract {
     this.langData = {};
     this.langNative = {};
     this.validLangs = [];
+    this.continents = [];
     this.run();
   }
 
