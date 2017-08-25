@@ -1,0 +1,50 @@
+/**
+ * This file was automatically generated and contains unvalidated content
+ * Once verified, add the base IETF language tag to the array in the
+ * src/validated-languages.json file and remove this comment
+ */
+{
+  "metadata": {
+    "alphabet": "Latn",
+    "continent": [
+      "EU"
+    ],
+    "language": "Slovenian",
+    "native": "slovenščina",
+    "source": [
+      "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
+    ]
+  },
+  "data": {
+    "č": {
+      "mapping": {
+        "base": "c"
+      }
+    },
+    "š": {
+      "mapping": {
+        "base": "s"
+      }
+    },
+    "ž": {
+      "mapping": {
+        "base": "z"
+      }
+    },
+    "Č": {
+      "mapping": {
+        "base": "C"
+      }
+    },
+    "Š": {
+      "mapping": {
+        "base": "S"
+      }
+    },
+    "Ž": {
+      "mapping": {
+        "base": "Z"
+      }
+    }
+  }
+}

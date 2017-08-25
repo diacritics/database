@@ -82,7 +82,7 @@ src/
 **NOTE**: German does not have a language variant that differs from the root language; therefore the `at.js` and `ch.js` files do not actually exist.
 
 - As there might be multiple files for a language, each language has its own folder.
-- The language files in this folder will be in a `.js` format to allow comments and to make sure text editors allow formatting them. The containing source is JSON though.
+- The language files in this folder will be in a `.json` format and may include comments (they will be removed before handling the contents)
 - Folder and file names must be according to [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the root language.
 - Each language variant has its own file:
   - If the variants (e.g. `de-DE`, `de-AT`, `de-CH`) don't have any differences from the root language, then only the root file is necessary.

@@ -1,0 +1,50 @@
+/**
+ * This file was automatically generated and contains unvalidated content
+ * Once verified, add the base IETF language tag to the array in the
+ * src/validated-languages.json file and remove this comment
+ */
+{
+  "metadata": {
+    "alphabet": "Cyrl",
+    "continent": [
+      "EU"
+    ],
+    "language": "Belarusian",
+    "native": "беларуская",
+    "source": [
+      "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
+    ]
+  },
+  "data": {
+    "ё": {
+      "mapping": {
+        "base": "е"
+      }
+    },
+    "й": {
+      "mapping": {
+        "base": "и"
+      }
+    },
+    "ў": {
+      "mapping": {
+        "base": "у"
+      }
+    },
+    "Ё": {
+      "mapping": {
+        "base": "Е"
+      }
+    },
+    "Й": {
+      "mapping": {
+        "base": "И"
+      }
+    },
+    "Ў": {
+      "mapping": {
+        "base": "У"
+      }
+    }
+  }
+}

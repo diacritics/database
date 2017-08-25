@@ -2,7 +2,7 @@
 
 ## Development
 
-_Requirements: [node.js][node-js] (including npm)_
+_Requirements: Latest [node.js][node-js] (including npm)_
 
 Before you start developing, you should clone or download this repository and run:
 
