@@ -149,7 +149,7 @@ class Build {
     const prefix = options.prefix || '',
       suffix = options.suffix || '',
       len = str.length,
-      format = function (val) {
+      format = val => {
         if (options.base === 'dec') {
           // if no prefix/suffix, this returns a number type
           return (prefix || suffix) ? prefix + val + suffix : val;
