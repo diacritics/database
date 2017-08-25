@@ -15,10 +15,7 @@ const fs = require('fs'), // file system
   ).supplemental.languageData,
   langEn = require( // get metadata.language in English
     'cldr-data/main/en/languages'
-  ).main.en.localeDisplayNames.languages,
-
-  // CLDR data path
-  cldrData = 'node_modules/cldr-data/';
+  ).main.en.localeDisplayNames.languages;
 
 /**
  * Extract
@@ -108,7 +105,7 @@ class Extract {
    */
   loadLangFiles(lang) {
     if (!this.langData[lang]) {
-      const path = `${cldrData}main/${lang}/`;
+      const path = `node_modules/cldr-data/main/${lang}/`;
       // get language alphabet to extract diacritics
       let data = this.readJSON(path + 'characters.json');
       this.langData[lang] = data || {};
@@ -125,7 +122,7 @@ class Extract {
    */
   buildLangList() {
     const folders = [],
-      dir = cldrData + 'main';
+      dir = 'node_modules/cldr-data/main';
     fs.readdirSync(dir).forEach(file => {
       if (fs.lstatSync(path.join(dir, file)).isDirectory()) {
         folders.push(file);
@@ -181,6 +178,10 @@ class Extract {
     return continents;
   }
 
+  /**
+   * @param {string} language
+   * @return {object}
+   */
   getMetadata(language) {
     // get root language (ignore variants for alphabet data)
     const rootLang = this.getRootLang(language),
@@ -300,7 +301,7 @@ class Extract {
       );
       fs.writeFileSync(
         temp,
-        tpl.replace(/\/\/<\%= contents %>/gmi, JSON.stringify(data, null, 2)),
+        tpl.replace(/\/\/<%= contents %>/gmi, JSON.stringify(data, null, 2)),
         'utf8'
       );
     } else if (language !== 'sr') {
