@@ -84,16 +84,19 @@ class Build {
    * @return {object[]}
    */
   getLanguageFiles() {
+    const validated = this.readJSON('./src/validated-languages.json');
     let ret = [];
     glob.sync('./src/*/*.json').forEach(file => {
       const spl = file.split('/'),
         folderName = spl[2],
         fileName = spl[3].split('.')[0];
-      ret.push({
-        file,
-        folderName,
-        fileName
-      });
+      if (validated.includes(folderName)) {
+        ret.push({
+          file,
+          folderName,
+          fileName
+        });
+      }
     });
     return ret;
   }
