@@ -17,5 +17,5 @@ The specification can be found in the [spec folder](./spec/).
 
 ## Contributing
 
-Thanks for contributing! Most data is user-contributed so your help is really much appreciated.  
-To get started, please read the documentation. It gives you the basic idea of the database structure. You can also view the [existing files](./src/). Then you can start providing your data and submit a PR.
+Thanks for contributing :tada: Most data is user-contributed so your help is really much appreciated.  
+To get started, please read the documentation. It should give you the basic idea of the database structure. Then you can start reviewing existing, unvalidated language files or create new ones in the [source folder](./src/). Unvalidated languages contain a comment in the header of the file to indicate that they need to be reviewed by a native speaker.
