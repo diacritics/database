@@ -4,10 +4,11 @@
     "continent": [
       "EU"
     ],
-    "language": "Swiss German",
+    "language": "German",
     "native": "Schweizerdeutsch",
+    "variant": "Swiss Standard German",
     "source": [
-      "https://en.wikipedia.org/wiki/German_orthography#Special_characters"
+      "https://en.wikipedia.org/wiki/Swiss_Standard_German"
     ]
   },
   "data": {
