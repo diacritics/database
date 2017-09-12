@@ -18,7 +18,22 @@
         "base": "ا"
       }
     },
+    "أَ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "أُ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
     "إ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "إِ": {
       "mapping": {
         "base": "ا"
       }
@@ -33,6 +48,132 @@
         "base": "ا"
       }
     },
+    "اَ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "اِ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "اُ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "اْ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "أ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "إ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "آ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "اً": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "اٍ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "اٌ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "اّ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "اَّ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "اُّ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    
+    "بَ": {
+      "mapping": {
+        "base": "ب"
+      }
+    },
+    "بِ": {
+      "mapping": {
+        "base": "ب"
+      }
+    },
+    "بُ": {
+      "mapping": {
+        "base": "ب"
+      }
+    },
+    "بْ": {
+      "mapping": {
+        "base": "ب"
+      }
+    },
+    "بً": {
+      "mapping": {
+        "base": "ب"
+      }
+    },
+    "بٍ": {
+      "mapping": {
+        "base": "ب"
+      }
+    },
+    "بٌ": {
+      "mapping": {
+        "base": "ب"
+      }
+    },
+    "بّ": {
+      "mapping": {
+        "base": "ب"
+      }
+    },
+    "بَّ": {
+      "mapping": {
+        "base": "ب"
+      }
+    },
+    "بِّ": {
+      "mapping": {
+        "base": "ب"
+      }
+    },
+    "بُّ": {
+      "mapping": {
+        "base": "ب"
+      }
+    },
+    
+    
+    
+    
+    
     "ؤ": {
       "mapping": {
         "base": "و"
