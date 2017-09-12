@@ -282,6 +282,117 @@
       }
     },
     
+    "ثَ": {
+      "mapping": {
+        "base": "ث"
+      }
+    },
+    "ثِ": {
+      "mapping": {
+        "base": "ث"
+      }
+    },
+    "ثُ": {
+      "mapping": {
+        "base": "ث"
+      }
+    },
+    "ثْ": {
+      "mapping": {
+        "base": "ث"
+      }
+    },
+    "ثً": {
+      "mapping": {
+        "base": "ث"
+      }
+    },
+    "ثٍ": {
+      "mapping": {
+        "base": "ث"
+      }
+    },
+    "ثٌ": {
+      "mapping": {
+        "base": "ث"
+      }
+    },
+    "ثّ": {
+      "mapping": {
+        "base": "ث"
+      }
+    },
+    "ثَّ": {
+      "mapping": {
+        "base": "ث"
+      }
+    },
+    "ثِّ": {
+      "mapping": {
+        "base": "ث"
+      }
+    },
+    "ثُ": {
+      "mapping": {
+        "base": "ث"
+      }
+    },
+    
+    "جَ": {
+      "mapping": {
+        "base": "ج"
+      }
+    },
+    "جِ": {
+      "mapping": {
+        "base": "ج"
+      }
+    },
+    "جُ": {
+      "mapping": {
+        "base": "ج"
+      }
+    },
+    "جْ": {
+      "mapping": {
+        "base": "ج"
+      }
+    },
+    "جً": {
+      "mapping": {
+        "base": "ج"
+      }
+    },
+    "جٍ": {
+      "mapping": {
+        "base": "ج"
+      }
+    },
+    "جٌ": {
+      "mapping": {
+        "base": "ج"
+      }
+    },
+    "جّ": {
+      "mapping": {
+        "base": "ج"
+      }
+    },
+    "جَّ": {
+      "mapping": {
+        "base": "ج"
+      }
+    },
+    "جِّ": {
+      "mapping": {
+        "base": "ج"
+      }
+    },
+    "جُّ": {
+      "mapping": {
+        "base": "ج"
+      }
+    },
     
     
     
