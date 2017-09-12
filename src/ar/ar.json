@@ -114,6 +114,62 @@
       }
     },
     
+    "ءَ": {
+      "mapping": {
+        "base": "ء"
+      }
+    },
+    "ءِ": {
+      "mapping": {
+        "base": "ء"
+      }
+    },
+    "ءُ": {
+      "mapping": {
+        "base": "ء"
+      }
+    },
+    "ءْ": {
+      "mapping": {
+        "base": "ء"
+      }
+    },
+    "ءً": {
+      "mapping": {
+        "base": "ء"
+      }
+    },
+    "ءٍ": {
+      "mapping": {
+        "base": "ء"
+      }
+    },
+    "ءٌ": {
+      "mapping": {
+        "base": "ء"
+      }
+    },
+    "ءّ": {
+      "mapping": {
+        "base": "ء"
+      }
+    },
+    "ءَّ": {
+      "mapping": {
+        "base": "ء"
+      }
+    },
+    "ءِّ": {
+      "mapping": {
+        "base": "ء"
+      }
+    },
+    "ءُّ": {
+      "mapping": {
+        "base": "ء"
+      }
+    },
+    
     "بَ": {
       "mapping": {
         "base": "ب"
