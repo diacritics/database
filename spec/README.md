@@ -13,8 +13,9 @@
     - [metadata.alphabet](#metadataalphabet)
     - [metadata.continent](#metadatacontinent)
     - [metadata.language](#metadatalanguage)
+    - [metadata.languageNative](#metadatalanguagenative)
     - [metadata.variant](#metadatavariant)
-    - [metadata.native](#metadatanative)
+    - [metadata.variantNative](#metadatavariantnative)
     - [metadata.source](#metadatasource)
     - [data](#data)
     - [data.{character}.mapping](#datacharactermapping)
@@ -106,7 +107,7 @@ Example structure for the German language source file, which only contains lower
             "EU"
         ],
         "language": "German",
-        "native": "Deutsch",
+        "languageNative": "Deutsch",
         "source": [
             "https://en.wikipedia.org/wiki/German_orthography#Special_characters"
         ]
@@ -160,6 +161,14 @@ Type: `String`
 
 The associated language written in English.
 
+###### metadata.languageNative
+
+Required  
+Type: `String`
+
+The associated language written in the native language.
+
+
 ###### metadata.variant
 
 Optional  
@@ -167,12 +176,12 @@ Type: `String`
 
 The associated language variant written in English, if applicable. For example, if the [IETF language tag](https://www.w3.org/International/articles/language-tags/) was `de_AT`, this entry would include the full name of the variant country, `Austria` for the `AT` variant.
 
-###### metadata.native
+###### metadata.variantNative
 
 Required  
 Type: `String`
 
-The associated language written in the native language.
+The associated language variant written in the native language, if applicable.
 
 ###### metadata.source
 
