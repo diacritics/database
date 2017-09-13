@@ -1,5 +1,162 @@
 {
   "de": {
+    "ch": {
+      "metadata": {
+        "alphabet": "Latn",
+        "continent": [
+          "EU"
+        ],
+        "language": "German",
+        "native": "Schweizerdeutsch",
+        "variant": "Swiss Standard German",
+        "source": [
+          "https://en.wikipedia.org/wiki/Swiss_Standard_German"
+        ],
+        "country": [
+          "GU"
+        ]
+      },
+      "data": {
+        "ü": {
+          "mapping": {
+            "base": "u",
+            "decompose": "ue"
+          },
+          "equivalents": [
+            {
+              "raw": "ü",
+              "unicode": "\\u00FC",
+              "html_decimal": "&#252;",
+              "html_hex": "&#x00FC;",
+              "encoded_uri": "%C3%BC",
+              "html_entity": "&uuml;"
+            },
+            {
+              "raw": "ü",
+              "unicode": "u\\u0308",
+              "html_decimal": "u&#776;",
+              "html_hex": "u&#x0308;",
+              "encoded_uri": "u%CC%88"
+            }
+          ]
+        },
+        "Ü": {
+          "mapping": {
+            "base": "U",
+            "decompose": "UE"
+          },
+          "equivalents": [
+            {
+              "raw": "Ü",
+              "unicode": "\\u00DC",
+              "html_decimal": "&#220;",
+              "html_hex": "&#x00DC;",
+              "encoded_uri": "%C3%9C",
+              "html_entity": "&Uuml;"
+            },
+            {
+              "raw": "Ü",
+              "unicode": "U\\u0308",
+              "html_decimal": "U&#776;",
+              "html_hex": "U&#x0308;",
+              "encoded_uri": "U%CC%88"
+            }
+          ]
+        },
+        "ö": {
+          "mapping": {
+            "base": "o",
+            "decompose": "oe"
+          },
+          "equivalents": [
+            {
+              "raw": "ö",
+              "unicode": "\\u00F6",
+              "html_decimal": "&#246;",
+              "html_hex": "&#x00F6;",
+              "encoded_uri": "%C3%B6",
+              "html_entity": "&ouml;"
+            },
+            {
+              "raw": "ö",
+              "unicode": "o\\u0308",
+              "html_decimal": "o&#776;",
+              "html_hex": "o&#x0308;",
+              "encoded_uri": "o%CC%88"
+            }
+          ]
+        },
+        "Ö": {
+          "mapping": {
+            "base": "O",
+            "decompose": "OE"
+          },
+          "equivalents": [
+            {
+              "raw": "Ö",
+              "unicode": "\\u00D6",
+              "html_decimal": "&#214;",
+              "html_hex": "&#x00D6;",
+              "encoded_uri": "%C3%96",
+              "html_entity": "&Ouml;"
+            },
+            {
+              "raw": "Ö",
+              "unicode": "O\\u0308",
+              "html_decimal": "O&#776;",
+              "html_hex": "O&#x0308;",
+              "encoded_uri": "O%CC%88"
+            }
+          ]
+        },
+        "ä": {
+          "mapping": {
+            "base": "a",
+            "decompose": "ae"
+          },
+          "equivalents": [
+            {
+              "raw": "ä",
+              "unicode": "\\u00E4",
+              "html_decimal": "&#228;",
+              "html_hex": "&#x00E4;",
+              "encoded_uri": "%C3%A4",
+              "html_entity": "&auml;"
+            },
+            {
+              "raw": "ä",
+              "unicode": "a\\u0308",
+              "html_decimal": "a&#776;",
+              "html_hex": "a&#x0308;",
+              "encoded_uri": "a%CC%88"
+            }
+          ]
+        },
+        "Ä": {
+          "mapping": {
+            "base": "A",
+            "decompose": "AE"
+          },
+          "equivalents": [
+            {
+              "raw": "Ä",
+              "unicode": "\\u00C4",
+              "html_decimal": "&#196;",
+              "html_hex": "&#x00C4;",
+              "encoded_uri": "%C3%84",
+              "html_entity": "&Auml;"
+            },
+            {
+              "raw": "Ä",
+              "unicode": "A\\u0308",
+              "html_decimal": "A&#776;",
+              "html_hex": "A&#x0308;",
+              "encoded_uri": "A%CC%88"
+            }
+          ]
+        }
+      }
+    },
     "de": {
       "metadata": {
         "alphabet": "Latn",
