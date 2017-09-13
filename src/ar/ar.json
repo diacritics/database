@@ -1,8 +1,3 @@
-/**
- * This file was automatically generated and contains unvalidated content
- * Once verified, add the base IETF language tag to the array in the
- * src/validated-languages.json file and remove this comment
- */
 {
   "metadata": {
     "alphabet": "Arab",
@@ -14,6 +9,7 @@
     "native": "العربية",
     "source": [
       "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
+      "https://en.m.wikipedia.org/wiki/Arabic_alphabet#Alif"
     ]
   },
   "data": {
@@ -22,9 +18,14 @@
         "base": "ا"
       }
     },
-    "ؤ": {
+    "أَ": {
       "mapping": {
-        "base": "و"
+        "base": "ا"
+      }
+    },
+    "أُ": {
+      "mapping": {
+        "base": "ا"
       }
     },
     "إ": {
@@ -32,15 +33,2120 @@
         "base": "ا"
       }
     },
-    "ئ": {
+    "إِ": {
       "mapping": {
-        "base": "ي"
+        "base": "ا"
+      }
+    },
+    "ٱ": {
+      "mapping": {
+        "base": "ا"
       }
     },
     "آ": {
       "mapping": {
         "base": "ا"
       }
+    },
+    "اَ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "اِ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "اُ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "اْ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "أ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "إ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "آ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "اً": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "اٍ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "اٌ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "اّ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "اَّ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    "اُّ": {
+      "mapping": {
+        "base": "ا"
+      }
+    },
+    
+    "ءَ": {
+      "mapping": {
+        "base": "ء"
+      }
+    },
+    "ءِ": {
+      "mapping": {
+        "base": "ء"
+      }
+    },
+    "ءُ": {
+      "mapping": {
+        "base": "ء"
+      }
+    },
+    "ءْ": {
+      "mapping": {
+        "base": "ء"
+      }
+    },
+    "ءً": {
+      "mapping": {
+        "base": "ء"
+      }
+    },
+    "ءٍ": {
+      "mapping": {
+        "base": "ء"
+      }
+    },
+    "ءٌ": {
+      "mapping": {
+        "base": "ء"
+      }
+    },
+    "ءّ": {
+      "mapping": {
+        "base": "ء"
+      }
+    },
+    "ءَّ": {
+      "mapping": {
+        "base": "ء"
+      }
+    },
+    "ءِّ": {
+      "mapping": {
+        "base": "ء"
+      }
+    },
+    "ءُّ": {
+      "mapping": {
+        "base": "ء"
+      }
+    },
+    
+    "بَ": {
+      "mapping": {
+        "base": "ب"
+      }
+    },
+    "بِ": {
+      "mapping": {
+        "base": "ب"
+      }
+    },
+    "بُ": {
+      "mapping": {
+        "base": "ب"
+      }
+    },
+    "بْ": {
+      "mapping": {
+        "base": "ب"
+      }
+    },
+    "بً": {
+      "mapping": {
+        "base": "ب"
+      }
+    },
+    "بٍ": {
+      "mapping": {
+        "base": "ب"
+      }
+    },
+    "بٌ": {
+      "mapping": {
+        "base": "ب"
+      }
+    },
+    "بّ": {
+      "mapping": {
+        "base": "ب"
+      }
+    },
+    "بَّ": {
+      "mapping": {
+        "base": "ب"
+      }
+    },
+    "بِّ": {
+      "mapping": {
+        "base": "ب"
+      }
+    },
+    "بُّ": {
+      "mapping": {
+        "base": "ب"
+      }
+    },
+    
+    "تَ": {
+      "mapping": {
+        "base": "ت"
+      }
+    },
+    "تِ": {
+      "mapping": {
+        "base": "ت"
+      }
+    },
+    "تُ": {
+      "mapping": {
+        "base": "ت"
+      }
+    },
+    "تْ": {
+      "mapping": {
+        "base": "ت"
+      }
+    },
+    "تً": {
+      "mapping": {
+        "base": "ت"
+      }
+    },
+    "تٍ": {
+      "mapping": {
+        "base": "ت"
+      }
+    },
+    "تٌ": {
+      "mapping": {
+        "base": "ت"
+      }
+    },
+    "تّ": {
+      "mapping": {
+        "base": "ت"
+      }
+    },
+    "تَّ": {
+      "mapping": {
+        "base": "ت"
+      }
+    },
+    "تِّ": {
+      "mapping": {
+        "base": "ت"
+      }
+    },
+    "تُّ": {
+      "mapping": {
+        "base": "ت"
+      }
+    },
+    
+    "ةَ": {
+      "mapping": {
+        "base": "ة"
+      }
+    },
+    "ةِ": {
+      "mapping": {
+        "base": "ة"
+      }
+    },
+    "ةُ": {
+      "mapping": {
+        "base": "ة"
+      }
+    },
+    "ةْ": {
+      "mapping": {
+        "base": "ة"
+      }
+    },
+    "ةً": {
+      "mapping": {
+        "base": "ة"
+      }
+    },
+    "ةٍ": {
+      "mapping": {
+        "base": "ة"
+      }
+    },
+    "ةٌ": {
+      "mapping": {
+        "base": "ة"
+      }
+    },
+    "ةّ": {
+      "mapping": {
+        "base": "ة"
+      }
+    },
+    "ةَّ": {
+      "mapping": {
+        "base": "ة"
+      }
+    },
+    "ةِّ": {
+      "mapping": {
+        "base": "ة"
+      }
+    },
+    "ةُّ": {
+      "mapping": {
+        "base": "ة"
+      }
+    },
+    
+    "ثَ": {
+      "mapping": {
+        "base": "ث"
+      }
+    },
+    "ثِ": {
+      "mapping": {
+        "base": "ث"
+      }
+    },
+    "ثُ": {
+      "mapping": {
+        "base": "ث"
+      }
+    },
+    "ثْ": {
+      "mapping": {
+        "base": "ث"
+      }
+    },
+    "ثً": {
+      "mapping": {
+        "base": "ث"
+      }
+    },
+    "ثٍ": {
+      "mapping": {
+        "base": "ث"
+      }
+    },
+    "ثٌ": {
+      "mapping": {
+        "base": "ث"
+      }
+    },
+    "ثّ": {
+      "mapping": {
+        "base": "ث"
+      }
+    },
+    "ثَّ": {
+      "mapping": {
+        "base": "ث"
+      }
+    },
+    "ثِّ": {
+      "mapping": {
+        "base": "ث"
+      }
+    },
+    "ثُ": {
+      "mapping": {
+        "base": "ث"
+      }
+    },
+    
+    "جَ": {
+      "mapping": {
+        "base": "ج"
+      }
+    },
+    "جِ": {
+      "mapping": {
+        "base": "ج"
+      }
+    },
+    "جُ": {
+      "mapping": {
+        "base": "ج"
+      }
+    },
+    "جْ": {
+      "mapping": {
+        "base": "ج"
+      }
+    },
+    "جً": {
+      "mapping": {
+        "base": "ج"
+      }
+    },
+    "جٍ": {
+      "mapping": {
+        "base": "ج"
+      }
+    },
+    "جٌ": {
+      "mapping": {
+        "base": "ج"
+      }
+    },
+    "جّ": {
+      "mapping": {
+        "base": "ج"
+      }
+    },
+    "جَّ": {
+      "mapping": {
+        "base": "ج"
+      }
+    },
+    "جِّ": {
+      "mapping": {
+        "base": "ج"
+      }
+    },
+    "جُّ": {
+      "mapping": {
+        "base": "ج"
+      }
+    },
+    
+    "حَ": {
+      "mapping": {
+        "base": "ح"
+      }
+    },
+    "حِ": {
+      "mapping": {
+        "base": "ح"
+      }
+    },
+    "حُ": {
+      "mapping": {
+        "base": "ح"
+      }
+    },
+    "حْ": {
+      "mapping": {
+        "base": "ح"
+      }
+    },
+    "حً": {
+      "mapping": {
+        "base": "ح"
+      }
+    },
+    "حٍ": {
+      "mapping": {
+        "base": "ح"
+      }
+    },
+    "حٌ": {
+      "mapping": {
+        "base": "ح"
+      }
+    },
+    "حّ": {
+      "mapping": {
+        "base": "ح"
+      }
+    },
+    "حَّ": {
+      "mapping": {
+        "base": "ح"
+      }
+    },
+    "حِّ": {
+      "mapping": {
+        "base": "ح"
+      }
+    },
+    "حُّ": {
+      "mapping": {
+        "base": "ح"
+      }
+    },
+    
+    "خَ": {
+      "mapping": {
+        "base": "خ"
+      }
+    },
+    "خِ": {
+      "mapping": {
+        "base": "خ"
+      }
+    },
+    "خُ": {
+      "mapping": {
+        "base": "خ"
+      }
+    },
+    "خْ": {
+      "mapping": {
+        "base": "خ"
+      }
+    },
+    "خً": {
+      "mapping": {
+        "base": "خ"
+      }
+    },
+    "خٍ": {
+      "mapping": {
+        "base": "خ"
+      }
+    },
+    "خٌ": {
+      "mapping": {
+        "base": "خ"
+      }
+    },
+    "خّ": {
+      "mapping": {
+        "base": "خ"
+      }
+    },
+    "خَّ": {
+      "mapping": {
+        "base": "خ"
+      }
+    },
+    "خِّ": {
+      "mapping": {
+        "base": "خ"
+      }
+    },
+    "خُّ": {
+      "mapping": {
+        "base": "خ"
+      }
+    },
+    
+    "دَ": {
+      "mapping": {
+        "base": "د"
+      }
+    },
+    "دِ": {
+      "mapping": {
+        "base": "د"
+      }
+    },
+    "دُ": {
+      "mapping": {
+        "base": "د"
+      }
+    },
+    "دْ": {
+      "mapping": {
+        "base": "د"
+      }
+    },
+    "دً": {
+      "mapping": {
+        "base": "د"
+      }
+    },
+    "دٍ": {
+      "mapping": {
+        "base": "د"
+      }
+    },
+    "دٌ": {
+      "mapping": {
+        "base": "د"
+      }
+    },
+    "دّ": {
+      "mapping": {
+        "base": "د"
+      }
+    },
+    "دَّ": {
+      "mapping": {
+        "base": "د"
+      }
+    },
+    "دِّ": {
+      "mapping": {
+        "base": "د"
+      }
+    },
+    "دُّ": {
+      "mapping": {
+        "base": "د"
+      }
+    },
+    "ذَ": {
+      "mapping": {
+        "base": "ذ"
+      }
+    },
+    "ذِ": {
+      "mapping": {
+        "base": "ذ"
+      }
+    },
+    "ذُ": {
+      "mapping": {
+        "base": "ذ"
+      }
+    },
+    "ذْ": {
+      "mapping": {
+        "base": "ذ"
+      }
+    },
+    "ذً": {
+      "mapping": {
+        "base": "ذ"
+      }
+    },
+    "ذٍ": {
+      "mapping": {
+        "base": "ذ"
+      }
+    },
+    "ذٌ": {
+      "mapping": {
+        "base": "ذ"
+      }
+    },
+    "ذّ": {
+      "mapping": {
+        "base": "ذ"
+      }
+    },
+    "ذَّ": {
+      "mapping": {
+        "base": "ذ"
+      }
+    },
+    "ذِّ": {
+      "mapping": {
+        "base": "ذ"
+      }
+    },
+    "ذُّ": {
+      "mapping": {
+        "base": "ذ"
+      }
+    },
+    
+    "رَ": {
+      "mapping": {
+        "base": "ر"
+      }
+    },
+    "رِ": {
+      "mapping": {
+        "base": "ر"
+      }
+    },
+    "رُ": {
+      "mapping": {
+        "base": "ر"
+      }
+    },
+    "رْ": {
+      "mapping": {
+        "base": "ر"
+      }
+    },
+    "رً": {
+      "mapping": {
+        "base": "ر"
+      }
+    },
+    "رٍ": {
+      "mapping": {
+        "base": "ر"
+      }
+    },
+    "رٌ": {
+      "mapping": {
+        "base": "ر"
+      }
+    },
+    "رّ": {
+      "mapping": {
+        "base": "ر"
+      }
+    },
+    "رَّ": {
+      "mapping": {
+        "base": "ر"
+      }
+    },
+    "رِّ": {
+      "mapping": {
+        "base": "ر"
+      }
+    },
+    "رُّ": {
+      "mapping": {
+        "base": "ر"
+      }
+    },
+    
+    "زَ": {
+      "mapping": {
+        "base": "ز"
+      }
+    },
+    "زِ": {
+      "mapping": {
+        "base": "ز"
+      }
+    },
+    "زُ": {
+      "mapping": {
+        "base": "ز"
+      }
+    },
+    "زْ": {
+      "mapping": {
+        "base": "ز"
+      }
+    },
+    "زً": {
+      "mapping": {
+        "base": "ز"
+      }
+    },
+    "زٍ": {
+      "mapping": {
+        "base": "ز"
+      }
+    },
+    "زٌ": {
+      "mapping": {
+        "base": "ز"
+      }
+    },
+    "زّ": {
+      "mapping": {
+        "base": "ز"
+      }
+    },
+    "زَّ": {
+      "mapping": {
+        "base": "ز"
+      }
+    },
+    "زِّ": {
+      "mapping": {
+        "base": "ز"
+      }
+    },
+    "زُّ": {
+      "mapping": {
+        "base": "ز"
+      }
+    },
+    
+    "سَ": {
+      "mapping": {
+        "base": "س"
+      }
+    },
+    "سِ": {
+      "mapping": {
+        "base": "س"
+      }
+    },
+    "سُ": {
+      "mapping": {
+        "base": "س"
+      }
+    },
+    "سْ": {
+      "mapping": {
+        "base": "س"
+      }
+    },
+    "سً": {
+      "mapping": {
+        "base": "س"
+      }
+    },
+    "سٍ": {
+      "mapping": {
+        "base": "س"
+      }
+    },
+    "سٌ": {
+      "mapping": {
+        "base": "س"
+      }
+    },
+    "سّ": {
+      "mapping": {
+        "base": "س"
+      }
+    },
+    "سَّ": {
+      "mapping": {
+        "base": "س"
+      }
+    },
+    "سِّ": {
+      "mapping": {
+        "base": "س"
+      }
+    },
+    "سُّ": {
+      "mapping": {
+        "base": "س"
+      }
+    },
+    
+    "شَ": {
+      "mapping": {
+        "base": "ش"
+      }
+    },
+    "شِ": {
+      "mapping": {
+        "base": "ش"
+      }
+    },
+    "شُ": {
+      "mapping": {
+        "base": "ش"
+      }
+    },
+    "شْ": {
+      "mapping": {
+        "base": "ش"
+      }
+    },
+    "شً": {
+      "mapping": {
+        "base": "ش"
+      }
+    },
+    "شٍ": {
+      "mapping": {
+        "base": "ش"
+      }
+    },
+    "شٌ": {
+      "mapping": {
+        "base": "ش"
+      }
+    },
+    "شّ": {
+      "mapping": {
+        "base": "ش"
+      }
+    },
+    "شَّ": {
+      "mapping": {
+        "base": "ش"
+      }
+    },
+    "شِّ": {
+      "mapping": {
+        "base": "ش"
+      }
+    },
+    "شُّ": {
+      "mapping": {
+        "base": "ش"
+      }
+    },
+    
+    "صَ": {
+      "mapping": {
+        "base": "ص"
+      }
+    },
+    "صِ": {
+      "mapping": {
+        "base": "ص"
+      }
+    },
+    "صُ": {
+      "mapping": {
+        "base": "ص"
+      }
+    },
+    "صْ": {
+      "mapping": {
+        "base": "ص"
+      }
+    },
+    "صً": {
+      "mapping": {
+        "base": "ص"
+      }
+    },
+    "صٍ": {
+      "mapping": {
+        "base": "ص"
+      }
+    },
+    "صٌ": {
+      "mapping": {
+        "base": "ص"
+      }
+    },
+    "صّ": {
+      "mapping": {
+        "base": "ص"
+      }
+    },
+    "صَّ": {
+      "mapping": {
+        "base": "ص"
+      }
+    },
+    "صِّ": {
+      "mapping": {
+        "base": "ص"
+      }
+    },
+    "صُّ": {
+      "mapping": {
+        "base": "ص"
+      }
+    },
+    
+    "ضَ": {
+      "mapping": {
+        "base": "ض"
+      }
+    },
+    "ضِ": {
+      "mapping": {
+        "base": "ض"
+      }
+    },
+    "ضُ": {
+      "mapping": {
+        "base": "ض"
+      }
+    },
+    "ضْ": {
+      "mapping": {
+        "base": "ض"
+      }
+    },
+    "ضً": {
+      "mapping": {
+        "base": "ض"
+      }
+    },
+    "ضٍ": {
+      "mapping": {
+        "base": "ض"
+      }
+    },
+    "ضٌ": {
+      "mapping": {
+        "base": "ض"
+      }
+    },
+    "ضّ": {
+      "mapping": {
+        "base": "ض"
+      }
+    },
+    "ضَّ": {
+      "mapping": {
+        "base": "ض"
+      }
+    },
+    "ضِّ": {
+      "mapping": {
+        "base": "ض"
+      }
+    },
+    "ضُّ": {
+      "mapping": {
+        "base": "ض"
+      }
+    },
+    
+    "طَ": {
+      "mapping": {
+        "base": "ط"
+      }
+    },
+    "طِ": {
+      "mapping": {
+        "base": "ط"
+      }
+    },
+    "طُ": {
+      "mapping": {
+        "base": "ط"
+      }
+    },
+    "طْ": {
+      "mapping": {
+        "base": "ط"
+      }
+    },
+    "طً": {
+      "mapping": {
+        "base": "ط"
+      }
+    },
+    "طٍ": {
+      "mapping": {
+        "base": "ط"
+      }
+    },
+    "طٌ": {
+      "mapping": {
+        "base": "ط"
+      }
+    },
+    "طّ": {
+      "mapping": {
+        "base": "ط"
+      }
+    },
+    "طَّ": {
+      "mapping": {
+        "base": "ط"
+      }
+    },
+    "طِّ": {
+      "mapping": {
+        "base": "ط"
+      }
+    },
+    "طُّ": {
+      "mapping": {
+        "base": "ط"
+      }
+    },
+    
+    "ظَ": {
+      "mapping": {
+        "base": "ظ"
+      }
+    },
+    "ظِ": {
+      "mapping": {
+        "base": "ظ"
+      }
+    },
+    "ظُ": {
+      "mapping": {
+        "base": "ظ"
+      }
+    },
+    "ظْ": {
+      "mapping": {
+        "base": "ظ"
+      }
+    },
+    "ظً": {
+      "mapping": {
+        "base": "ظ"
+      }
+    },
+    "ظٍ": {
+      "mapping": {
+        "base": "ظ"
+      }
+    },
+    "ظٌ": {
+      "mapping": {
+        "base": "ظ"
+      }
+    },
+    "ظّ": {
+      "mapping": {
+        "base": "ظ"
+      }
+    },
+    "ظَّ": {
+      "mapping": {
+        "base": "ظ"
+      }
+    },
+    "ظِّ": {
+      "mapping": {
+        "base": "ظ"
+      }
+    },
+    "ظُّ": {
+      "mapping": {
+        "base": "ظ"
+      }
+    },
+    
+    "عَ": {
+      "mapping": {
+        "base": "ع"
+      }
+    },
+    "عِ": {
+      "mapping": {
+        "base": "ع"
+      }
+    },
+    "عُ": {
+      "mapping": {
+        "base": "ع"
+      }
+    },
+    "عْ": {
+      "mapping": {
+        "base": "ع"
+      }
+    },
+    "عً": {
+      "mapping": {
+        "base": "ع"
+      }
+    },
+    "عٍ": {
+      "mapping": {
+        "base": "ع"
+      }
+    },
+    "عٌ": {
+      "mapping": {
+        "base": "ع"
+      }
+    },
+    "عّ": {
+      "mapping": {
+        "base": "ع"
+      }
+    },
+    "عَّ": {
+      "mapping": {
+        "base": "ع"
+      }
+    },
+    "عِّ": {
+      "mapping": {
+        "base": "ع"
+      }
+    },
+    "عُّ": {
+      "mapping": {
+        "base": "ع"
+      }
+    },
+    
+    "غَ": {
+      "mapping": {
+        "base": "غ"
+      }
+    },
+    "غِ": {
+      "mapping": {
+        "base": "غ"
+      }
+    },
+    "غُ": {
+      "mapping": {
+        "base": "غ"
+      }
+    },
+    "غْ": {
+      "mapping": {
+        "base": "غ"
+      }
+    },
+    "غً": {
+      "mapping": {
+        "base": "غ"
+      }
+    },
+    "غٍ": {
+      "mapping": {
+        "base": "غ"
+      }
+    },
+    "غٌ": {
+      "mapping": {
+        "base": "غ"
+      }
+    },
+    "غّ": {
+      "mapping": {
+        "base": "غ"
+      }
+    },
+    "غَّ": {
+      "mapping": {
+        "base": "غ"
+      }
+    },
+    "غِّ": {
+      "mapping": {
+        "base": "غ"
+      }
+    },
+    "غُّ": {
+      "mapping": {
+        "base": "غ"
+      }
+    },
+    
+    "فَ": {
+      "mapping": {
+        "base": "ف"
+      }
+    },
+    "فِ": {
+      "mapping": {
+        "base": "ف"
+      }
+    },
+    "فُ": {
+      "mapping": {
+        "base": "ف"
+      }
+    },
+    "فْ": {
+      "mapping": {
+        "base": "ف"
+      }
+    },
+    "فً": {
+      "mapping": {
+        "base": "ف"
+      }
+    },
+    "فٍ": {
+      "mapping": {
+        "base": "ف"
+      }
+    },
+    "فٌ": {
+      "mapping": {
+        "base": "ف"
+      }
+    },
+    "فّ": {
+      "mapping": {
+        "base": "ف"
+      }
+    },
+    "فَّ": {
+      "mapping": {
+        "base": "ف"
+      }
+    },
+    "فِّ": {
+      "mapping": {
+        "base": "ف"
+      }
+    },
+    "فُّ": {
+      "mapping": {
+        "base": "ف"
+      }
+    },
+    
+    "قَ": {
+      "mapping": {
+        "base": "ق"
+      }
+    },
+    "قِ": {
+      "mapping": {
+        "base": "ق"
+      }
+    },
+    "قُ": {
+      "mapping": {
+        "base": "ق"
+      }
+    },
+    "قْ": {
+      "mapping": {
+        "base": "ق"
+      }
+    },
+    "قً": {
+      "mapping": {
+        "base": "ق"
+      }
+    },
+    "قٍ": {
+      "mapping": {
+        "base": "ق"
+      }
+    },
+    "قٌ": {
+      "mapping": {
+        "base": "ق"
+      }
+    },
+    "قّ": {
+      "mapping": {
+        "base": "ق"
+      }
+    },
+    "قَّ": {
+      "mapping": {
+        "base": "ق"
+      }
+    },
+    "قِّ": {
+      "mapping": {
+        "base": "ق"
+      }
+    },
+    "قُّ": {
+      "mapping": {
+        "base": "ق"
+      }
+    },
+    
+    "كَ": {
+      "mapping": {
+        "base": "ك"
+      }
+    },
+    "كِ": {
+      "mapping": {
+        "base": "ك"
+      }
+    },
+    "كُ": {
+      "mapping": {
+        "base": "ك"
+      }
+    },
+    "كْ": {
+      "mapping": {
+        "base": "ك"
+      }
+    },
+    "كً": {
+      "mapping": {
+        "base": "ك"
+      }
+    },
+    "كٍ": {
+      "mapping": {
+        "base": "ك"
+      }
+    },
+    "كٌ": {
+      "mapping": {
+        "base": "ك"
+      }
+    },
+    "كّ": {
+      "mapping": {
+        "base": "ك"
+      }
+    },
+    "كَّ": {
+      "mapping": {
+        "base": "ك"
+      }
+    },
+    "كِّ": {
+      "mapping": {
+        "base": "ك"
+      }
+    },
+    "كُّ": {
+      "mapping": {
+        "base": "ك"
+      }
+    },
+    
+    "کَ": {
+      "mapping": {
+        "base": "ک"
+      }
+    },
+    "کِ": {
+      "mapping": {
+        "base": "ک"
+      }
+    },
+    "کُ": {
+      "mapping": {
+        "base": "ک"
+      }
+    },
+    "کْ": {
+      "mapping": {
+        "base": "ک"
+      }
+    },
+    "کً": {
+      "mapping": {
+        "base": "ک"
+      }
+    },
+    "کٍ": {
+      "mapping": {
+        "base": "ک"
+      }
+    },
+    "کٌ": {
+      "mapping": {
+        "base": "ک"
+      }
+    },
+    "کّ": {
+      "mapping": {
+        "base": "ک"
+      }
+    },
+    "کَّ": {
+      "mapping": {
+        "base": "ک"
+      }
+    },
+    "کِّ": {
+      "mapping": {
+        "base": "ک"
+      }
+    },
+    "کُّ": {
+      "mapping": {
+        "base": "ک"
+      }
+    },
+    
+    "لَ": {
+      "mapping": {
+        "base": "ل"
+      }
+    },
+    "لِ": {
+      "mapping": {
+        "base": "ل"
+      }
+    },
+    "لُ": {
+      "mapping": {
+        "base": "ل"
+      }
+    },
+    "لْ": {
+      "mapping": {
+        "base": "ل"
+      }
+    },
+    "لً": {
+      "mapping": {
+        "base": "ل"
+      }
+    },
+    "لٍ": {
+      "mapping": {
+        "base": "ل"
+      }
+    },
+    "لٌ": {
+      "mapping": {
+        "base": "ل"
+      }
+    },
+    "لّ": {
+      "mapping": {
+        "base": "ل"
+      }
+    },
+    "لَّ": {
+      "mapping": {
+        "base": "ل"
+      }
+    },
+    "لِّ": {
+      "mapping": {
+        "base": "ل"
+      }
+    },
+    "لُّ": {
+      "mapping": {
+        "base": "ل"
+      }
+    },
+    
+    "لاَ": {
+      "mapping": {
+        "base": "لا"
+      }
+    },
+    "لاِ": {
+      "mapping": {
+        "base": "لا"
+      }
+    },
+    "لاُ": {
+      "mapping": {
+        "base": "لا"
+      }
+    },
+    "لاْ": {
+      "mapping": {
+        "base": "لا"
+      }
+    },
+    "لاً": {
+      "mapping": {
+        "base": "لا"
+      }
+    },
+    "لاٍ": {
+      "mapping": {
+        "base": "لا"
+      }
+    },
+    "لاٌ": {
+      "mapping": {
+        "base": "لا"
+      }
+    },
+    "لاّ": {
+      "mapping": {
+        "base": "لا"
+      }
+    },
+    "لاَّ": {
+      "mapping": {
+        "base": "لا"
+      }
+    },
+    "لاِّ": {
+      "mapping": {
+        "base": "لا"
+      }
+    },
+    "لاُّ": {
+      "mapping": {
+        "base": "لا"
+      }
+    },
+    
+    "لأَ": {
+      "mapping": {
+        "base": "لأ"
+      }
+    },
+    "لأِ": {
+      "mapping": {
+        "base": "لأ"
+      }
+    },
+    "لأُ": {
+      "mapping": {
+        "base": "لأ"
+      }
+    },
+    "لأْ": {
+      "mapping": {
+        "base": "لأ"
+      }
+    },
+    "لأً": {
+      "mapping": {
+        "base": "لأ"
+      }
+    },
+    "لأٍ": {
+      "mapping": {
+        "base": "لأ"
+      }
+    },
+    "لأٌ": {
+      "mapping": {
+        "base": "لأ"
+      }
+    },
+    "لأّ": {
+      "mapping": {
+        "base": "لأ"
+      }
+    },
+    "لأَّ": {
+      "mapping": {
+        "base": "لأ"
+      }
+    },
+    "لأِّ": {
+      "mapping": {
+        "base": "لأ"
+      }
+    },
+    "لأُّ": {
+      "mapping": {
+        "base": "لأ"
+      }
+    },
+    
+    "لإَ": {
+      "mapping": {
+        "base": "لإ"
+      }
+    },
+    "لإِ": {
+      "mapping": {
+        "base": "لإ"
+      }
+    },
+    "لإُ": {
+      "mapping": {
+        "base": "لإ"
+      }
+    },
+    "لإْ": {
+      "mapping": {
+        "base": "لإ"
+      }
+    },
+    "لإً": {
+      "mapping": {
+        "base": "لإ"
+      }
+    },
+    "لإٍ": {
+      "mapping": {
+        "base": "لإ"
+      }
+    },
+    "لإٌ": {
+      "mapping": {
+        "base": "لإ"
+      }
+    },
+    "لإّ": {
+      "mapping": {
+        "base": "لإ"
+      }
+    },
+    "لإَّ": {
+      "mapping": {
+        "base": "لإ"
+      }
+    },
+    "لإِّ": {
+      "mapping": {
+        "base": "لإ"
+      }
+    },
+    "لإُّ": {
+      "mapping": {
+        "base": "لإ"
+      }
+    },
+    
+    "مَ": {
+      "mapping": {
+        "base": "م"
+      }
+    },
+    "مِ": {
+      "mapping": {
+        "base": "م"
+      }
+    },
+    "مُ": {
+      "mapping": {
+        "base": "م"
+      }
+    },
+    "مْ": {
+      "mapping": {
+        "base": "م"
+      }
+    },
+    "مً": {
+      "mapping": {
+        "base": "م"
+      }
+    },
+    "مٍ": {
+      "mapping": {
+        "base": "م"
+      }
+    },
+    "مٌ": {
+      "mapping": {
+        "base": "م"
+      }
+    },
+    "مّ": {
+      "mapping": {
+        "base": "م"
+      }
+    },
+    "مَّ": {
+      "mapping": {
+        "base": "م"
+      }
+    },
+    "مِّ": {
+      "mapping": {
+        "base": "م"
+      }
+    },
+    "مُّ": {
+      "mapping": {
+        "base": "م"
+      }
+    },
+    
+    "نَ": {
+      "mapping": {
+        "base": "ن"
+      }
+    },
+    "نِ": {
+      "mapping": {
+        "base": "ن"
+      }
+    },
+    "نُ": {
+      "mapping": {
+        "base": "ن"
+      }
+    },
+    "نْ": {
+      "mapping": {
+        "base": "ن"
+      }
+    },
+    "نً": {
+      "mapping": {
+        "base": "ن"
+      }
+    },
+    "نٍ": {
+      "mapping": {
+        "base": "ن"
+      }
+    },
+    "نٌ": {
+      "mapping": {
+        "base": "ن"
+      }
+    },
+    "نّ": {
+      "mapping": {
+        "base": "ن"
+      }
+    },
+    "نَّ": {
+      "mapping": {
+        "base": "ن"
+      }
+    },
+    "نِّ": {
+      "mapping": {
+        "base": "ن"
+      }
+    },
+    "نُّ": {
+      "mapping": {
+        "base": "ن"
+      }
+    },
+    
+    "هَ": {
+      "mapping": {
+        "base": "ه"
+      }
+    },
+    "هِ": {
+      "mapping": {
+        "base": "ه"
+      }
+    },
+    "هُ": {
+      "mapping": {
+        "base": "ه"
+      }
+    },
+    "هْ": {
+      "mapping": {
+        "base": "ه"
+      }
+    },
+    "هً": {
+      "mapping": {
+        "base": "ه"
+      }
+    },
+    "هٍ": {
+      "mapping": {
+        "base": "ه"
+      }
+    },
+    "هٌ": {
+      "mapping": {
+        "base": "ه"
+      }
+    },
+    "هّ": {
+      "mapping": {
+        "base": "ه"
+      }
+    },
+    "هَّ": {
+      "mapping": {
+        "base": "ه"
+      }
+    },
+    "هِّ": {
+      "mapping": {
+        "base": "ه"
+      }
+    },
+    "هُّ": {
+      "mapping": {
+        "base": "ه"
+      }
+    },
+    
+    "وَ": {
+      "mapping": {
+        "base": "و"
+      }
+    },
+    "وِ": {
+      "mapping": {
+        "base": "و"
+      }
+    },
+    "وُ": {
+      "mapping": {
+        "base": "و"
+      }
+    },
+    "وْ": {
+      "mapping": {
+        "base": "و"
+      }
+    },
+    "وً": {
+      "mapping": {
+        "base": "و"
+      }
+    },
+    "وٍ": {
+      "mapping": {
+        "base": "و"
+      }
+    },
+    "وٌ": {
+      "mapping": {
+        "base": "و"
+      }
+    },
+    "وّ": {
+      "mapping": {
+        "base": "و"
+      }
+    },
+    "وَّ": {
+      "mapping": {
+        "base": "و"
+      }
+    },
+    "وِّ": {
+      "mapping": {
+        "base": "و"
+      }
+    },
+    "وُّ": {
+      "mapping": {
+        "base": "و"
+      }
+    },
+    
+    "ؤَ": {
+      "mapping": {
+        "base": "ؤ"
+      }
+    },
+    "ؤِ": {
+      "mapping": {
+        "base": "ؤ"
+      }
+    },
+    "ؤُ": {
+      "mapping": {
+        "base": "ؤ"
+      }
+    },
+    "ؤْ": {
+      "mapping": {
+        "base": "ؤ"
+      }
+    },
+    "ؤً": {
+      "mapping": {
+        "base": "ؤ"
+      }
+    },
+    "ؤٍ": {
+      "mapping": {
+        "base": "ؤ"
+      }
+    },
+    "ؤٌ": {
+      "mapping": {
+        "base": "ؤ"
+      }
+    },
+    "ؤّ": {
+      "mapping": {
+        "base": "ؤ"
+      }
+    },
+    "ؤَّ": {
+      "mapping": {
+        "base": "ؤ"
+      }
+    },
+    "ؤِّ": {
+      "mapping": {
+        "base": "ؤ"
+      }
+    },
+    "ؤُّ": {
+      "mapping": {
+        "base": "ؤ"
+      }
+    },
+    
+    "ؤ": {
+      "mapping": {
+        "base": "و"
+      }
+    },
+    
+    "يَ": {
+      "mapping": {
+        "base": "ي"
+      }
+    },
+    "يِ": {
+      "mapping": {
+        "base": "ي"
+      }
+    },
+    "يُ": {
+      "mapping": {
+        "base": "ي"
+      }
+    },
+    "يْ": {
+      "mapping": {
+        "base": "ي"
+      }
+    },
+    "يً": {
+      "mapping": {
+        "base": "ي"
+      }
+    },
+    "يٍ": {
+      "mapping": {
+        "base": "ي"
+      }
+    },
+    "يٌ": {
+      "mapping": {
+        "base": "ي"
+      }
+    },
+    "يّ": {
+      "mapping": {
+        "base": "ي"
+      }
+    },
+    "يَّ": {
+      "mapping": {
+        "base": "ي"
+      }
+    },
+    "يِّ": {
+      "mapping": {
+        "base": "ي"
+      }
+    },
+    "يُّ": {
+      "mapping": {
+        "base": "ي"
+      }
+    },
+    
+    "ئَ": {
+      "mapping": {
+        "base": "ئ"
+      }
+    },
+    "ئِ": {
+      "mapping": {
+        "base": "ئ"
+      }
+    },
+    "ئُ": {
+      "mapping": {
+        "base": "ئ"
+      }
+    },
+    "ئْ": {
+      "mapping": {
+        "base": "ئ"
+      }
+    },
+    "ئً": {
+      "mapping": {
+        "base": "ئ"
+      }
+    },
+    "ئٍ": {
+      "mapping": {
+        "base": "ئ"
+      }
+    },
+    "ئٌ": {
+      "mapping": {
+        "base": "ئ"
+      }
+    },
+    "ئّ": {
+      "mapping": {
+        "base": "ئ"
+      }
+    },
+    "ئَّ": {
+      "mapping": {
+        "base": "ئ"
+      }
+    },
+    "ئِّ": {
+      "mapping": {
+        "base": "ئ"
+      }
+    },
+    "ئُّ": {
+      "mapping": {
+        "base": "ئ"
+      }
+    },
+    
+    "ئ": {
+      "mapping": {
+        "base": "ي"
+      }
+    },
+    
+    "ىَ": {
+      "mapping": {
+        "base": "ى"
+      }
+    },
+    "ىِ": {
+      "mapping": {
+        "base": "ى"
+      }
+    },
+    "ىُ": {
+      "mapping": {
+        "base": "ى"
+      }
+    },
+    "ىْ": {
+      "mapping": {
+        "base": "ى"
+      }
+    },
+    "ىً": {
+      "mapping": {
+        "base": "ى"
+      }
+    },
+    "ىٍ": {
+      "mapping": {
+        "base": "ى"
+      }
+    },
+    "ىٌ": {
+      "mapping": {
+        "base": "ى"
+      }
+    },
+    "ىّ": {
+      "mapping": {
+        "base": "ى"
+      }
+    },
+    "ىَّ": {
+      "mapping": {
+        "base": "ى"
+      }
+    },
+    "ىِّ": {
+      "mapping": {
+        "base": "ى"
+      }
+    },
+    "ىُّ": {
+      "mapping": {
+        "base": "ى"
+      }
+    },
+    
+    "ى": {
+      "mapping": {
+        "base": "ي"
+      }
     }
+    
+
   }
 }
