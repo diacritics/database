@@ -26,13 +26,17 @@
           "type": "string",
           "pattern": "^.+$"
         },
+        "languageNative": {
+          "type": "string",
+          "pattern": "^.+$"
+        },
         "variant": {
           "type": "string",
           "pattern": "^[A-Za-z ,\\-\\(\\)\\'\\.]+$"
         },
-        "native": {
+        "variantNative": {
           "type": "string",
-          "pattern": "^.+$"
+          "pattern": "^[A-Za-z ,\\-\\(\\)\\'\\.]+$"
         },
         "source": {
           "type": "array",
@@ -47,7 +51,7 @@
         "alphabet",
         "continent",
         "language",
-        "native"
+        "languageNative"
       ]
     },
     "data": {
