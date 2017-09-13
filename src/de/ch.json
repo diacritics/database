@@ -5,8 +5,9 @@
       "EU"
     ],
     "language": "German",
-    "native": "Deutsch",
-    "variant": "Swiss Standard German",
+    "languageNative": "Deutsch",
+    "variant": "Swiss German",
+    "variantNative": "Schweizerdeutsch",
     "source": [
       "https://en.wikipedia.org/wiki/Swiss_Standard_German"
     ]
