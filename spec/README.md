@@ -178,10 +178,10 @@ The associated language variant written in English, if applicable. For example, 
 
 ###### metadata.variantNative
 
-Required  
+Optional  
 Type: `String`
 
-The associated language variant written in the native language, if applicable.
+The associated language variant written in the native language, if applicable. Required in case a `metadata.variant` is provided.
 
 ###### metadata.source
 
