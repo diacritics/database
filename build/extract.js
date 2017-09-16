@@ -194,7 +194,7 @@ class Extract {
         alphabet: alpha['_scripts'] && alpha['_scripts'][0] || '',
         continent: continents,
         language: langEn[rootLang] || '',
-        native: this.langNative[rootLang],
+        languageNative: this.langNative[rootLang],
         source: [
           'http://www.unicode.org/cldr/charts/latest/by_type/' +
           'core_data.alphabetic_information.main.html'
