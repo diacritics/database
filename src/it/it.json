@@ -11,7 +11,7 @@
       "NA"
     ],
     "language": "Italian",
-    "native": "italiano",
+    "languageNative": "italiano",
     "source": [
       "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
     ]

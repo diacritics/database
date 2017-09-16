@@ -16,7 +16,7 @@
       "AN"
     ],
     "language": "French",
-    "native": "français",
+    "languageNative": "français",
     "source": [
       "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
     ]

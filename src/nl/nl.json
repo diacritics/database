@@ -12,7 +12,7 @@
       "SA"
     ],
     "language": "Dutch",
-    "native": "Nederlands",
+    "languageNative": "Nederlands",
     "source": [
       "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
     ]

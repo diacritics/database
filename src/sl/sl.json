@@ -10,7 +10,7 @@
       "EU"
     ],
     "language": "Slovenian",
-    "native": "slovenščina",
+    "languageNative": "slovenščina",
     "source": [
       "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
     ]
