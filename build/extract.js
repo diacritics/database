@@ -50,6 +50,9 @@ class Extract {
     this.initTSV();
     // load list of validated languages
     this.validLangs = this.readJSON('./src/validated-languages.json');
+    // variant languages to be extracted, even if the data matches
+    // the root language
+    this.extractVariants = this.readJSON('./src/extract-variants.json');
   }
 
   /**
@@ -263,7 +266,10 @@ class Extract {
         if (isVariant) {
           // include variants that are different from the root
           // language
-          if (JSON.stringify(data) === root) {
+          if (
+            JSON.stringify(data) === root &&
+            !this.extractVariants.includes(language)
+          ) {
             unique = false;
           } else {
             // add variant metadata
