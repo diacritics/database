@@ -265,6 +265,10 @@ class Extract {
           // language
           if (JSON.stringify(data) === root) {
             unique = false;
+          } else {
+            // add variant metadata
+            data.metadata.variant = langEn[language];
+            data.metadata.variantNative = this.langNative[language];
           }
         }
         // write file if unique and it contains data
@@ -296,7 +300,7 @@ class Extract {
     if (!fs.existsSync(temp)) {
       fs.mkdirSync(temp);
     }
-    temp = `./src/${folder}/${language}.json`;
+    temp = `./src/${folder}/${language.toLowerCase()}.json`;
     if (!fs.existsSync(temp)) {
       const tpl = fs.readFileSync(
         './build/templates/extracted-language-variant.json', 'utf8'
