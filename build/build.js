@@ -284,8 +284,7 @@ class Build {
         // to only find offical languages
         if (languages[variant]['_territories']) {
           languages[variant]['_territories'].forEach(territory => {
-            const vrnt =
-              territories[territory].languagePopulation[variant];
+            const vrnt = territories[territory].languagePopulation[variant];
             // official or official_regional language if defined
             if (vrnt['_officialStatus']) {
               country.push(territory);

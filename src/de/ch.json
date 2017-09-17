@@ -5,8 +5,12 @@
       "EU"
     ],
     "language": "German",
-    "native": "Schweizerdeutsch",
+    "languageNative": "Deutsch",
+    // The variant name is taken from Wikipedia. Instead of "Swiss German"
+    // "Swiss Standard German" is used as "Swiss German" indicates the spoken
+    // language, while "Swiss Standard German" indicates the written language.
     "variant": "Swiss Standard German",
+    "variantNative": "Schweizer Standarddeutsch",
     "source": [
       "https://en.wikipedia.org/wiki/Swiss_Standard_German"
     ]

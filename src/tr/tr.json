@@ -3,7 +3,7 @@
     "alphabet": "Latn",
     "continent": ["EU", "AS"],
     "language": "Turkish",
-    "native": "Türkçe",
+    "languageNative": "Türkçe",
     "source": [
       "https://en.wikipedia.org/wiki/Turkish_language",
       // The Turkish alphabet (Turkish: Türk Alfabesi) is an alphabet used
