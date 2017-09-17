@@ -8,7 +8,7 @@
           "AF"
         ],
         "language": "Arabic",
-        "native": "العربية",
+        "languageNative": "العربية",
         "source": [
           "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html",
           "https://en.m.wikipedia.org/wiki/Arabic_alphabet#Alif"
@@ -7075,8 +7075,9 @@
           "EU"
         ],
         "language": "German",
-        "native": "Schweizerdeutsch",
+        "languageNative": "Deutsch",
         "variant": "Swiss Standard German",
+        "variantNative": "Schweizer Standarddeutsch",
         "source": [
           "https://en.wikipedia.org/wiki/Swiss_Standard_German"
         ],
@@ -7232,7 +7233,7 @@
           "EU"
         ],
         "language": "German",
-        "native": "Deutsch",
+        "languageNative": "Deutsch",
         "source": [
           "https://en.wikipedia.org/wiki/German_orthography#Special_characters"
         ],
@@ -7416,7 +7417,7 @@
           "AN"
         ],
         "language": "Spanish",
-        "native": "Español",
+        "languageNative": "Español",
         "source": [
           "https://en.wikipedia.org/wiki/Spanish_orthography#Keyboard_requirements",
           "https://en.wikipedia.org/wiki/Spanish_language#Estimated_number_of_speakers",
@@ -7880,7 +7881,7 @@
           "AS"
         ],
         "language": "Turkish",
-        "native": "Türkçe",
+        "languageNative": "Türkçe",
         "source": [
           "https://en.wikipedia.org/wiki/Turkish_language",
           "https://en.wikipedia.org/wiki/Turkish_alphabet"
