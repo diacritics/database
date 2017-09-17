@@ -8,7 +8,7 @@
     "language": "Arabic",
     "languageNative": "العربية",
     "source": [
-      "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
+      "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html",
       "https://en.m.wikipedia.org/wiki/Arabic_alphabet#Alif"
     ]
   },
@@ -388,7 +388,7 @@
         "base": "ث"
       }
     },
-    "ثُ": {
+    "ثُّ": {
       "mapping": {
         "base": "ث"
       }
