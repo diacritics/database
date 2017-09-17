@@ -15,43 +15,71 @@
     "ü": {
       "mapping": {
         "base": "u",
-        "decompose": "ue"
+        "decompose": {
+          "titleCase": "Ue",
+          "upperCase": "UE",
+          "lowerCase": "ue"
+        }
       }
     },
     "Ü": {
       "mapping": {
         "base": "U",
-        "decompose": "UE"
+        "decompose": {
+          "titleCase": "Ue",
+          "upperCase": "UE",
+          "lowerCase": "ue"
+        }
       }
     },
     "ö": {
       "mapping": {
         "base": "o",
-        "decompose": "oe"
+        "decompose": {
+          "titleCase": "Oe",
+          "upperCase": "OE",
+          "lowerCase": "oe"
+        }
       }
     },
     "Ö": {
       "mapping": {
         "base": "O",
-        "decompose": "OE"
+        "decompose": {
+          "titleCase": "Oe",
+          "upperCase": "OE",
+          "lowerCase": "oe"
+        }
       }
     },
     "ä": {
       "mapping": {
         "base": "a",
-        "decompose": "ae"
+        "decompose": {
+          "titleCase": "Ae",
+          "upperCase": "AE",
+          "lowerCase": "ae"
+        }
       }
     },
     "Ä": {
       "mapping": {
         "base": "A",
-        "decompose": "AE"
+        "decompose": {
+          "titleCase": "Ae",
+          "upperCase": "AE",
+          "lowerCase": "ae"
+        }
       }
     },
     "ß": {
       "mapping": {
         "base": "ß",
-        "decompose": "ss"
+        "decompose": {
+          "titleCase": "SS",
+          "upperCase": "SS",
+          "lowerCase": "ss"
+        }
       }
     }
   }

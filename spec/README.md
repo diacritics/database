@@ -116,24 +116,40 @@ Example structure for the German language source file, which only contains lower
         "ü": {
             "mapping": {
                 "base": "u",
-                "decompose": "ue"
+                "decompose": {
+                    "titleCase": "Ue",
+                    "upperCase": "UE",
+                    "lowerCase": "ue"
+                }
             }
         },
         "ö": {
             "mapping": {
                 "base": "o",
-                "decompose": "oe"
+                "decompose": {
+                    "titleCase": "Oe",
+                    "upperCase": "OE",
+                    "lowerCase": "oe"
+                }
             }
         },
         "ä": {
             "mapping": {
                 "base": "a",
-                "decompose": "ae"
+                "decompose": {
+                    "titleCase": "Ae",
+                    "upperCase": "AE",
+                    "lowerCase": "ae"
+                }
             }
         },
         "ß": {
             "mapping": {
-                "decompose": "ss"
+                "decompose": {
+                  "titleCase": "SS",
+                  "upperCase": "SS",
+                  "lowerCase": "ss"
+                }
             }
         }
     }
@@ -214,9 +230,32 @@ This is the base of the character (e.g. the diacritic `ü` has a base of `u`, an
 ###### data.{character}.mapping.decompose
 
 Optional  
-Type: String
+Type: Object
 
 This is the character, or combination of characters used to represent the diacritic (e.g. `ö` decomposes into `oe` in German), ligature (e.g. `æ` decomposes into `ae`), or symbol (e.g. `‽` decomposes into `?!`).
+
+Each decompose value may need to be transformed into an upper, lower or title case. These entries have been included within the `decompose` values
+
+###### data.{character}.mapping.decompose.titleCase
+
+Optional  
+Type: String
+
+When a decompose value comprises two or more characters, the case of the first character may differ from the others. Include the necessary changes in this entry (e.g. `æ` and `Æ` decomposes into `Ae` in a title case).
+
+###### data.{character}.mapping.decompose.upperCase
+
+Optional  
+Type: String
+
+When a decompose value comprises two or more characters, the characters may be used in an abbreviation and require all capitals. Include the necessary changes in this entry (e.g. `æ` and `Æ` decomposes into `AE` in all upper case).
+
+###### data.{character}.mapping.decompose.lowerCase
+
+Optional  
+Type: String
+
+When a decompose value comprises two or more characters, the characters may need to be transformed into all lower case. Include the necessary changes in this entry (e.g. `æ` and `Æ` decomposes into `ae` in all lower case).
 
 ## 3. Dist Branch
 
