@@ -46,8 +46,10 @@ class Extract {
    * Load in extract settings
    */
   initSettings() {
+    process.stdout.write('Loading data files');
     // get metadata.continents cross-reference
     this.initTSV();
+    process.stdout.write('.');
     // load list of validated languages
     this.validLangs = this.readJSON('./src/validated-languages.json');
     // variant languages to be extracted, even if the data matches
@@ -96,6 +98,7 @@ class Extract {
    * @return {object}
    */
   readJSON(file) {
+    process.stdout.write('.');
     return JSON.parse(
       stripJsonComments(
         fs.readFileSync(file, 'utf8')
@@ -127,10 +130,12 @@ class Extract {
   buildLangList() {
     const folders = [],
       dir = 'node_modules/cldr-data/main';
+    process.stdout.write('\nBuilding language folders');
     fs.readdirSync(dir).forEach(file => {
       if (fs.lstatSync(path.join(dir, file)).isDirectory()) {
         folders.push(file);
       }
+      process.stdout.write('.');
     });
     return folders;
   }
@@ -248,6 +253,7 @@ class Extract {
     const languages = Object.keys(this.results);
     // assuming the first language listed isn't a variant
     let root = JSON.stringify(this.results[languages[0]]);
+    process.stdout.write('\nExtracting diacritic data');
     languages.forEach(language => {
       let unique = true,
         isVariant = /-/.test(language) &&
@@ -282,6 +288,7 @@ class Extract {
           this.writeOutput(language, data);
         }
       }
+      process.stdout.write('.');
     });
   }
 
