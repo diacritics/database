@@ -7089,7 +7089,11 @@
         "ü": {
           "mapping": {
             "base": "u",
-            "decompose": "ue"
+            "decompose": {
+              "titleCase": "Ue",
+              "upperCase": "UE",
+              "lowerCase": "ue"
+            }
           },
           "equivalents": [
             {
@@ -7112,7 +7116,11 @@
         "Ü": {
           "mapping": {
             "base": "U",
-            "decompose": "UE"
+            "decompose": {
+              "titleCase": "Ue",
+              "upperCase": "UE",
+              "lowerCase": "ue"
+            }
           },
           "equivalents": [
             {
@@ -7135,7 +7143,11 @@
         "ö": {
           "mapping": {
             "base": "o",
-            "decompose": "oe"
+            "decompose": {
+              "titleCase": "oe",
+              "upperCase": "OE",
+              "lowerCase": "oe"
+            }
           },
           "equivalents": [
             {
@@ -7158,7 +7170,11 @@
         "Ö": {
           "mapping": {
             "base": "O",
-            "decompose": "OE"
+            "decompose": {
+              "titleCase": "Oe",
+              "upperCase": "OE",
+              "lowerCase": "oe"
+            }
           },
           "equivalents": [
             {
@@ -7181,7 +7197,11 @@
         "ä": {
           "mapping": {
             "base": "a",
-            "decompose": "ae"
+            "decompose": {
+              "titleCase": "Ae",
+              "upperCase": "AE",
+              "lowerCase": "ae"
+            }
           },
           "equivalents": [
             {
@@ -7204,7 +7224,11 @@
         "Ä": {
           "mapping": {
             "base": "A",
-            "decompose": "AE"
+            "decompose": {
+              "titleCase": "Ae",
+              "upperCase": "AE",
+              "lowerCase": "ae"
+            }
           },
           "equivalents": [
             {
@@ -7235,7 +7259,8 @@
         "language": "German",
         "languageNative": "Deutsch",
         "source": [
-          "https://en.wikipedia.org/wiki/German_orthography#Special_characters"
+          "https://en.wikipedia.org/wiki/German_orthography#Special_characters",
+          "https://en.wikipedia.org/wiki/Capital_%E1%BA%9E"
         ],
         "country": [
           "AT",
@@ -7250,7 +7275,11 @@
         "ü": {
           "mapping": {
             "base": "u",
-            "decompose": "ue"
+            "decompose": {
+              "titleCase": "Ue",
+              "upperCase": "UE",
+              "lowerCase": "ue"
+            }
           },
           "equivalents": [
             {
@@ -7273,7 +7302,11 @@
         "Ü": {
           "mapping": {
             "base": "U",
-            "decompose": "UE"
+            "decompose": {
+              "titleCase": "Ue",
+              "upperCase": "UE",
+              "lowerCase": "ue"
+            }
           },
           "equivalents": [
             {
@@ -7296,7 +7329,11 @@
         "ö": {
           "mapping": {
             "base": "o",
-            "decompose": "oe"
+            "decompose": {
+              "titleCase": "Oe",
+              "upperCase": "OE",
+              "lowerCase": "oe"
+            }
           },
           "equivalents": [
             {
@@ -7319,7 +7356,11 @@
         "Ö": {
           "mapping": {
             "base": "O",
-            "decompose": "OE"
+            "decompose": {
+              "titleCase": "Oe",
+              "upperCase": "OE",
+              "lowerCase": "oe"
+            }
           },
           "equivalents": [
             {
@@ -7342,7 +7383,11 @@
         "ä": {
           "mapping": {
             "base": "a",
-            "decompose": "ae"
+            "decompose": {
+              "titleCase": "Ae",
+              "upperCase": "AE",
+              "lowerCase": "ae"
+            }
           },
           "equivalents": [
             {
@@ -7365,7 +7410,11 @@
         "Ä": {
           "mapping": {
             "base": "A",
-            "decompose": "AE"
+            "decompose": {
+              "titleCase": "Ae",
+              "upperCase": "AE",
+              "lowerCase": "ae"
+            }
           },
           "equivalents": [
             {
@@ -7388,7 +7437,11 @@
         "ß": {
           "mapping": {
             "base": "ß",
-            "decompose": "ss"
+            "decompose": {
+              "titleCase": "Ss",
+              "upperCase": "SS",
+              "lowerCase": "ss"
+            }
           },
           "equivalents": [
             {
@@ -7398,6 +7451,25 @@
               "html_hex": "&#x00DF;",
               "encoded_uri": "%C3%9F",
               "html_entity": "&szlig;"
+            }
+          ]
+        },
+        "ẞ": {
+          "mapping": {
+            "base": "ß",
+            "decompose": {
+              "titleCase": "Ss",
+              "upperCase": "SS",
+              "lowerCase": "ss"
+            }
+          },
+          "equivalents": [
+            {
+              "raw": "ẞ",
+              "unicode": "\\u1E9E",
+              "html_decimal": "&#7838;",
+              "html_hex": "&#x1E9E;",
+              "encoded_uri": "%E1%BA%9E"
             }
           ]
         }
@@ -7827,7 +7899,11 @@
         },
         "¿": {
           "mapping": {
-            "decompose": "?"
+            "decompose": {
+              "titleCase": "?",
+              "upperCase": "?",
+              "lowerCase": "?"
+            }
           },
           "equivalents": [
             {
@@ -7842,7 +7918,11 @@
         },
         "¡": {
           "mapping": {
-            "decompose": "!"
+            "decompose": {
+              "titleCase": "!",
+              "upperCase": "!",
+              "lowerCase": "!"
+            }
           },
           "equivalents": [
             {
@@ -7857,7 +7937,11 @@
         },
         "⸘": {
           "mapping": {
-            "decompose": "?!"
+            "decompose": {
+              "titleCase": "?!",
+              "upperCase": "?!",
+              "lowerCase": "?!"
+            }
           },
           "equivalents": [
             {
