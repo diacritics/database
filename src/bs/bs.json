@@ -26,14 +26,14 @@
         "base": "c"
       }
     },
-    "š": {
-      "mapping": {
-        "base": "s"
-      }
-    },
     "ž": {
       "mapping": {
         "base": "z"
+      }
+    },
+    "š": {
+      "mapping": {
+        "base": "s"
       }
     },
     "Č": {
@@ -46,14 +46,14 @@
         "base": "C"
       }
     },
-    "Š": {
-      "mapping": {
-        "base": "S"
-      }
-    },
     "Ž": {
       "mapping": {
         "base": "Z"
+      }
+    },
+    "Š": {
+      "mapping": {
+        "base": "S"
       }
     }
   }
