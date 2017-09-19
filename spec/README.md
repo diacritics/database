@@ -248,7 +248,7 @@ When a decompose value comprises two or more characters, the case of the first c
 Optional
 Type: String
 
-When a decompose value comprises two or more characters, the characters may be used in an abbreviation and require all capitals. Include the necessary changes in this entry (e.g. `æ` and `Æ` decomposes into `AE` in all upper case).
+When a decompose value comprises two or more characters, this property may be used when the word requires all capital letters, such as in an abbreviation. Include the necessary changes in this entry (e.g. `æ` and `Æ` decomposes into `AE` in all upper case).
 
 ###### data.{character}.mapping.decompose.lowerCase
 
