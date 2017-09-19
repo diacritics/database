@@ -18,27 +18,39 @@ $ npm run build
 
 ## Extract Method
 
-Using this method would only be required after an update to the CLDR database, or if you determine that a language variant file is missing and you would like to create a template for that variant.
+### Updates
 
-To automatically recreate unvalidated language files, perform the following steps:
+This method should only be used after an update to the CLDR database.
 
-* Ensure all validated languages have been included in the `src/validated-languages.json` file.
-  * This JSON file must only include the root language name (based on the ISO 639-1 and ISO 639-2 language; meaning no dashes in the folder name).
-  * Any IETF language tag variants that do not match a folder name (e.g. `de-CH` or `fr-CA`) will be ignored.
+To use this method, perform the following steps:
 
-    ```js
-    [
-      "de",
-      "es",
-      "tr",
-      "ar"
-    ]
-    ```
+* Ensure all *validated* languages have been included in the `src/validated-languages.json` file.
+  * In this case, "validated" means a language file that has been manually updated.
+  * If the file is not added to the `validated-languages.json` file, the extract method will remove and recreate the file based on the given CLDR data; therefore, it is vital to include folders that contain manually edited language files, or all changes will be lost.
+  * This JSON file *must only include* the language folder name, and as such, all files (including variant languages) within that folder will be untouched.
+* Ensure that none of the unvalidated template files are open in your editor.
+  * Open files will not be removed during the extraction process, and an error will be shown because the script was unable to remove the file or folder (this usually happens in the Atom editor with auto-save disabled).
+  * Close the file, or you may need to completely close Atom before attempting to restart the extraction method.
+* Enter the following to start the process.
 
-* For variants:
-  * The extract script will automatically compare the CLDR data between a root language and language variant. If equal, a variant file will not be created. It's not a perfect method so some variants may be missed.
-  * At the time of this writing, no variant files have been determined to be necessary; but `de-CH` (Swiss Standard German) variant was determined to be necessary and has been manually added.
-  * If you determine that a language variant needs to be included, add its IETF language tag to the `src/extract-variants.json` file to force this script to build an "unvalidated" template file for that variant. For example, adding `fr-CA`, the French Canadian language variant to the template file will automatically build a `ca.json` file within the `fr` folder.
+  ```bash
+  $ npm run extract
+  ```
+
+### Missing variant language files
+
+The extract script will automatically compare the CLDR data between a root language and language variant. If equal, a variant file will not be created. It's not a perfect method so some variants may be missed. At the time of this writing, no variant files were found to be necessary by this script; but the `de-CH` (Swiss Standard German) variant does differ from the root (`de`) language and has been manually added.
+
+A variant file can be added using either of these methods:
+
+1. Using the root language file:
+  * Copy the root language file into the language folder so that a copy is made.
+  * Rename the new file to use the variant label (e.g. the `de-CH` variant would need a file named `ch.json`).
+  * Modify the variant file as appropriate.
+2. Use the extract method to create a template file:
+  * **Note** that this method will remove and recreate all unvalidated language files.
+  * Add the language variant IETF language tag to the `src/extract-variants.json` file. This forces the script to build an "unvalidated" template file for that variant.
+  * For example, adding `fr-CA`, the French Canadian language variant to the template file, will automatically build a `ca.json` file within the `fr` folder.
 
     ```js
     [
@@ -46,14 +58,8 @@ To automatically recreate unvalidated language files, perform the following step
     ]
     ```
 
-* Ensure that none of the unvalidated template files are open in your editor.
-  * Open files will not be removed during the extraction process, and an error will be shown because it was unable to remove the file or folder (this usually happens in the Atom editor with auto-save disabled).
-  * Close the file, or you may need to completely close Atom before attempting to restart the extraction method.
-* Enter the following to start the process.
-
-```bash
-$ npm run extract
-```
+  * After adding this exception, use the extract method to build the file.
+  * Modify the variant file as appropriate.
 
 ## Contribution and License Agreement
 
