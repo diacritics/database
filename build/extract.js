@@ -156,7 +156,10 @@ class Extract {
     // include upper and lower case characters
     return (
       `${result.toLocaleLowerCase()} ${result.toLocaleUpperCase()}`
-    ).split(/\s+/);
+      // nl exemplarCharacters has an entry {íj\\u0301} = j + combining acute
+      // accent; this won't be included since it uses a combining diacritic
+      // exclusively (i.e. there is no j with acute accent in unicode)
+    ).replace(/[{}\\\d]/g, '').split(/\s+/);
   }
 
   /**
