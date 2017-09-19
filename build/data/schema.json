@@ -67,8 +67,21 @@
                 "pattern": "^[\\S]+$"
               },
               "decompose": {
-                "type": "string",
-                "pattern": "^[\\S]+$"
+                "type": "object",
+                "properties": {
+                  "titleCase": {
+                    "type": "string",
+                    "pattern": "^[\\S]+$"
+                  },
+                  "upperCase": {
+                    "type": "string",
+                    "pattern": "^[\\S]+$"
+                  },
+                  "lowerCase": {
+                    "type": "string",
+                    "pattern": "^[\\S]+$"
+                  }
+                }
               }
             }
           }

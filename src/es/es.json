@@ -111,17 +111,29 @@
     // symbols are typically used as a closing tag
     "¿": {
       "mapping": {
-        "decompose": "?"
+        "decompose": {
+          "titleCase": "?",
+          "upperCase": "?",
+          "lowerCase": "?"
+        }
       }
     },
     "¡": {
       "mapping": {
-        "decompose": "!"
+        "decompose": {
+          "titleCase": "!",
+          "upperCase": "!",
+          "lowerCase": "!"
+        }
       }
     },
     "⸘": {
       "mapping": {
-        "decompose": "?!"
+        "decompose": {
+          "titleCase": "?!",
+          "upperCase": "?!",
+          "lowerCase": "?!"
+        }
       }
     }
   }
