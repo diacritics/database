@@ -77,7 +77,7 @@
       "mapping": {
         "base": "ß",
         "decompose": {
-          "titleCase": "SS",
+          "titleCase": "Ss",
           "upperCase": "SS",
           "lowerCase": "ss"
         }
@@ -87,7 +87,7 @@
       "mapping": {
         "base": "ß",
         "decompose": {
-          "titleCase": "ss",
+          "titleCase": "Ss",
           "upperCase": "SS",
           "lowerCase": "ss"
         }
