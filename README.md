@@ -1,5 +1,7 @@
 # Diacritics Database
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/diacritics/database.svg)](https://greenkeeper.io/)
+
 The meaning behind this repository is to collect diacritics with their associated ASCII characters in a structured form. It should be the central place for various projects when it comes to diacritics mapping.
 
 As there is no single, trustworthy and complete source, all information need to be collected by contributors manually. However, parts of the data is generated automatically.
