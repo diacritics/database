@@ -1,5 +1,6 @@
 # Diacritics Database
 
+[![Build Status](https://img.shields.io/travis/diacritics/database/master.svg)](https://travis-ci.org/diacritics/database)
 [![Greenkeeper badge](https://badges.greenkeeper.io/diacritics/database.svg)](https://greenkeeper.io/)
 
 The meaning behind this repository is to collect diacritics with their associated ASCII characters in a structured form. It should be the central place for various projects when it comes to diacritics mapping.
