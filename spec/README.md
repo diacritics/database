@@ -158,28 +158,28 @@ Example structure for the German language source file, which only contains lower
 
 ###### metadata.alphabet
 
-Required  
+Required
 Type: `String`
 
 An alphabet code based on [ISO 15924](https://en.wikipedia.org/wiki/ISO_15924) that specifies the associated alphabet.
 
 ###### metadata.continent
 
-Required  
+Required
 Type: `Array`
 
 An array of continent codes based on [ISO-3166](https://en.wikipedia.org/wiki/List_of_sovereign_states_and_dependent_territories_by_continent_%28data_file%29) that specifies the associated continent.
 
 ###### metadata.language
 
-Required  
+Required
 Type: `String`
 
 The associated language written in English.
 
 ###### metadata.languageNative
 
-Required  
+Required
 Type: `String`
 
 The associated language written in the native language.
@@ -187,49 +187,49 @@ The associated language written in the native language.
 
 ###### metadata.variant
 
-Optional  
+Optional
 Type: `String`
 
 The associated language variant written in English, if applicable. For example, if the [IETF language tag](https://www.w3.org/International/articles/language-tags/) was `de_AT`, this entry would include the full name of the variant country, `Austria` for the `AT` variant.
 
 ###### metadata.variantNative
 
-Optional  
+Optional
 Type: `String`
 
 The associated language variant written in the native language, if applicable. Required in case a `metadata.variant` is provided.
 
 ###### metadata.source
 
-Optional  
+Optional
 Type: `Array`
 
 An array containing links to diacritic, ligature and symbol sources which includes mapping and other details.
 
 ###### data
 
-Required  
+Required
 Type: `Object`
 
 An object containing the actual mapping information. Every character has its own object key. The value for each diacritic, ligature or symbol is an object specified below:
 
 ###### data.{character}.mapping
 
-Required  
+Required
 Type: `Object`
 
 An object containing mapping values for the given character. This must contain a base or decompose value, or both. It can not be empty.
 
 ###### data.{character}.mapping.base
 
-Optional  
+Optional
 Type: String
 
 This is the base of the character (e.g. the diacritic `ü` has a base of `u`, an unaccented character).
 
 ###### data.{character}.mapping.decompose
 
-Optional  
+Optional
 Type: Object
 
 This is the character, or combination of characters used to represent the diacritic (e.g. `ö` decomposes into `oe` in German), ligature (e.g. `æ` decomposes into `ae`), or symbol (e.g. `‽` decomposes into `?!`).
@@ -238,21 +238,21 @@ Each decompose value may need to be transformed into an upper, lower or title ca
 
 ###### data.{character}.mapping.decompose.titleCase
 
-Optional  
+Optional
 Type: String
 
-When a decompose value comprises two or more characters, the case of the first character may differ from the others. Include the necessary changes in this entry (e.g. `æ` and `Æ` decomposes into `Ae` in a title case).
+When a decompose value comprises two or more characters, the case of the first character may differ from the others. This property was implemented in case a diacritic is the first character of a word written in title case. Include the necessary changes in this entry (e.g. `æ` and `Æ` decomposes into `Ae` in a title case).
 
 ###### data.{character}.mapping.decompose.upperCase
 
-Optional  
+Optional
 Type: String
 
 When a decompose value comprises two or more characters, the characters may be used in an abbreviation and require all capitals. Include the necessary changes in this entry (e.g. `æ` and `Æ` decomposes into `AE` in all upper case).
 
 ###### data.{character}.mapping.decompose.lowerCase
 
-Optional  
+Optional
 Type: String
 
 When a decompose value comprises two or more characters, the characters may need to be transformed into all lower case. Include the necessary changes in this entry (e.g. `æ` and `Æ` decomposes into `ae` in all lower case).
@@ -346,49 +346,49 @@ Example (only showing one lower case diacritic):
 
 ##### equivalents
 
-Required  
+Required
 Type: `Array`
 
 Contains an array containing equivalents objects consisting of the original character and any additional characters created through normalization.
 
 ##### equivalents[index].raw
 
-Required  
+Required
 Type: `String`
 
 Contains a rendered equivalent character (e.g. `ü`).
 
 ##### equivalents[index].unicode
 
-Required  
+Required
 Type: `String`
 
 Contains an escaped unicode (hex) value of the character (e.g. `\u00f6`).
 
 ##### equivalents[index].html_decimal
 
-Required  
+Required
 Type: `String`
 
 Contains a HTML entity in decimal format (e.g. `&#246;`).
 
 ##### equivalents[index].html_hex
 
-Required  
+Required
 Type: `String`
 
 Contains a HTML entity in hex format (e.g. `&#xf6;`).
 
 ##### equivalents[index].html_entity
 
-Required  
+Required
 Type: `String`
 
 Contains a named HTML entity if one exists (e.g. `&ouml;`) - [ref](https://dev.w3.org/html5/html-author/charref).
 
 ##### equivalents[index].encoded_uri
 
-Required  
+Required
 Type: `String`
 
 Contains a URL encoded value (e.g. `%C3%B6`) - see [percent encoding](https://en.wikipedia.org/wiki/Percent-encoding).
@@ -397,7 +397,7 @@ Contains a URL encoded value (e.g. `%C3%B6`) - see [percent encoding](https://en
 
 ##### metadata.country
 
-Required  
+Required
 Type: `Array`
 
 An array of countries where the given language is officially spoken. This entry is automatically added by the build script, with language information obtained directly from Unicode's CLDR supplemental [languageData](https://github.com/unicode-cldr/cldr-core/blob/master/supplemental/languageData.json) and cross-referenced with supplemental [territoryInfo](https://github.com/unicode-cldr/cldr-core/blob/master/supplemental/territoryInfo.json) databases.
