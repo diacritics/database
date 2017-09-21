@@ -46,10 +46,19 @@ class Extract {
    * Load in extract settings
    */
   initSettings() {
+    process.stdout.write('Loading data files');
     // get metadata.continents cross-reference
     this.initTSV();
+    process.stdout.write('.');
     // load list of validated languages
-    this.validLangs = this.readJSON('./src/validated-languages.json');
+    this.validLangs = this.readJSON('./src/validated-languages.json', {
+      lowerCase: true
+    });
+    // variant languages to be extracted, even if the data matches
+    // the root language
+    this.extractVariants = this.readJSON('./src/extract-variants.json', {
+      lowerCase: true
+    });
   }
 
   /**
@@ -90,14 +99,16 @@ class Extract {
   /**
    * Reads a JSON file, removes comments and parses it
    * @param {string} file - path to json file
+   * @param {object} options - options to process resulting JSON
    * @return {object}
    */
-  readJSON(file) {
-    return JSON.parse(
-      stripJsonComments(
-        fs.readFileSync(file, 'utf8')
-      )
-    );
+  readJSON(file, options = {}) {
+    process.stdout.write('.');
+    let result = stripJsonComments(fs.readFileSync(file, 'utf8'));
+    if (options.lowerCase) {
+      result = result.toLowerCase();
+    }
+    return JSON.parse(result);
   }
 
   /**
@@ -124,10 +135,12 @@ class Extract {
   buildLangList() {
     const folders = [],
       dir = 'node_modules/cldr-data/main';
+    process.stdout.write('\nBuilding language folders');
     fs.readdirSync(dir).forEach(file => {
       if (fs.lstatSync(path.join(dir, file)).isDirectory()) {
         folders.push(file);
       }
+      process.stdout.write('.');
     });
     return folders;
   }
@@ -148,7 +161,10 @@ class Extract {
     // include upper and lower case characters
     return (
       `${result.toLocaleLowerCase()} ${result.toLocaleUpperCase()}`
-    ).split(/\s+/);
+      // nl exemplarCharacters has an entry {íj\\u0301} = j + combining acute
+      // accent; this won't be included since it uses a combining diacritic
+      // exclusively (i.e. there is no j with acute accent in unicode)
+    ).replace(/[{}\\\d]/g, '').split(/\s+/);
   }
 
   /**
@@ -194,7 +210,7 @@ class Extract {
         alphabet: alpha['_scripts'] && alpha['_scripts'][0] || '',
         continent: continents,
         language: langEn[rootLang] || '',
-        native: this.langNative[rootLang],
+        languageNative: this.langNative[rootLang],
         source: [
           'http://www.unicode.org/cldr/charts/latest/by_type/' +
           'core_data.alphabetic_information.main.html'
@@ -245,26 +261,35 @@ class Extract {
     const languages = Object.keys(this.results);
     // assuming the first language listed isn't a variant
     let root = JSON.stringify(this.results[languages[0]]);
+    process.stdout.write('\nExtracting diacritic data');
     languages.forEach(language => {
       let unique = true,
+        langLC = language.toLowerCase(),
         isVariant = /-/.test(language) &&
           // make exception for "sr-Latn"
-          !/^sr-Latn$/.test(language);
+          !/^sr-latn$/.test(langLC);
       const data = this.results[language];
       if (!isVariant) {
         root = JSON.stringify(data);
       }
       // skip validated languages
-      if (!this.validLangs.includes(language) ||
+      if (!this.validLangs.includes(langLC) ||
         isVariant &&
-        !this.validLangs.includes(this.getRootLang(language))
+        !this.validLangs.includes(this.getRootLang(langLC))
       ) {
         // target language variants
         if (isVariant) {
           // include variants that are different from the root
           // language
-          if (JSON.stringify(data) === root) {
+          if (
+            JSON.stringify(data) === root &&
+            !this.extractVariants.includes(langLC)
+          ) {
             unique = false;
+          } else {
+            // add variant metadata
+            data.metadata.variant = langEn[language];
+            data.metadata.variantNative = this.langNative[language];
           }
         }
         // write file if unique and it contains data
@@ -272,6 +297,7 @@ class Extract {
           this.writeOutput(language, data);
         }
       }
+      process.stdout.write('.');
     });
   }
 
@@ -296,7 +322,7 @@ class Extract {
     if (!fs.existsSync(temp)) {
       fs.mkdirSync(temp);
     }
-    temp = `./src/${folder}/${language}.json`;
+    temp = `./src/${folder}/${language.toLowerCase()}.json`;
     if (!fs.existsSync(temp)) {
       const tpl = fs.readFileSync(
         './build/templates/extracted-language-variant.json', 'utf8'
@@ -322,7 +348,7 @@ class Extract {
       let variant = this.getRootLang(file);
       if (
         fs.lstatSync(path.join(dir, file)).isDirectory() &&
-        !this.validLangs.includes(variant)
+        !this.validLangs.includes(variant.toLowerCase())
       ) {
         del.sync([dir + file + '/**']);
       }

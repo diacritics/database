@@ -10,7 +10,7 @@
       "EU"
     ],
     "language": "Bosnian",
-    "native": "bosanski",
+    "languageNative": "bosanski",
     "source": [
       "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
     ]
@@ -26,14 +26,14 @@
         "base": "c"
       }
     },
-    "š": {
-      "mapping": {
-        "base": "s"
-      }
-    },
     "ž": {
       "mapping": {
         "base": "z"
+      }
+    },
+    "š": {
+      "mapping": {
+        "base": "s"
       }
     },
     "Č": {
@@ -46,14 +46,14 @@
         "base": "C"
       }
     },
-    "Š": {
-      "mapping": {
-        "base": "S"
-      }
-    },
     "Ž": {
       "mapping": {
         "base": "Z"
+      }
+    },
+    "Š": {
+      "mapping": {
+        "base": "S"
       }
     }
   }

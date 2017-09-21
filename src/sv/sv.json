@@ -10,7 +10,7 @@
       "EU"
     ],
     "language": "Swedish",
-    "native": "svenska",
+    "languageNative": "svenska",
     "source": [
       "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
     ]

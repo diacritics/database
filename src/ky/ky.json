@@ -10,7 +10,7 @@
       "AS"
     ],
     "language": "Kyrgyz",
-    "native": "кыргызча",
+    "languageNative": "кыргызча",
     "source": [
       "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
     ]

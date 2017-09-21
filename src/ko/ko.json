@@ -10,7 +10,7 @@
       "AS"
     ],
     "language": "Korean",
-    "native": "한국어",
+    "languageNative": "한국어",
     "source": [
       "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html"
     ]
