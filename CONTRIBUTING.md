@@ -24,8 +24,8 @@ This method should only be used after an update to the CLDR database.
 
 To use this method, perform the following steps:
 
-* Ensure all *validated* languages have been included in the `src/validated-languages.json` file.
-  * In this case, "validated" means a language file that has been manually updated.
+* Ensure all *validated* languages have been included in the array within the `src/validated-languages.json` file.
+  * In this case, "validated" means a language file that has been manually updated or confirmed.
   * If the file is not added to the `validated-languages.json` file, the extract method will remove and recreate the file based on the given CLDR data; therefore, it is vital to include folders that contain manually edited language files, or all changes will be lost.
   * This JSON file *must only include* the language folder name, and as such, all files (including variant languages) within that folder will be untouched.
 * Ensure that none of the unvalidated template files are open in your editor.
