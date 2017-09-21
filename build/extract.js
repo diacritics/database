@@ -51,10 +51,14 @@ class Extract {
     this.initTSV();
     process.stdout.write('.');
     // load list of validated languages
-    this.validLangs = this.readJSON('./src/validated-languages.json');
+    this.validLangs = this.readJSON('./src/validated-languages.json', {
+      lowerCase: true
+    });
     // variant languages to be extracted, even if the data matches
     // the root language
-    this.extractVariants = this.readJSON('./src/extract-variants.json');
+    this.extractVariants = this.readJSON('./src/extract-variants.json', {
+      lowerCase: true
+    });
   }
 
   /**
@@ -95,15 +99,16 @@ class Extract {
   /**
    * Reads a JSON file, removes comments and parses it
    * @param {string} file - path to json file
+   * @param {object} options - options to process resulting JSON
    * @return {object}
    */
-  readJSON(file) {
+  readJSON(file, options = {}) {
     process.stdout.write('.');
-    return JSON.parse(
-      stripJsonComments(
-        fs.readFileSync(file, 'utf8')
-      )
-    );
+    let result = stripJsonComments(fs.readFileSync(file, 'utf8'));
+    if (options.lowerCase) {
+      result = result.toLowerCase();
+    }
+    return JSON.parse(result);
   }
 
   /**
@@ -259,17 +264,18 @@ class Extract {
     process.stdout.write('\nExtracting diacritic data');
     languages.forEach(language => {
       let unique = true,
+        langLC = language.toLowerCase(),
         isVariant = /-/.test(language) &&
           // make exception for "sr-Latn"
-          !/^sr-Latn$/.test(language);
+          !/^sr-latn$/.test(langLC);
       const data = this.results[language];
       if (!isVariant) {
         root = JSON.stringify(data);
       }
       // skip validated languages
-      if (!this.validLangs.includes(language) ||
+      if (!this.validLangs.includes(langLC) ||
         isVariant &&
-        !this.validLangs.includes(this.getRootLang(language))
+        !this.validLangs.includes(this.getRootLang(langLC))
       ) {
         // target language variants
         if (isVariant) {
@@ -277,7 +283,7 @@ class Extract {
           // language
           if (
             JSON.stringify(data) === root &&
-            !this.extractVariants.includes(language)
+            !this.extractVariants.includes(langLC)
           ) {
             unique = false;
           } else {
@@ -342,7 +348,7 @@ class Extract {
       let variant = this.getRootLang(file);
       if (
         fs.lstatSync(path.join(dir, file)).isDirectory() &&
-        !this.validLangs.includes(variant)
+        !this.validLangs.includes(variant.toLowerCase())
       ) {
         del.sync([dir + file + '/**']);
       }
