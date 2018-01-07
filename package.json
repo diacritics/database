@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "ajv": "^5.2.2",
-    "cldr-data": "^31.0.2",
+    "cldr-data": "^32.0.0",
     "del": "^3.0.0",
     "eslint": "^4.6.1",
     "glob": "^7.1.2",
