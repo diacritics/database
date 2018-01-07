@@ -1,7 +1,7 @@
 /*!***************************************************
  * diacritics - extract characters
  * http://diacritics.io/
- * Copyright (c) 2016-2017, Diacritics Team
+ * Copyright (c) 2016–2018, Diacritics Team
  * Released under the MIT license https://git.io/vXg2H
  *****************************************************/
 'use strict';
@@ -258,6 +258,7 @@ class Extract {
    * - write language file to "src" directory
    */
   validateList() {
+    /* eslint-disable complexity */
     const languages = Object.keys(this.results);
     // assuming the first language listed isn't a variant
     let root = JSON.stringify(this.results[languages[0]]);
@@ -299,6 +300,7 @@ class Extract {
       }
       process.stdout.write('.');
     });
+    /* eslint-enable complexity */
   }
 
   /**
