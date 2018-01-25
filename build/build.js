@@ -209,7 +209,7 @@ class Build {
         // languageData contains ALL territories where a language is
         // spoken, so we will cross-reference with the territoryInfo
         // to only find offical languages
-        if (languages[variant]['_territories']) {
+        if (languages[variant] && languages[variant]['_territories']) {
           languages[variant]['_territories'].forEach(territory => {
             const vrnt = territories[territory].languagePopulation[variant];
             // official or official_regional language if defined
