@@ -198,19 +198,19 @@ class Build {
       'unicode': this.decodeUnicode(char, {
         prefix: '\\u'
       }),
-      'html_decimal': this.decodeUnicode(char, {
+      'htmlDecimal': this.decodeUnicode(char, {
         prefix: '&#',
         suffix: ';',
         base: 'dec'
       }),
-      'html_hex': this.decodeUnicode(char, {
+      'htmlHex': this.decodeUnicode(char, {
         prefix: '&#x',
         suffix: ';'
       }),
-      'encoded_uri': encodeURI(char)
+      'encodedUri': encodeURI(char)
     };
     if (this.htmlEntities[char]) {
-      ret['html_entity'] = this.htmlEntities[char];
+      ret['htmlEntity'] = this.htmlEntities[char];
     }
     return ret;
   }

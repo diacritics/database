@@ -27,10 +27,10 @@
     - [equivalents](#equivalents)
     - [equivalents[index].raw](#equivalentsindexraw)
     - [equivalents[index].unicode](#equivalentsindexunicode)
-    - [equivalents[index].html_decimal](#equivalentsindexhtml_decimal)
-    - [equivalents[index].html_hex](#equivalentsindexhtml_hex)
-    - [equivalents[index].html_entity](#equivalentsindexhtml_entity)
-    - [equivalents[index].encoded_uri](#equivalentsindexencoded_uri)
+    - [equivalents[index].htmlDecimal](#equivalentsindexhtmldecimal)
+    - [equivalents[index].htmlHex](#equivalentsindexhtmlhex)
+    - [equivalents[index].htmlEntity](#equivalentsindexhtmlentity)
+    - [equivalents[index].encodedUri](#equivalentsindexencodeduri)
   - [3.1.2. Other Automatically Generated Data](#312-other-automatically-generated-data)
     - [metadata.country](#metadatacountry)
 
@@ -324,17 +324,17 @@ Example (only showing one lower case diacritic):
                         {
                             "raw": "ü"
                             "unicode": "\\u00fc",
-                            "html_decimal": "&#252;",
-                            "html_hex": "&#xfc;",
-                            "encoded_uri": "%C3%BC",
-                            "html_entity": "&uuml;"
+                            "htmlDecimal": "&#252;",
+                            "htmlHex": "&#xfc;",
+                            "encodedUri": "%C3%BC",
+                            "htmlEntity": "&uuml;"
                         },
                         {
                             "raw": "ü",
                             "unicode": "u\\u0308",
-                            "html_decimal": "u&#776;",
-                            "html_hex": "u&#x0308;",
-                            "encoded_uri": "u%CC%88"
+                            "htmlDecimal": "u&#776;",
+                            "htmlHex": "u&#x0308;",
+                            "encodedUri": "u%CC%88"
                         }
                     ]
                 }
@@ -365,28 +365,28 @@ Type: `String`
 
 Contains an escaped unicode (hex) value of the character (e.g. `\u00f6`).
 
-##### equivalents[index].html_decimal
+##### equivalents[index].htmlDecimal
 
 Required  
 Type: `String`
 
 Contains a HTML entity in decimal format (e.g. `&#246;`).
 
-##### equivalents[index].html_hex
+##### equivalents[index].htmlHex
 
 Required  
 Type: `String`
 
 Contains a HTML entity in hex format (e.g. `&#xf6;`).
 
-##### equivalents[index].html_entity
+##### equivalents[index].htmlEntity
 
 Required  
 Type: `String`
 
 Contains a named HTML entity if one exists (e.g. `&ouml;`) - [ref](https://dev.w3.org/html5/html-author/charref).
 
-##### equivalents[index].encoded_uri
+##### equivalents[index].encodedUri
 
 Required  
 Type: `String`
