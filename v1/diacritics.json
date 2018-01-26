@@ -7956,6 +7956,409 @@
       }
     }
   },
+  "pl": {
+    "pl": {
+      "metadata": {
+        "alphabet": "Latn",
+        "continent": [
+          "EU"
+        ],
+        "language": "Polish",
+        "languageNative": "polski",
+        "source": [
+          "http://www.unicode.org/cldr/charts/latest/by_type/core_data.alphabetic_information.main.html",
+          "https://en.wikipedia.org/wiki/Polish_language"
+        ],
+        "country": [
+          "PL"
+        ]
+      },
+      "data": {
+        "ą": {
+          "mapping": {
+            "base": "a"
+          },
+          "equivalents": [
+            {
+              "raw": "ą",
+              "unicode": "\\u0105",
+              "htmlDecimal": "&#261;",
+              "htmlHex": "&#x0105;",
+              "encodedUri": "%C4%85",
+              "htmlEntity": "&aogon;"
+            },
+            {
+              "raw": "ą",
+              "unicode": "a\\u0328",
+              "htmlDecimal": "a&#808;",
+              "htmlHex": "a&#x0328;",
+              "encodedUri": "a%CC%A8"
+            }
+          ]
+        },
+        "ć": {
+          "mapping": {
+            "base": "c"
+          },
+          "equivalents": [
+            {
+              "raw": "ć",
+              "unicode": "\\u0107",
+              "htmlDecimal": "&#263;",
+              "htmlHex": "&#x0107;",
+              "encodedUri": "%C4%87",
+              "htmlEntity": "&cacute;"
+            },
+            {
+              "raw": "ć",
+              "unicode": "c\\u0301",
+              "htmlDecimal": "c&#769;",
+              "htmlHex": "c&#x0301;",
+              "encodedUri": "c%CC%81"
+            }
+          ]
+        },
+        "ę": {
+          "mapping": {
+            "base": "e"
+          },
+          "equivalents": [
+            {
+              "raw": "ę",
+              "unicode": "\\u0119",
+              "htmlDecimal": "&#281;",
+              "htmlHex": "&#x0119;",
+              "encodedUri": "%C4%99",
+              "htmlEntity": "&eogon;"
+            },
+            {
+              "raw": "ę",
+              "unicode": "e\\u0328",
+              "htmlDecimal": "e&#808;",
+              "htmlHex": "e&#x0328;",
+              "encodedUri": "e%CC%A8"
+            }
+          ]
+        },
+        "ł": {
+          "mapping": {
+            "base": "l"
+          },
+          "equivalents": [
+            {
+              "raw": "ł",
+              "unicode": "\\u0142",
+              "htmlDecimal": "&#322;",
+              "htmlHex": "&#x0142;",
+              "encodedUri": "%C5%82",
+              "htmlEntity": "&lstrok;"
+            }
+          ]
+        },
+        "ń": {
+          "mapping": {
+            "base": "n"
+          },
+          "equivalents": [
+            {
+              "raw": "ń",
+              "unicode": "\\u0144",
+              "htmlDecimal": "&#324;",
+              "htmlHex": "&#x0144;",
+              "encodedUri": "%C5%84",
+              "htmlEntity": "&nacute;"
+            },
+            {
+              "raw": "ń",
+              "unicode": "n\\u0301",
+              "htmlDecimal": "n&#769;",
+              "htmlHex": "n&#x0301;",
+              "encodedUri": "n%CC%81"
+            }
+          ]
+        },
+        "ó": {
+          "mapping": {
+            "base": "o"
+          },
+          "equivalents": [
+            {
+              "raw": "ó",
+              "unicode": "\\u00F3",
+              "htmlDecimal": "&#243;",
+              "htmlHex": "&#x00F3;",
+              "encodedUri": "%C3%B3",
+              "htmlEntity": "&oacute;"
+            },
+            {
+              "raw": "ó",
+              "unicode": "o\\u0301",
+              "htmlDecimal": "o&#769;",
+              "htmlHex": "o&#x0301;",
+              "encodedUri": "o%CC%81"
+            }
+          ]
+        },
+        "ś": {
+          "mapping": {
+            "base": "s"
+          },
+          "equivalents": [
+            {
+              "raw": "ś",
+              "unicode": "\\u015B",
+              "htmlDecimal": "&#347;",
+              "htmlHex": "&#x015B;",
+              "encodedUri": "%C5%9B",
+              "htmlEntity": "&sacute;"
+            },
+            {
+              "raw": "ś",
+              "unicode": "s\\u0301",
+              "htmlDecimal": "s&#769;",
+              "htmlHex": "s&#x0301;",
+              "encodedUri": "s%CC%81"
+            }
+          ]
+        },
+        "ź": {
+          "mapping": {
+            "base": "z"
+          },
+          "equivalents": [
+            {
+              "raw": "ź",
+              "unicode": "\\u017A",
+              "htmlDecimal": "&#378;",
+              "htmlHex": "&#x017A;",
+              "encodedUri": "%C5%BA",
+              "htmlEntity": "&zacute;"
+            },
+            {
+              "raw": "ź",
+              "unicode": "z\\u0301",
+              "htmlDecimal": "z&#769;",
+              "htmlHex": "z&#x0301;",
+              "encodedUri": "z%CC%81"
+            }
+          ]
+        },
+        "ż": {
+          "mapping": {
+            "base": "z"
+          },
+          "equivalents": [
+            {
+              "raw": "ż",
+              "unicode": "\\u017C",
+              "htmlDecimal": "&#380;",
+              "htmlHex": "&#x017C;",
+              "encodedUri": "%C5%BC",
+              "htmlEntity": "&zdot;"
+            },
+            {
+              "raw": "ż",
+              "unicode": "z\\u0307",
+              "htmlDecimal": "z&#775;",
+              "htmlHex": "z&#x0307;",
+              "encodedUri": "z%CC%87"
+            }
+          ]
+        },
+        "Ą": {
+          "mapping": {
+            "base": "A"
+          },
+          "equivalents": [
+            {
+              "raw": "Ą",
+              "unicode": "\\u0104",
+              "htmlDecimal": "&#260;",
+              "htmlHex": "&#x0104;",
+              "encodedUri": "%C4%84",
+              "htmlEntity": "&Aogon;"
+            },
+            {
+              "raw": "Ą",
+              "unicode": "A\\u0328",
+              "htmlDecimal": "A&#808;",
+              "htmlHex": "A&#x0328;",
+              "encodedUri": "A%CC%A8"
+            }
+          ]
+        },
+        "Ć": {
+          "mapping": {
+            "base": "C"
+          },
+          "equivalents": [
+            {
+              "raw": "Ć",
+              "unicode": "\\u0106",
+              "htmlDecimal": "&#262;",
+              "htmlHex": "&#x0106;",
+              "encodedUri": "%C4%86",
+              "htmlEntity": "&Cacute;"
+            },
+            {
+              "raw": "Ć",
+              "unicode": "C\\u0301",
+              "htmlDecimal": "C&#769;",
+              "htmlHex": "C&#x0301;",
+              "encodedUri": "C%CC%81"
+            }
+          ]
+        },
+        "Ę": {
+          "mapping": {
+            "base": "E"
+          },
+          "equivalents": [
+            {
+              "raw": "Ę",
+              "unicode": "\\u0118",
+              "htmlDecimal": "&#280;",
+              "htmlHex": "&#x0118;",
+              "encodedUri": "%C4%98",
+              "htmlEntity": "&Eogon;"
+            },
+            {
+              "raw": "Ę",
+              "unicode": "E\\u0328",
+              "htmlDecimal": "E&#808;",
+              "htmlHex": "E&#x0328;",
+              "encodedUri": "E%CC%A8"
+            }
+          ]
+        },
+        "Ł": {
+          "mapping": {
+            "base": "L"
+          },
+          "equivalents": [
+            {
+              "raw": "Ł",
+              "unicode": "\\u0141",
+              "htmlDecimal": "&#321;",
+              "htmlHex": "&#x0141;",
+              "encodedUri": "%C5%81",
+              "htmlEntity": "&Lstrok;"
+            }
+          ]
+        },
+        "Ń": {
+          "mapping": {
+            "base": "N"
+          },
+          "equivalents": [
+            {
+              "raw": "Ń",
+              "unicode": "\\u0143",
+              "htmlDecimal": "&#323;",
+              "htmlHex": "&#x0143;",
+              "encodedUri": "%C5%83",
+              "htmlEntity": "&Nacute;"
+            },
+            {
+              "raw": "Ń",
+              "unicode": "N\\u0301",
+              "htmlDecimal": "N&#769;",
+              "htmlHex": "N&#x0301;",
+              "encodedUri": "N%CC%81"
+            }
+          ]
+        },
+        "Ó": {
+          "mapping": {
+            "base": "O"
+          },
+          "equivalents": [
+            {
+              "raw": "Ó",
+              "unicode": "\\u00D3",
+              "htmlDecimal": "&#211;",
+              "htmlHex": "&#x00D3;",
+              "encodedUri": "%C3%93",
+              "htmlEntity": "&Oacute;"
+            },
+            {
+              "raw": "Ó",
+              "unicode": "O\\u0301",
+              "htmlDecimal": "O&#769;",
+              "htmlHex": "O&#x0301;",
+              "encodedUri": "O%CC%81"
+            }
+          ]
+        },
+        "Ś": {
+          "mapping": {
+            "base": "S"
+          },
+          "equivalents": [
+            {
+              "raw": "Ś",
+              "unicode": "\\u015A",
+              "htmlDecimal": "&#346;",
+              "htmlHex": "&#x015A;",
+              "encodedUri": "%C5%9A",
+              "htmlEntity": "&Sacute;"
+            },
+            {
+              "raw": "Ś",
+              "unicode": "S\\u0301",
+              "htmlDecimal": "S&#769;",
+              "htmlHex": "S&#x0301;",
+              "encodedUri": "S%CC%81"
+            }
+          ]
+        },
+        "Ź": {
+          "mapping": {
+            "base": "Z"
+          },
+          "equivalents": [
+            {
+              "raw": "Ź",
+              "unicode": "\\u0179",
+              "htmlDecimal": "&#377;",
+              "htmlHex": "&#x0179;",
+              "encodedUri": "%C5%B9",
+              "htmlEntity": "&Zacute;"
+            },
+            {
+              "raw": "Ź",
+              "unicode": "Z\\u0301",
+              "htmlDecimal": "Z&#769;",
+              "htmlHex": "Z&#x0301;",
+              "encodedUri": "Z%CC%81"
+            }
+          ]
+        },
+        "Ż": {
+          "mapping": {
+            "base": "Z"
+          },
+          "equivalents": [
+            {
+              "raw": "Ż",
+              "unicode": "\\u017B",
+              "htmlDecimal": "&#379;",
+              "htmlHex": "&#x017B;",
+              "encodedUri": "%C5%BB",
+              "htmlEntity": "&Zdot;"
+            },
+            {
+              "raw": "Ż",
+              "unicode": "Z\\u0307",
+              "htmlDecimal": "Z&#775;",
+              "htmlHex": "Z&#x0307;",
+              "encodedUri": "Z%CC%87"
+            }
+          ]
+        }
+      }
+    }
+  },
   "tr": {
     "tr": {
       "metadata": {
