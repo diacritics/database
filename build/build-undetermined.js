@@ -25,22 +25,21 @@ const fs = require('fs'),
     'uùúủũụưừứửữựûüůū', 'UÙÚỦŨỤƯỪỨỬỮỰÛÜŮŪ',
     'yýỳỷỹỵÿ', 'YÝỲỶỸỴŸ',
     'zžżź', 'ZŽŻŹ'
-  ];
+  ],
 
-function buildEntries(block) {
-  block = block.split('');
-  const base = block.shift(),
-    capital = base.toLowerCase() !== base;
-
-  block.forEach(diacritic => {
-    und.data[diacritic] = {
-      capital,
-      mapping: {
-        base
-      }
-    };
-  });
-}
+  buildEntries = block => {
+    block = block.split('');
+    const base = block.shift(),
+      capital = base.toLowerCase() !== base;
+    block.forEach(diacritic => {
+      und.data[diacritic] = {
+        capital,
+        mapping: {
+          base
+        }
+      };
+    });
+  };
 
 diacritics.forEach(block => buildEntries(block));
 fs.writeFile(
