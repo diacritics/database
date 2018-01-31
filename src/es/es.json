@@ -23,103 +23,103 @@
   },
   "data": {
     "á": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "Á": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "é": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "É": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "í": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "i"
       }
     },
     "Í": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "I"
       }
     },
     "ï": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "i"
       }
     },
     "ñ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "n"
       }
     },
     "Ñ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "N"
       }
     },
     "ó": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "Ó": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "ú": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "Ú": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "ü": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "Ü": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "ý": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "y"
       }
     },
     "Ý": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "Y"
       }
@@ -127,7 +127,7 @@
     // The following symbols are used as an opening tag and the decomposed
     // symbols are typically used as a closing tag
     "¿": {
-      "capital": false,
+      "case": "none",
       "mapping": {
         "decompose": {
           "lowerCase": "?"
@@ -135,7 +135,7 @@
       }
     },
     "¡": {
-      "capital": false,
+      "case": "none",
       "mapping": {
         "decompose": {
           "lowerCase": "!"
@@ -143,7 +143,7 @@
       }
     },
     "⸘": {
-      "capital": false,
+      "case": "none",
       "mapping": {
         "decompose": {
           "lowerCase": "?!"

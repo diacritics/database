@@ -13,109 +13,109 @@
   },
   "data": {
     "ą": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "ć": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "c"
       }
     },
     "ę": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "ł": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "l"
       }
     },
     "ń": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "n"
       }
     },
     "ó": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ś": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "s"
       }
     },
     "ź": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "z"
       }
     },
     "ż": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "z"
       }
     },
     "Ą": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Ć": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "C"
       }
     },
     "Ę": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Ł": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "L"
       }
     },
     "Ń": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "N"
       }
     },
     "Ó": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ś": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "S"
       }
     },
     "Ź": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "Z"
       }
     },
     "Ż": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "Z"
       }

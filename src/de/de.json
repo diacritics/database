@@ -14,7 +14,7 @@
   "data": {
     // mapping information
     "ü": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "u",
         "decompose": {
@@ -23,7 +23,7 @@
       }
     },
     "Ü": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "U",
         "decompose": {
@@ -33,7 +33,7 @@
       }
     },
     "ö": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "o",
         "decompose": {
@@ -42,7 +42,7 @@
       }
     },
     "Ö": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "O",
         "decompose": {
@@ -52,7 +52,7 @@
       }
     },
     "ä": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "a",
         "decompose": {
@@ -61,7 +61,7 @@
       }
     },
     "Ä": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "A",
         "decompose": {
@@ -71,7 +71,7 @@
       }
     },
     "ß": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "ß",
         "decompose": {
@@ -80,7 +80,7 @@
       }
     },
     "ẞ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "ß",
         "decompose": {

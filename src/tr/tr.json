@@ -13,109 +13,109 @@
   },
   "data": {
     "â": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "Â": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "ç": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "c"
       }
     },
     "Ç": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "C"
       }
     },
     "ğ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "g"
       }
     },
     "Ğ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "G"
       }
     },
     "ı": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "i"
       }
     },
     "İ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "I"
       }
     },
     "î": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "i"
       }
     },
     "Î": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "I"
       }
     },
     "ö": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "Ö": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "ş": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "s"
       }
     },
     "Ş": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "S"
       }
     },
     "ü": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "Ü": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "û": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "Û": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
