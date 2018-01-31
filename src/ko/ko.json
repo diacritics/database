@@ -17,6 +17,7 @@
   },
   "data": {
     "가-힣": {
+      "case": "none",
       "mapping": {
         "base": "가-힣"
       }

@@ -18,62 +18,59 @@
   "data": {
     // mapping information
     "ü": {
+      "capital": false,
       "mapping": {
         "base": "u",
         "decompose": {
-          "titleCase": "Ue",
-          "upperCase": "UE",
           "lowerCase": "ue"
         }
       }
     },
     "Ü": {
+      "capital": true,
       "mapping": {
         "base": "U",
         "decompose": {
           "titleCase": "Ue",
-          "upperCase": "UE",
-          "lowerCase": "ue"
+          "upperCase": "UE"
         }
       }
     },
     "ö": {
+      "capital": false,
       "mapping": {
         "base": "o",
         "decompose": {
-          "titleCase": "oe",
-          "upperCase": "OE",
           "lowerCase": "oe"
         }
       }
     },
     "Ö": {
+      "capital": true,
       "mapping": {
         "base": "O",
         "decompose": {
           "titleCase": "Oe",
-          "upperCase": "OE",
-          "lowerCase": "oe"
+          "upperCase": "OE"
         }
       }
     },
     "ä": {
+      "capital": false,
       "mapping": {
         "base": "a",
         "decompose": {
-          "titleCase": "Ae",
-          "upperCase": "AE",
           "lowerCase": "ae"
         }
       }
     },
     "Ä": {
+      "capital": true,
       "mapping": {
         "base": "A",
         "decompose": {
           "titleCase": "Ae",
-          "upperCase": "AE",
-          "lowerCase": "ae"
+          "upperCase": "AE"
         }
       }
     }

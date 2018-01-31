@@ -17,91 +17,109 @@
   },
   "data": {
     "ą": {
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "č": {
+      "case": "lower",
       "mapping": {
         "base": "c"
       }
     },
     "ę": {
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "ė": {
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "į": {
+      "case": "lower",
       "mapping": {
         "base": "i"
       }
     },
     "š": {
+      "case": "lower",
       "mapping": {
         "base": "s"
       }
     },
     "ų": {
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "ū": {
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "ž": {
+      "case": "lower",
       "mapping": {
         "base": "z"
       }
     },
     "Ą": {
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Č": {
+      "case": "upper",
       "mapping": {
         "base": "C"
       }
     },
     "Ę": {
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Ė": {
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Į": {
+      "case": "upper",
       "mapping": {
         "base": "I"
       }
     },
     "Š": {
+      "case": "upper",
       "mapping": {
         "base": "S"
       }
     },
     "Ų": {
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "Ū": {
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "Ž": {
+      "case": "upper",
       "mapping": {
         "base": "Z"
       }

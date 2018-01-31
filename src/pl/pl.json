@@ -13,91 +13,109 @@
   },
   "data": {
     "ą": {
+      "capital": false,
       "mapping": {
         "base": "a"
       }
     },
     "ć": {
+      "capital": false,
       "mapping": {
         "base": "c"
       }
     },
     "ę": {
+      "capital": false,
       "mapping": {
         "base": "e"
       }
     },
     "ł": {
+      "capital": false,
       "mapping": {
         "base": "l"
       }
     },
     "ń": {
+      "capital": false,
       "mapping": {
         "base": "n"
       }
     },
     "ó": {
+      "capital": false,
       "mapping": {
         "base": "o"
       }
     },
     "ś": {
+      "capital": false,
       "mapping": {
         "base": "s"
       }
     },
     "ź": {
+      "capital": false,
       "mapping": {
         "base": "z"
       }
     },
     "ż": {
+      "capital": false,
       "mapping": {
         "base": "z"
       }
     },
     "Ą": {
+      "capital": true,
       "mapping": {
         "base": "A"
       }
     },
     "Ć": {
+      "capital": true,
       "mapping": {
         "base": "C"
       }
     },
     "Ę": {
+      "capital": true,
       "mapping": {
         "base": "E"
       }
     },
     "Ł": {
+      "capital": true,
       "mapping": {
         "base": "L"
       }
     },
     "Ń": {
+      "capital": true,
       "mapping": {
         "base": "N"
       }
     },
     "Ó": {
+      "capital": true,
       "mapping": {
         "base": "O"
       }
     },
     "Ś": {
+      "capital": true,
       "mapping": {
         "base": "S"
       }
     },
     "Ź": {
+      "capital": true,
       "mapping": {
         "base": "Z"
       }
     },
     "Ż": {
+      "capital": true,
       "mapping": {
         "base": "Z"
       }

@@ -17,21 +17,25 @@
   },
   "data": {
     "آ": {
+      "case": "none",
       "mapping": {
         "base": "ا"
       }
     },
     "أ": {
+      "case": "none",
       "mapping": {
         "base": "ا"
       }
     },
     "ؤ": {
+      "case": "none",
       "mapping": {
         "base": "و"
       }
     },
     "ئ": {
+      "case": "none",
       "mapping": {
         "base": "ي"
       }

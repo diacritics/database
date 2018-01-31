@@ -17,11 +17,13 @@
   },
   "data": {
     "å": {
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "Å": {
+      "case": "upper",
       "mapping": {
         "base": "A"
       }

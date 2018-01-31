@@ -13,91 +13,109 @@
   },
   "data": {
     "â": {
+      "capital": false,
       "mapping": {
         "base": "a"
       }
     },
     "Â": {
+      "capital": true,
       "mapping": {
         "base": "A"
       }
     },
     "ç": {
+      "capital": false,
       "mapping": {
         "base": "c"
       }
     },
     "Ç": {
+      "capital": true,
       "mapping": {
         "base": "C"
       }
     },
     "ğ": {
+      "capital": false,
       "mapping": {
         "base": "g"
       }
     },
     "Ğ": {
+      "capital": true,
       "mapping": {
         "base": "G"
       }
     },
     "ı": {
+      "capital": false,
       "mapping": {
         "base": "i"
       }
     },
     "İ": {
+      "capital": true,
       "mapping": {
         "base": "I"
       }
     },
     "î": {
+      "capital": false,
       "mapping": {
         "base": "i"
       }
     },
     "Î": {
+      "capital": true,
       "mapping": {
         "base": "I"
       }
     },
     "ö": {
+      "capital": false,
       "mapping": {
         "base": "o"
       }
     },
     "Ö": {
+      "capital": true,
       "mapping": {
         "base": "O"
       }
     },
     "ş": {
+      "capital": false,
       "mapping": {
         "base": "s"
       }
     },
     "Ş": {
+      "capital": true,
       "mapping": {
         "base": "S"
       }
     },
     "ü": {
+      "capital": false,
       "mapping": {
         "base": "u"
       }
     },
     "Ü": {
+      "capital": true,
       "mapping": {
         "base": "U"
       }
     },
     "û": {
+      "capital": false,
       "mapping": {
         "base": "u"
       }
     },
     "Û": {
+      "capital": true,
       "mapping": {
         "base": "U"
       }

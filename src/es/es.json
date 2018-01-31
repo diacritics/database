@@ -23,86 +23,103 @@
   },
   "data": {
     "á": {
+      "capital": false,
       "mapping": {
         "base": "a"
       }
     },
     "Á": {
+      "capital": true,
       "mapping": {
         "base": "A"
       }
     },
     "é": {
+      "capital": false,
       "mapping": {
         "base": "e"
       }
     },
     "É": {
+      "capital": true,
       "mapping": {
         "base": "E"
       }
     },
     "í": {
+      "capital": false,
       "mapping": {
         "base": "i"
       }
     },
     "Í": {
+      "capital": true,
       "mapping": {
         "base": "I"
       }
     },
     "ï": {
+      "capital": false,
       "mapping": {
         "base": "i"
       }
     },
     "ñ": {
+      "capital": false,
       "mapping": {
         "base": "n"
       }
     },
     "Ñ": {
+      "capital": true,
       "mapping": {
         "base": "N"
       }
     },
     "ó": {
+      "capital": false,
       "mapping": {
         "base": "o"
       }
     },
     "Ó": {
+      "capital": true,
       "mapping": {
         "base": "O"
       }
     },
     "ú": {
+      "capital": false,
       "mapping": {
         "base": "u"
       }
     },
     "Ú": {
+      "capital": true,
       "mapping": {
         "base": "U"
       }
     },
     "ü": {
+      "capital": false,
       "mapping": {
         "base": "u"
       }
     },
     "Ü": {
+      "capital": true,
       "mapping": {
         "base": "U"
       }
     },
     "ý": {
+      "capital": false,
       "mapping": {
         "base": "y"
       }
     },
     "Ý": {
+      "capital": true,
       "mapping": {
         "base": "Y"
       }
@@ -110,28 +127,25 @@
     // The following symbols are used as an opening tag and the decomposed
     // symbols are typically used as a closing tag
     "¿": {
+      "capital": false,
       "mapping": {
         "decompose": {
-          "titleCase": "?",
-          "upperCase": "?",
           "lowerCase": "?"
         }
       }
     },
     "¡": {
+      "capital": false,
       "mapping": {
         "decompose": {
-          "titleCase": "!",
-          "upperCase": "!",
           "lowerCase": "!"
         }
       }
     },
     "⸘": {
+      "capital": false,
       "mapping": {
         "decompose": {
-          "titleCase": "?!",
-          "upperCase": "?!",
           "lowerCase": "?!"
         }
       }

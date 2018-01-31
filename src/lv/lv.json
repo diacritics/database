@@ -17,111 +17,133 @@
   },
   "data": {
     "ā": {
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "č": {
+      "case": "lower",
       "mapping": {
         "base": "c"
       }
     },
     "ē": {
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "ģ": {
+      "case": "lower",
       "mapping": {
         "base": "g"
       }
     },
     "ī": {
+      "case": "lower",
       "mapping": {
         "base": "i"
       }
     },
     "ķ": {
+      "case": "lower",
       "mapping": {
         "base": "k"
       }
     },
     "ļ": {
+      "case": "lower",
       "mapping": {
         "base": "l"
       }
     },
     "ņ": {
+      "case": "lower",
       "mapping": {
         "base": "n"
       }
     },
     "š": {
+      "case": "lower",
       "mapping": {
         "base": "s"
       }
     },
     "ū": {
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "ž": {
+      "case": "lower",
       "mapping": {
         "base": "z"
       }
     },
     "Ā": {
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Č": {
+      "case": "upper",
       "mapping": {
         "base": "C"
       }
     },
     "Ē": {
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Ģ": {
+      "case": "upper",
       "mapping": {
         "base": "G"
       }
     },
     "Ī": {
+      "case": "upper",
       "mapping": {
         "base": "I"
       }
     },
     "Ķ": {
+      "case": "upper",
       "mapping": {
         "base": "K"
       }
     },
     "Ļ": {
+      "case": "upper",
       "mapping": {
         "base": "L"
       }
     },
     "Ņ": {
+      "case": "upper",
       "mapping": {
         "base": "N"
       }
     },
     "Š": {
+      "case": "upper",
       "mapping": {
         "base": "S"
       }
     },
     "Ū": {
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "Ž": {
+      "case": "upper",
       "mapping": {
         "base": "Z"
       }

@@ -17,51 +17,61 @@
   },
   "data": {
     "ă": {
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "â": {
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "î": {
+      "case": "lower",
       "mapping": {
         "base": "i"
       }
     },
     "ș": {
+      "case": "lower",
       "mapping": {
         "base": "s"
       }
     },
     "ț": {
+      "case": "lower",
       "mapping": {
         "base": "t"
       }
     },
     "Ă": {
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Â": {
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Î": {
+      "case": "upper",
       "mapping": {
         "base": "I"
       }
     },
     "Ș": {
+      "case": "upper",
       "mapping": {
         "base": "S"
       }
     },
     "Ț": {
+      "case": "upper",
       "mapping": {
         "base": "T"
       }

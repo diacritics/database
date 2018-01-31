@@ -17,151 +17,181 @@
   },
   "data": {
     "á": {
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "č": {
+      "case": "lower",
       "mapping": {
         "base": "c"
       }
     },
     "ď": {
+      "case": "lower",
       "mapping": {
         "base": "d"
       }
     },
     "é": {
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "ě": {
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "í": {
+      "case": "lower",
       "mapping": {
         "base": "i"
       }
     },
     "ň": {
+      "case": "lower",
       "mapping": {
         "base": "n"
       }
     },
     "ó": {
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ř": {
+      "case": "lower",
       "mapping": {
         "base": "r"
       }
     },
     "š": {
+      "case": "lower",
       "mapping": {
         "base": "s"
       }
     },
     "ť": {
+      "case": "lower",
       "mapping": {
         "base": "t"
       }
     },
     "ú": {
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "ů": {
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "ý": {
+      "case": "lower",
       "mapping": {
         "base": "y"
       }
     },
     "ž": {
+      "case": "lower",
       "mapping": {
         "base": "z"
       }
     },
     "Á": {
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Č": {
+      "case": "upper",
       "mapping": {
         "base": "C"
       }
     },
     "Ď": {
+      "case": "upper",
       "mapping": {
         "base": "D"
       }
     },
     "É": {
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Ě": {
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Í": {
+      "case": "upper",
       "mapping": {
         "base": "I"
       }
     },
     "Ň": {
+      "case": "upper",
       "mapping": {
         "base": "N"
       }
     },
     "Ó": {
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ř": {
+      "case": "upper",
       "mapping": {
         "base": "R"
       }
     },
     "Š": {
+      "case": "upper",
       "mapping": {
         "base": "S"
       }
     },
     "Ť": {
+      "case": "upper",
       "mapping": {
         "base": "T"
       }
     },
     "Ú": {
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "Ů": {
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "Ý": {
+      "case": "upper",
       "mapping": {
         "base": "Y"
       }
     },
     "Ž": {
+      "case": "upper",
       "mapping": {
         "base": "Z"
       }
