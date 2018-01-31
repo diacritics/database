@@ -18,6 +18,7 @@
     - [metadata.variantNative](#metadatavariantnative)
     - [metadata.source](#metadatasource)
     - [data](#data)
+    - [data.{character}.capital](#datacharactercapital)
     - [data.{character}.mapping](#datacharactermapping)
     - [data.{character}.mapping.base](#datacharactermappingbase)
     - [data.{character}.mapping.decompose](#datacharactermappingdecompose)
@@ -117,8 +118,6 @@ Example structure for the German language source file, which only contains lower
             "mapping": {
                 "base": "u",
                 "decompose": {
-                    "titleCase": "Ue",
-                    "upperCase": "UE",
                     "lowerCase": "ue"
                 }
             }
@@ -127,8 +126,6 @@ Example structure for the German language source file, which only contains lower
             "mapping": {
                 "base": "o",
                 "decompose": {
-                    "titleCase": "Oe",
-                    "upperCase": "OE",
                     "lowerCase": "oe"
                 }
             }
@@ -137,8 +134,6 @@ Example structure for the German language source file, which only contains lower
             "mapping": {
                 "base": "a",
                 "decompose": {
-                    "titleCase": "Ae",
-                    "upperCase": "AE",
                     "lowerCase": "ae"
                 }
             }
@@ -146,8 +141,6 @@ Example structure for the German language source file, which only contains lower
         "ß": {
             "mapping": {
                 "decompose": {
-                  "titleCase": "SS",
-                  "upperCase": "SS",
                   "lowerCase": "ss"
                 }
             }
@@ -213,6 +206,17 @@ Type: `Object`
 
 An object containing the actual mapping information. Every character has its own object key. The value for each diacritic, ligature or symbol is an object specified below:
 
+###### data.{character}.case
+
+Required  
+Type: `String`
+
+The case value has three values:
+
+* `'upper'` - Signifies that the character is capitalized, or an uppercase character.
+* `'lower'` - Signifies that the character is a lower case character.
+* `'none'` - Signifies that the character has no case; e.g. punctuation (`¿`, `¡` and `⸘`) and Arabic characters.
+
 ###### data.{character}.mapping
 
 Required  
@@ -241,21 +245,21 @@ Each decompose value may need to be transformed into an upper, lower or title ca
 Optional  
 Type: String
 
-When a decompose value comprises two or more characters, the case of the first character may differ from the others. This property was implemented in case a diacritic is the first character of a word written in title case. Include the necessary changes in this entry (e.g. `æ` and `Æ` decomposes into `Ae` in a title case).
+This value is only available when the character is a capital letter, signified by the `capital` boolean value of `true`, and when a decompose value comprises two or more characters. This setting is provided because the case of the first character may differ from the other character(s). This property was implemented in case a diacritic is the first character of a word written in title case. Include the necessary changes in this entry (e.g. `æ` and `Æ` decomposes into `Ae` in a title case).
 
 ###### data.{character}.mapping.decompose.upperCase
 
 Optional  
 Type: String
 
-When a decompose value comprises two or more characters, this property may be used when the word requires all capital letters, such as in an abbreviation. Include the necessary changes in this entry (e.g. `æ` and `Æ` decomposes into `AE` in all upper case).
+This value is ony available when the character is a capital letter, signified by a `capital` boolean value of `true`, and when a decompose value comprises two or more characters. This property may be used when the word requires all capital letters, such as in an abbreviation. Include the necessary changes in this entry (e.g. `æ` and `Æ` decomposes into `AE` in all upper case).
 
 ###### data.{character}.mapping.decompose.lowerCase
 
 Optional  
 Type: String
 
-When a decompose value comprises two or more characters, the characters may need to be transformed into all lower case. Include the necessary changes in this entry (e.g. `æ` and `Æ` decomposes into `ae` in all lower case).
+This value s ony available when the character is a capital letter, signified by a `capital` boolean value of `false`, and when a decompose value comprises two or more characters. The characters may need to be transformed into all lower case. Include the necessary changes in this entry (e.g. `æ` and `Æ` decomposes into `ae` in all lower case).
 
 ## 3. Dist Branch
 
@@ -316,6 +320,7 @@ Example (only showing one lower case diacritic):
             "metadata": {...},
             "data": {
                 "ü": {
+                    "capital": false,
                     "mapping": {
                         "base": "u",
                         "decompose": "ue"

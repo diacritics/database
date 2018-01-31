@@ -59,6 +59,10 @@
       "additionalProperties": {
         "type": "object",
         "properties": {
+          "case": {
+            "type": "string",
+            "pattern": "^(upper|lower|none)$"
+          },
           "mapping": {
             "type": "object",
             "properties": {
@@ -87,7 +91,8 @@
           }
         },
         "required": [
-          "mapping"
+          "mapping",
+          "case"
         ]
       }
     }
