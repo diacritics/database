@@ -282,11 +282,7 @@ class Build {
     this.clearBuild();
     let out = {};
     this.getLanguageFiles().forEach(item => {
-      const {
-        file,
-        folderName,
-        fileName
-      } = item;
+      const {file, folderName, fileName} = item;
       this.checkValidation(file);
       // add language & any variants
       if (typeof out[folderName] === 'undefined') {
