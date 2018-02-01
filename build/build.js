@@ -8,6 +8,7 @@
 const fs = require('fs'),
   glob = require('glob'),
   del = require('del'),
+  cleanup = require('./build-cleanup'),
   Utils = require('./processes/utils'),
   Validate = require('./processes/validate'),
   pkg = require('../package.json'),
@@ -247,20 +248,6 @@ class Build {
   }
 
   /**
-   * Remove existing diacritics from undetermined list
-   * @param {object} content - The database file content
-   * @return {object}
-   */
-  removeUndeterminedDuplicates(content) {
-    [...this._diacritics].forEach(char => {
-      if (content.und.und.data[char]) {
-        delete content.und.und.data[char];
-      }
-    });
-    return content;
-  }
-
-  /**
    * Writes the defined content into ./build/out/[version]/diacritics.json
    * @param {object} content - The database file content
    */
@@ -292,7 +279,7 @@ class Build {
       out = this.addEquivalents(out);
       out = this.addOfficialLang(out);
     });
-    out = this.removeUndeterminedDuplicates(out);
+    out = cleanup.removeUndeterminedDuplicates(out, this._diacritics);
     this.writeOutput(out);
   }
 

@@ -25,7 +25,12 @@ class Undetermined {
    * Constructor
    */
   constructor() {
-    // This list was copied from https://git.io/vNPua
+    /**
+     * This list was copied from https://git.io/vNPua
+     * Duplicate diacritics will automatically be removed from this list by the
+     * build-cleanup script. Lone characters without diacritics will need to be
+     * manually removed
+     */
     this.diacritics = [
       'aàáảãạăằắẳẵặâầấẩẫậäåāą', 'AÀÁẢÃẠĂẰẮẲẴẶÂẦẤẨẪẬÄÅĀĄ',
       'cçćč', 'CÇĆČ',
@@ -71,9 +76,13 @@ class Undetermined {
    * Write resulting "und.json" file using the global "und" variable
    */
   writeFile() {
+    const path = './src/und/';
+    if (!fs.existsSync(path)) {
+      fs.mkdirSync(path);
+    }
     fs.writeFile(
-      './src/und/und.json',
-      JSON.stringify(und, null, ' ') + '\n',
+      `${path}und.json`,
+      JSON.stringify(und, null, 2) + '\n',
       err => {
         if (err) {
           console.log('Error writing und.json', err);
