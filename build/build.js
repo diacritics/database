@@ -10,6 +10,8 @@ const fs = require('fs'),
   del = require('del'),
   Utils = require('./processes/utils'),
   Validate = require('./processes/validate'),
+  pkg = require('../package.json'),
+  validated = require('../src/validated-languages.json'),
   // official language references
   languageData = require('cldr-data/supplemental/languageData'),
   territoryInfo = require('cldr-data/supplemental/territoryInfo');
@@ -28,28 +30,6 @@ class Build {
   }
 
   /**
-   * HTML entities
-   * @type {object}
-   */
-  get htmlEntities() {
-    if (!this._htmlEntities) {
-      this._htmlEntities = Utils.readJSON('./build/data/html-entities.json');
-    }
-    return this._htmlEntities;
-  }
-
-  /**
-   * Package information
-   * @type {object}
-   */
-  get pkg() {
-    if (!this._pkg) {
-      this._pkg = Utils.readJSON('./package.json');
-    }
-    return this._pkg;
-  }
-
-  /**
    * Removes all files of the build output folder
    */
   clearBuild() {
@@ -62,7 +42,6 @@ class Build {
    * @return {object[]}
    */
   getLanguageFiles() {
-    const validated = Utils.readJSON('./src/validated-languages.json');
     let ret = [];
     glob.sync('./src/*/*.json').forEach(file => {
       const spl = file.split('/'),
@@ -245,15 +224,33 @@ class Build {
   }
 
   /**
+   * Check validation
+   * @param {string} file - path to JSON file + file name
+   * 
+   */
+  checkValidation(file) {
+    const validation = new Validate(file);
+    if (!validation.validateJSONSyntax()) {
+      throw new Error(`Syntax error in file: '${file}'`);
+    }
+    let schemaValidation = validation.validateJSONSchema();
+    if (schemaValidation.length > 0) {
+      throw new Error(
+        `Schema error in file '${file}': ${schemaValidation}`
+      );
+    }
+  }
+
+  /**
    * Writes the defined content into ./build/out/[version]/diacritics.json
    * @param {string} content - The file content
    */
   writeOutput(content) {
     // write diacritics.json based on `out`
     fs.mkdirSync('./build/out/');
-    fs.mkdirSync(`./build/out/v${this.pkg.version.split('.')[0]}`);
+    fs.mkdirSync(`./build/out/v${pkg.version.split('.')[0]}`);
     fs.writeFileSync(
-      `./build/out/v${this.pkg.version.split('.')[0]}/diacritics.json`,
+      `./build/out/v${pkg.version.split('.')[0]}/diacritics.json`,
       JSON.stringify(content, null, 2),
       'utf8'
     );
@@ -265,24 +262,14 @@ class Build {
   run() {
     this.clearBuild();
     let out = {};
+    this.htmlEntities = Utils.readJSON('./build/data/html-entities.json');
     this.getLanguageFiles().forEach(item => {
       const {
         file,
         folderName,
         fileName
       } = item;
-
-      const validation = new Validate(file);
-      if (!validation.validateJSONSyntax()) {
-        throw new Error(`Syntax error in file: '${file}'`);
-      }
-      let schemaValidation = validation.validateJSONSchema();
-      if (schemaValidation.length > 0) {
-        throw new Error(
-          `Schema error in file '${file}': ${schemaValidation}`
-        );
-      }
-
+      this.checkValidation(file);
       // add language & any variants
       if (typeof out[folderName] === 'undefined') {
         out[folderName] = {};

@@ -9,7 +9,7 @@ const fs = require('fs'), // file system
   path = require('path'),
   del = require('del'),
   stripMarks = require('strip-combining-marks'), // remove combining diacritics
-  stripJsonComments = require('strip-json-comments'),
+  Utils = require('./processes/utils'),
   alphabet = require( // get metadata.alphabet
     'cldr-data/supplemental/languageData'
   ).supplemental.languageData,
@@ -51,14 +51,19 @@ class Extract {
     this.initTSV();
     process.stdout.write('.');
     // load list of validated languages
-    this.validLangs = this.readJSON('./src/validated-languages.json', {
-      lowerCase: true
+    this.validLangs = Utils.readJSON('./src/validated-languages.json', {
+      lowerCase: true,
+      showProgress: true
     });
     // variant languages to be extracted, even if the data matches
     // the root language
-    this.extractVariants = this.readJSON('./src/extract-variants.json', {
-      lowerCase: true
+    this.extractVariants = Utils.readJSON('./src/extract-variants.json', {
+      lowerCase: true,
+      showProgress: true
     });
+    this.JSONtemplate = fs.readFileSync(
+      './build/templates/extracted-language-variant.json', 'utf8'
+    );
   }
 
   /**
@@ -97,21 +102,6 @@ class Extract {
   }
 
   /**
-   * Reads a JSON file, removes comments and parses it
-   * @param {string} file - path to json file
-   * @param {object} options - options to process resulting JSON
-   * @return {object}
-   */
-  readJSON(file, options = {}) {
-    process.stdout.write('.');
-    let result = stripJsonComments(fs.readFileSync(file, 'utf8'));
-    if (options.lowerCase) {
-      result = result.toLowerCase();
-    }
-    return JSON.parse(result);
-  }
-
-  /**
    * Load a specific language JSON file
    * @param {string} lang - IETF language tag
    */
@@ -119,10 +109,10 @@ class Extract {
     if (!this.langData[lang]) {
       const path = `node_modules/cldr-data/main/${lang}/`;
       // get language alphabet to extract diacritics
-      let data = this.readJSON(path + 'characters.json');
+      let data = Utils.readJSON(path + 'characters.json');
       this.langData[lang] = data || {};
       // get metadata.native value
-      data = this.readJSON(path + 'languages.json');
+      data = Utils.readJSON(path + 'languages.json');
       this.langNative[lang] =
         data.main[lang].localeDisplayNames.languages[lang] || {};
     }
@@ -327,35 +317,21 @@ class Extract {
    * @param {object} data - Language JSON data to output
    */
   writeOutput(language, data) {
-    let indx, temp,
-      folder = language;
+    let folder = language;
     if (/-/.test(language)) {
       // per spec... de/ would contain de.js, at.js & ch.js
-      indx = language.indexOf('-');
+      let indx = language.indexOf('-');
       folder = language.substring(0, indx);
       // make exception for "sr-Latn"
       language = /^sr-Latn$/.test(language) ?
         folder :
         language.slice(indx + 1);
     }
-    temp = `./src/${folder}/`;
-    if (!fs.existsSync(temp)) {
-      fs.mkdirSync(temp);
-    }
-    temp = `./src/${folder}/${language.toLowerCase()}.json`;
-    if (!fs.existsSync(temp)) {
-      const tpl = fs.readFileSync(
-        './build/templates/extracted-language-variant.json', 'utf8'
-      );
-      fs.writeFileSync(
-        temp,
-        tpl.replace(/\/\/<%= contents %>/gmi, JSON.stringify(data, null, 2)),
-        'utf8'
-      );
-    } else if (language !== 'sr') {
-      // don't log "sr" (single exception)
-      console.log(`ERROR: ${language} file already exists`);
-    }
+    const result = this.JSONtemplate.replace(
+      /\/\/<%= contents %>/gmi,
+      JSON.stringify(data, null, 2)
+    );
+    Utils.writeJSON(`./src/${folder}/`, language.toLowerCase(), result);
   }
 
   /**
