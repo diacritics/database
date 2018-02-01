@@ -6,12 +6,13 @@
  *****************************************************/
 'use strict';
 const fs = require('fs'),
-  und = require('./templates/und.json'),
-  // This file needs to be run each time a new language is added to the
-  // database; This script requires an existing output file
-  // use "npm run build" first!
-  output = require('./out/v1/diacritics.json');
+  und = require('./templates/und.json');
 
+/**
+ * This file should only need to be run if additional diacritics are added to
+ * the diacritics list below. It updates the "und.json" file and includes all
+ * of the listed diacritics. The build process removes duplicates.
+ */
 /**
  * This class uses a predefined list of diacritics (extracted from mark.js) and
  * compares it to the resulting diacritics.json used by the database;
@@ -45,22 +46,6 @@ class Undetermined {
   }
 
   /**
-   * Search for the diacritic within the validated database
-   * @param {string} char - diacritic character to find within the existing
-   * diacritics.json database.
-   * @return {boolean} - returns true if found; otherwise false
-   */
-  findChar(char) {
-    return Object.keys(output).find(lang => {
-      return lang === 'und' ?
-        false :
-        Object.keys(output[lang]).find(variant =>
-          Object.keys(output[lang][variant].data).includes(char)
-        );
-    });
-  }
-
-  /**
   * Writes the defined content into ./src/[lang]/[lang].json
   * @param {string} block - a block of diacritic characters using
   * a format where the base character is first, followed by a list
@@ -73,14 +58,12 @@ class Undetermined {
     const base = block.shift(),
       capital = base.toLowerCase() !== base;
     block.forEach(diacritic => {
-      if (!this.findChar(diacritic)) {
-        und.data[diacritic] = {
-          capital,
-          mapping: {
-            base
-          }
-        };
-      }
+      und.data[diacritic] = {
+        capital,
+        mapping: {
+          base
+        }
+      };
     });
   }
 

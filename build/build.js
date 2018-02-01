@@ -26,6 +26,7 @@ class Build {
    * Constructor
    */
   constructor() {
+    this._diacritics = new Set([]);
     this.run();
   }
 
@@ -186,6 +187,9 @@ class Build {
         Object.keys(json[lang][variant]['data']).forEach(char => {
           const eq = this.generateEquivalents(char);
           clone[lang][variant]['data'][char]['equivalents'] = eq;
+          if (lang !== 'und') {
+            this._diacritics.add(char);
+          }
         });
       });
     });
@@ -243,8 +247,22 @@ class Build {
   }
 
   /**
+   * Remove existing diacritics from undetermined list
+   * @param {object} content - The database file content
+   * @return {object}
+   */
+  removeUndeterminedDuplicates(content) {
+    [...this._diacritics].forEach(char => {
+      if (content.und.und.data[char]) {
+        delete content.und.und.data[char];
+      }
+    });
+    return content;
+  }
+
+  /**
    * Writes the defined content into ./build/out/[version]/diacritics.json
-   * @param {string} content - The file content
+   * @param {object} content - The database file content
    */
   writeOutput(content) {
     // write diacritics.json based on `out`
@@ -278,6 +296,7 @@ class Build {
       out = this.addEquivalents(out);
       out = this.addOfficialLang(out);
     });
+    out = this.removeUndeterminedDuplicates(out);
     this.writeOutput(out);
   }
 
