@@ -238,7 +238,7 @@ Type: Object
 
 This is the character, or combination of characters used to represent the diacritic (e.g. `ö` decomposes into `oe` in German), ligature (e.g. `æ` decomposes into `ae`), or symbol (e.g. `‽` decomposes into `?!`).
 
-Each decompose value may need to be transformed into an upper, lower or title case. These entries have been included within the `decompose` values and depend on the `'case'` setting.
+Each decompose value may need to be transformed into lower or upper and title case. These entries have been included within the `decompose` values and depend on the `'case'` setting.
 
 ###### data.{character}.mapping.decompose.titleCase
 
