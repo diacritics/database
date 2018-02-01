@@ -18,7 +18,7 @@
       "mapping": {
         "base": "u",
         "decompose": {
-          "lowerCase": "ue"
+          "value": "ue"
         }
       }
     },
@@ -28,7 +28,7 @@
         "base": "U",
         "decompose": {
           "titleCase": "Ue",
-          "upperCase": "UE"
+          "value": "UE"
         }
       }
     },
@@ -37,7 +37,7 @@
       "mapping": {
         "base": "o",
         "decompose": {
-          "lowerCase": "oe"
+          "value": "oe"
         }
       }
     },
@@ -47,7 +47,7 @@
         "base": "O",
         "decompose": {
           "titleCase": "Oe",
-          "upperCase": "OE"
+          "value": "OE"
         }
       }
     },
@@ -56,7 +56,7 @@
       "mapping": {
         "base": "a",
         "decompose": {
-          "lowerCase": "ae"
+          "value": "ae"
         }
       }
     },
@@ -66,7 +66,7 @@
         "base": "A",
         "decompose": {
           "titleCase": "Ae",
-          "upperCase": "AE"
+          "value": "AE"
         }
       }
     },
@@ -75,7 +75,7 @@
       "mapping": {
         "base": "ß",
         "decompose": {
-          "lowerCase": "ss"
+          "value": "ss"
         }
       }
     },
@@ -85,7 +85,7 @@
         "base": "ß",
         "decompose": {
           "titleCase": "Ss",
-          "upperCase": "SS"
+          "value": "SS"
         }
       }
     }

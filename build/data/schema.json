@@ -77,11 +77,7 @@
                     "type": "string",
                     "pattern": "^[\\S]+$"
                   },
-                  "upperCase": {
-                    "type": "string",
-                    "pattern": "^[\\S]+$"
-                  },
-                  "lowerCase": {
+                  "value": {
                     "type": "string",
                     "pattern": "^[\\S]+$"
                   }
