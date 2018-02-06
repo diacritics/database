@@ -226,7 +226,7 @@ class Build {
   /**
    * Check validation
    * @param {string} file - path to JSON file + file name
-   * 
+   *
    */
   checkValidation(file) {
     const validation = new Validate(file);
@@ -249,10 +249,10 @@ class Build {
     // write diacritics.json based on `out`
     fs.mkdirSync('./build/out/');
     fs.mkdirSync(`./build/out/v${pkg.version.split('.')[0]}`);
-    fs.writeFileSync(
-      `./build/out/v${pkg.version.split('.')[0]}/diacritics.json`,
-      JSON.stringify(content, null, 2),
-      'utf8'
+    Utils.writeJSON(
+      `./build/out/v${pkg.version.split('.')[0]}/`,
+      'diacritics',
+      content
     );
   }
 
