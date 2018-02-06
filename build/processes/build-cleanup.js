@@ -6,8 +6,8 @@
  *****************************************************/
 'use strict';
 const fs = require('fs'),
-  und = require('../src/und/und.json'),
-  Utils = require('./processes/utils');
+  und = require('../../src/und/und.json'),
+  Utils = require('./utils');
 
 class Cleanup {
   /**
