@@ -6,14 +6,15 @@
  *****************************************************/
 'use strict';
 const fs = require('fs'),
-  und = require('../src/und/und.json');
+  und = require('../src/und/und.json'),
+  Utils = require('./processes/utils');
 
 class Cleanup {
   /**
    * Constructor
    */
   constructor() {
-    this._buildFile = './build/build-undetermined.js';
+    this.buildFile = './build/build-undetermined.js';
     this.run();
   }
 
@@ -29,7 +30,7 @@ class Cleanup {
       if (output.und.und.data[char]) {
         delete output.und.und.data[char];
         delete und.data[char];
-        this._buildContent = this._buildContent.replace(char, '');
+        this.buildContent = this.buildContent.replace(char, '');
         console.log(`Removed "${char}" from "und"`);
       }
     });
@@ -41,30 +42,21 @@ class Cleanup {
    * Save modified "build-undetermined.js" and "und/und.json" files
    */
   saveFiles() {
-    fs.writeFile(this._buildFile, this._buildContent, 'utf8', err => {
+    fs.writeFile(this.buildFile, this.buildContent, 'utf8', err => {
       if (err) {
         throw err;
       }
-      console.log(`"${this._buildFile}" updated`);
+      console.log(`"${this.buildFile}" updated`);
     });
-    fs.writeFile(
-      'src/und/und.json',
-      JSON.stringify(und, null, 2),
-      'utf8',
-      err => {
-        if (err) {
-          throw err;
-        }
-        console.log('"und.json" file updated');
-      }
-    );
+    Utils.writeJSON('src/und', 'und.json', JSON.stringify(und, null, 2));
+    console.log('"und.json" file updated');
   }
 
   /**
    * Runs the build cleanup
    */
   run() {
-    this._buildContent = fs.readFileSync(this._buildFile, 'utf8');
+    this.buildContent = fs.readFileSync(this.buildFile, 'utf8');
   }
 
 }

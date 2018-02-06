@@ -8,7 +8,7 @@
 const fs = require('fs'),
   glob = require('glob'),
   del = require('del'),
-  cleanup = require('./build-cleanup'),
+  Cleanup = require('./processes/build-cleanup'),
   Utils = require('./processes/utils'),
   Validate = require('./processes/validate'),
   pkg = require('../package.json'),
@@ -279,7 +279,7 @@ class Build {
       out = this.addEquivalents(out);
       out = this.addOfficialLang(out);
     });
-    out = cleanup.removeUndeterminedDuplicates(out, this._diacritics);
+    out = Cleanup.removeUndeterminedDuplicates(out, this._diacritics);
     this.writeOutput(out);
   }
 
