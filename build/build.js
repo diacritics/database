@@ -135,8 +135,9 @@ class Build {
       }),
       'encodedUri': encodeURI(char)
     };
-    if (this.htmlEntities[char]) {
-      ret['htmlEntity'] = this.htmlEntities[char];
+    const entities = Utils.readJSON('./build/data/html-entities.json');
+    if (entities[char]) {
+      ret['htmlEntity'] = entities[char];
     }
     return ret;
   }
@@ -262,7 +263,6 @@ class Build {
   run() {
     this.clearBuild();
     let out = {};
-    this.htmlEntities = Utils.readJSON('./build/data/html-entities.json');
     this.getLanguageFiles().forEach(item => {
       const {
         file,
