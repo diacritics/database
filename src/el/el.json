@@ -18,111 +18,133 @@
   },
   "data": {
     "ά": {
+      "case": "lower",
       "mapping": {
         "base": "α"
       }
     },
     "έ": {
+      "case": "lower",
       "mapping": {
         "base": "ε"
       }
     },
     "ή": {
+      "case": "lower",
       "mapping": {
         "base": "η"
       }
     },
     "ί": {
+      "case": "lower",
       "mapping": {
         "base": "ι"
       }
     },
     "ϊ": {
+      "case": "lower",
       "mapping": {
         "base": "ι"
       }
     },
     "ΐ": {
+      "case": "lower",
       "mapping": {
         "base": "ι"
       }
     },
     "ό": {
+      "case": "lower",
       "mapping": {
         "base": "ο"
       }
     },
     "ύ": {
+      "case": "lower",
       "mapping": {
         "base": "υ"
       }
     },
     "ϋ": {
+      "case": "lower",
       "mapping": {
         "base": "υ"
       }
     },
     "ΰ": {
+      "case": "lower",
       "mapping": {
         "base": "υ"
       }
     },
     "ώ": {
+      "case": "lower",
       "mapping": {
         "base": "ω"
       }
     },
     "Ά": {
+      "case": "upper",
       "mapping": {
         "base": "Α"
       }
     },
     "Έ": {
+      "case": "upper",
       "mapping": {
         "base": "Ε"
       }
     },
     "Ή": {
+      "case": "upper",
       "mapping": {
         "base": "Η"
       }
     },
     "Ί": {
+      "case": "upper",
       "mapping": {
         "base": "Ι"
       }
     },
     "Ϊ": {
+      "case": "upper",
       "mapping": {
         "base": "Ι"
       }
     },
     "Ϊ́": {
+      "case": "upper",
       "mapping": {
         "base": "Ι"
       }
     },
     "Ό": {
+      "case": "upper",
       "mapping": {
         "base": "Ο"
       }
     },
     "Ύ": {
+      "case": "upper",
       "mapping": {
         "base": "Υ"
       }
     },
     "Ϋ": {
+      "case": "upper",
       "mapping": {
         "base": "Υ"
       }
     },
     "Ϋ́": {
+      "case": "upper",
       "mapping": {
         "base": "Υ"
       }
     },
     "Ώ": {
+      "case": "upper",
       "mapping": {
         "base": "Ω"
       }

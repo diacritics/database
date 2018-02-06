@@ -17,111 +17,133 @@
   },
   "data": {
     "á": {
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "â": {
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "é": {
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "è": {
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "ê": {
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "ë": {
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "î": {
+      "case": "lower",
       "mapping": {
         "base": "i"
       }
     },
     "ï": {
+      "case": "lower",
       "mapping": {
         "base": "i"
       }
     },
     "ô": {
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ö": {
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "û": {
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "Á": {
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Â": {
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "É": {
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "È": {
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Ê": {
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Ë": {
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Î": {
+      "case": "upper",
       "mapping": {
         "base": "I"
       }
     },
     "Ï": {
+      "case": "upper",
       "mapping": {
         "base": "I"
       }
     },
     "Ô": {
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ö": {
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Û": {
+      "case": "upper",
       "mapping": {
         "base": "U"
       }

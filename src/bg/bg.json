@@ -17,11 +17,13 @@
   },
   "data": {
     "й": {
+      "case": "lower",
       "mapping": {
         "base": "и"
       }
     },
     "Й": {
+      "case": "upper",
       "mapping": {
         "base": "И"
       }

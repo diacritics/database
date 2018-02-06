@@ -18,11 +18,13 @@
   },
   "data": {
     "ñ": {
+      "case": "lower",
       "mapping": {
         "base": "n"
       }
     },
     "Ñ": {
+      "case": "upper",
       "mapping": {
         "base": "N"
       }

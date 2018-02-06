@@ -20,131 +20,157 @@
   },
   "data": {
     "á": {
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "à": {
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "â": {
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "ã": {
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "ç": {
+      "case": "lower",
       "mapping": {
         "base": "c"
       }
     },
     "é": {
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "ê": {
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "í": {
+      "case": "lower",
       "mapping": {
         "base": "i"
       }
     },
     "ó": {
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ò": {
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ô": {
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "õ": {
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ú": {
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "Á": {
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "À": {
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Â": {
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Ã": {
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Ç": {
+      "case": "upper",
       "mapping": {
         "base": "C"
       }
     },
     "É": {
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Ê": {
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Í": {
+      "case": "upper",
       "mapping": {
         "base": "I"
       }
     },
     "Ó": {
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ò": {
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ô": {
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Õ": {
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ú": {
+      "case": "upper",
       "mapping": {
         "base": "U"
       }

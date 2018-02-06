@@ -23,86 +23,103 @@
   },
   "data": {
     "á": {
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "Á": {
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "é": {
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "É": {
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "í": {
+      "case": "lower",
       "mapping": {
         "base": "i"
       }
     },
     "Í": {
+      "case": "upper",
       "mapping": {
         "base": "I"
       }
     },
     "ï": {
+      "case": "lower",
       "mapping": {
         "base": "i"
       }
     },
     "ñ": {
+      "case": "lower",
       "mapping": {
         "base": "n"
       }
     },
     "Ñ": {
+      "case": "upper",
       "mapping": {
         "base": "N"
       }
     },
     "ó": {
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "Ó": {
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "ú": {
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "Ú": {
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "ü": {
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "Ü": {
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "ý": {
+      "case": "lower",
       "mapping": {
         "base": "y"
       }
     },
     "Ý": {
+      "case": "upper",
       "mapping": {
         "base": "Y"
       }
@@ -110,29 +127,26 @@
     // The following symbols are used as an opening tag and the decomposed
     // symbols are typically used as a closing tag
     "¿": {
+      "case": "none",
       "mapping": {
         "decompose": {
-          "titleCase": "?",
-          "upperCase": "?",
-          "lowerCase": "?"
+          "value": "?"
         }
       }
     },
     "¡": {
+      "case": "none",
       "mapping": {
         "decompose": {
-          "titleCase": "!",
-          "upperCase": "!",
-          "lowerCase": "!"
+          "value": "!"
         }
       }
     },
     "⸘": {
+      "case": "none",
       "mapping": {
         "decompose": {
-          "titleCase": "?!",
-          "upperCase": "?!",
-          "lowerCase": "?!"
+          "value": "?!"
         }
       }
     }

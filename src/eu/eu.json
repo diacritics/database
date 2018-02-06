@@ -17,21 +17,25 @@
   },
   "data": {
     "ç": {
+      "case": "lower",
       "mapping": {
         "base": "c"
       }
     },
     "ñ": {
+      "case": "lower",
       "mapping": {
         "base": "n"
       }
     },
     "Ç": {
+      "case": "upper",
       "mapping": {
         "base": "C"
       }
     },
     "Ñ": {
+      "case": "upper",
       "mapping": {
         "base": "N"
       }

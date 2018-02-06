@@ -17,101 +17,121 @@
   },
   "data": {
     "á": {
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "ā": {
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "é": {
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "ē": {
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "í": {
+      "case": "lower",
       "mapping": {
         "base": "i"
       }
     },
     "ī": {
+      "case": "lower",
       "mapping": {
         "base": "i"
       }
     },
     "ó": {
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ō": {
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ú": {
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "ū": {
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "Á": {
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Ā": {
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "É": {
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Ē": {
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Í": {
+      "case": "upper",
       "mapping": {
         "base": "I"
       }
     },
     "Ī": {
+      "case": "upper",
       "mapping": {
         "base": "I"
       }
     },
     "Ó": {
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ō": {
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ú": {
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "Ū": {
+      "case": "upper",
       "mapping": {
         "base": "U"
       }

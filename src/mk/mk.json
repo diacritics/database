@@ -17,21 +17,25 @@
   },
   "data": {
     "ѓ": {
+      "case": "lower",
       "mapping": {
         "base": "г"
       }
     },
     "ќ": {
+      "case": "lower",
       "mapping": {
         "base": "к"
       }
     },
     "Ѓ": {
+      "case": "upper",
       "mapping": {
         "base": "Г"
       }
     },
     "Ќ": {
+      "case": "upper",
       "mapping": {
         "base": "К"
       }

@@ -17,21 +17,25 @@
   },
   "data": {
     "ç": {
+      "case": "lower",
       "mapping": {
         "base": "c"
       }
     },
     "ë": {
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "Ç": {
+      "case": "upper",
       "mapping": {
         "base": "C"
       }
     },
     "Ë": {
+      "case": "upper",
       "mapping": {
         "base": "E"
       }

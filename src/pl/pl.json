@@ -13,91 +13,109 @@
   },
   "data": {
     "ą": {
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "ć": {
+      "case": "lower",
       "mapping": {
         "base": "c"
       }
     },
     "ę": {
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "ł": {
+      "case": "lower",
       "mapping": {
         "base": "l"
       }
     },
     "ń": {
+      "case": "lower",
       "mapping": {
         "base": "n"
       }
     },
     "ó": {
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ś": {
+      "case": "lower",
       "mapping": {
         "base": "s"
       }
     },
     "ź": {
+      "case": "lower",
       "mapping": {
         "base": "z"
       }
     },
     "ż": {
+      "case": "lower",
       "mapping": {
         "base": "z"
       }
     },
     "Ą": {
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Ć": {
+      "case": "upper",
       "mapping": {
         "base": "C"
       }
     },
     "Ę": {
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Ł": {
+      "case": "upper",
       "mapping": {
         "base": "L"
       }
     },
     "Ń": {
+      "case": "upper",
       "mapping": {
         "base": "N"
       }
     },
     "Ó": {
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ś": {
+      "case": "upper",
       "mapping": {
         "base": "S"
       }
     },
     "Ź": {
+      "case": "upper",
       "mapping": {
         "base": "Z"
       }
     },
     "Ż": {
+      "case": "upper",
       "mapping": {
         "base": "Z"
       }

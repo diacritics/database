@@ -59,6 +59,10 @@
       "additionalProperties": {
         "type": "object",
         "properties": {
+          "case": {
+            "type": "string",
+            "pattern": "^(upper|lower|none)$"
+          },
           "mapping": {
             "type": "object",
             "properties": {
@@ -73,11 +77,7 @@
                     "type": "string",
                     "pattern": "^[\\S]+$"
                   },
-                  "upperCase": {
-                    "type": "string",
-                    "pattern": "^[\\S]+$"
-                  },
-                  "lowerCase": {
+                  "value": {
                     "type": "string",
                     "pattern": "^[\\S]+$"
                   }
@@ -87,7 +87,8 @@
           }
         },
         "required": [
-          "mapping"
+          "mapping",
+          "case"
         ]
       }
     }

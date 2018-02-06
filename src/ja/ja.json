@@ -17,136 +17,163 @@
   },
   "data": {
     "ゞヾ": {
+      "case": "none",
       "mapping": {
         "base": "ゝヽ"
       }
     },
     "ヴ": {
+      "case": "none",
       "mapping": {
         "base": "ウ"
       }
     },
     "がガ": {
+      "case": "none",
       "mapping": {
         "base": "かカ"
       }
     },
     "ぎギ": {
+      "case": "none",
       "mapping": {
         "base": "きキ"
       }
     },
     "ぐグ": {
+      "case": "none",
       "mapping": {
         "base": "くク"
       }
     },
     "げゲ": {
+      "case": "none",
       "mapping": {
         "base": "けケ"
       }
     },
     "ごゴ": {
+      "case": "none",
       "mapping": {
         "base": "こコ"
       }
     },
     "ざザ": {
+      "case": "none",
       "mapping": {
         "base": "さサ"
       }
     },
     "じジ": {
+      "case": "none",
       "mapping": {
         "base": "しシ"
       }
     },
     "ずズ": {
+      "case": "none",
       "mapping": {
         "base": "すス"
       }
     },
     "ぜゼ": {
+      "case": "none",
       "mapping": {
         "base": "せセ"
       }
     },
     "ぞゾ": {
+      "case": "none",
       "mapping": {
         "base": "そソ"
       }
     },
     "だダ": {
+      "case": "none",
       "mapping": {
         "base": "たタ"
       }
     },
     "ぢヂ": {
+      "case": "none",
       "mapping": {
         "base": "ちチ"
       }
     },
     "づヅ": {
+      "case": "none",
       "mapping": {
         "base": "つツ"
       }
     },
     "でデ": {
+      "case": "none",
       "mapping": {
         "base": "てテ"
       }
     },
     "どド": {
+      "case": "none",
       "mapping": {
         "base": "とト"
       }
     },
     "ばバ": {
+      "case": "none",
       "mapping": {
         "base": "はハ"
       }
     },
     "ぱパ": {
+      "case": "none",
       "mapping": {
         "base": "はハ"
       }
     },
     "びビ": {
+      "case": "none",
       "mapping": {
         "base": "ひヒ"
       }
     },
     "ぴピ": {
+      "case": "none",
       "mapping": {
         "base": "ひヒ"
       }
     },
     "ぶブ": {
+      "case": "none",
       "mapping": {
         "base": "ふフ"
       }
     },
     "ぷプ": {
+      "case": "none",
       "mapping": {
         "base": "ふフ"
       }
     },
     "べベ": {
+      "case": "none",
       "mapping": {
         "base": "へヘ"
       }
     },
     "ぺペ": {
+      "case": "none",
       "mapping": {
         "base": "へヘ"
       }
     },
     "ぼボ": {
+      "case": "none",
       "mapping": {
         "base": "ほホ"
       }
     },
     "ぽポ": {
+      "case": "none",
       "mapping": {
         "base": "ほホ"
       }
