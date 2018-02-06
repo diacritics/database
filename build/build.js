@@ -27,7 +27,7 @@ class Build {
    * Constructor
    */
   constructor() {
-    this._diacritics = new Set([]);
+    this.diacritics = new Set([]);
     this.run();
   }
 
@@ -189,7 +189,7 @@ class Build {
           const eq = this.generateEquivalents(char);
           clone[lang][variant]['data'][char]['equivalents'] = eq;
           if (lang !== 'und') {
-            this._diacritics.add(char);
+            this.diacritics.add(char);
           }
         });
       });
@@ -279,7 +279,7 @@ class Build {
       out = this.addEquivalents(out);
       out = this.addOfficialLang(out);
     });
-    out = Cleanup.removeUndeterminedDuplicates(out, this._diacritics);
+    out = Cleanup.removeUndeterminedDuplicates(out, this.diacritics);
     this.writeOutput(out);
   }
 
