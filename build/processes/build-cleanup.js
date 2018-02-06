@@ -48,7 +48,7 @@ class Cleanup {
       }
       console.log(`"${this.buildFile}" updated`);
     });
-    Utils.writeJSON('src/und', 'und.json', JSON.stringify(und, null, 2));
+    Utils.writeJSON('src/und', 'und', JSON.stringify(und, null, 2));
     console.log('"und.json" file updated');
   }
 
