@@ -19,7 +19,7 @@ class Utils {
     if (options.lowerCase) {
       result = result.toLowerCase();
     }
-    return JSON.parse(result); 
+    return JSON.parse(result);
   }
 
   /**
@@ -39,6 +39,23 @@ class Utils {
     if (!fs.existsSync(file)) {
       fs.writeFileSync(file, result, 'utf8');
     }
+  }
+
+  /**
+   * Determine character case
+   * @param {string} char - Diacritic character
+   * @return {string} - character case string
+   */
+  static getCase(char) {
+    let charCase = 'lower',
+      lower = char.toLowerCase() === char,
+      upper = char.toUpperCase() === char;
+    if (lower && upper) {
+      charCase = 'none';
+    } else if (upper) {
+      charCase = 'upper';
+    }
+    return charCase;
   }
 
 }

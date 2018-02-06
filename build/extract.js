@@ -211,23 +211,6 @@ class Extract {
   }
 
   /**
-   * Determine character case
-   * @param {string} char - Diacritic character
-   * @return {string} - character case string
-   */
-  getCase(char) {
-    let charCase = 'lower',
-      lower = char.toLowerCase() === char,
-      upper = char.toUpperCase() === char;
-    if (lower && upper) {
-      charCase = 'none';
-    } else if (upper) {
-      charCase = 'upper';
-    }
-    return charCase;
-  }
-
-  /**
    * Extract diacritics from alphabet string
    * @param {string} language - IETF Language tag
    * @param {object} file - Language JSON data
@@ -247,7 +230,7 @@ class Extract {
             let base = stripMarks(char.normalize('NFD'));
             if (base !== char && base !== '') {
               lang.data[char] = {
-                case: this.getCase(char),
+                case: Utils.getCase(char),
                 mapping: {
                   base: base
                 }

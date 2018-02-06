@@ -19,979 +19,979 @@
   },
   "data": {
     "à": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "ả": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "ã": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "ạ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "ă": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "ằ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "ắ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "ẳ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "ẵ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "ặ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "ầ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "ấ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "ẩ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "ẫ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "ậ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "å": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "ā": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "a"
       }
     },
     "À": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Ả": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Ã": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Ạ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Ă": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Ằ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Ắ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Ẳ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Ẵ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Ặ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Ầ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Ấ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Ẩ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Ẫ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Ậ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Å": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "Ā": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "A"
       }
     },
     "č": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "c"
       }
     },
     "Č": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "C"
       }
     },
     "đ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "d"
       }
     },
     "ď": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "d"
       }
     },
     "Đ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "D"
       }
     },
     "Ď": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "D"
       }
     },
     "è": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "ẻ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "ẽ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "ẹ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "ê": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "ề": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "ế": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "ể": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "ễ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "ệ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "ë": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "ě": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "ē": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "e"
       }
     },
     "È": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Ẻ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Ẽ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Ẹ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Ê": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Ề": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Ế": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Ể": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Ễ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Ệ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Ë": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Ě": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "Ē": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "E"
       }
     },
     "ì": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "i"
       }
     },
     "ỉ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "i"
       }
     },
     "ĩ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "i"
       }
     },
     "ị": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "i"
       }
     },
     "ī": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "i"
       }
     },
     "Ì": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "I"
       }
     },
     "Ỉ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "I"
       }
     },
     "Ĩ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "I"
       }
     },
     "Ị": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "I"
       }
     },
     "Ï": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "I"
       }
     },
     "Ī": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "I"
       }
     },
     "ň": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "n"
       }
     },
     "Ň": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "N"
       }
     },
     "ò": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ỏ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "õ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ọ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ô": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ồ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ố": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ổ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ỗ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ộ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ơ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ở": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ỡ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ớ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ờ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ợ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ø": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "ō": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "o"
       }
     },
     "Ò": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ỏ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Õ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ọ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ô": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ồ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ố": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ổ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ỗ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ộ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ơ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ở": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ỡ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ớ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ờ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ợ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ø": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "Ō": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "O"
       }
     },
     "ř": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "r"
       }
     },
     "Ř": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "R"
       }
     },
     "š": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "s"
       }
     },
     "ș": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "s"
       }
     },
     "Š": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "S"
       }
     },
     "Ș": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "S"
       }
     },
     "ť": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "t"
       }
     },
     "ț": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "t"
       }
     },
     "ţ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "t"
       }
     },
     "Ť": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "T"
       }
     },
     "Ț": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "T"
       }
     },
     "Ţ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "T"
       }
     },
     "ù": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "ủ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "ũ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "ụ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "ư": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "ừ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "ứ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "ử": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "ữ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "ự": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "ů": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "ū": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "u"
       }
     },
     "Ù": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "Ủ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "Ũ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "Ụ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "Ư": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "Ừ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "Ứ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "Ử": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "Ữ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "Ự": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "Ů": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "Ū": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "U"
       }
     },
     "ỳ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "y"
       }
     },
     "ỷ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "y"
       }
     },
     "ỹ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "y"
       }
     },
     "ỵ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "y"
       }
     },
     "ÿ": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "y"
       }
     },
     "Ỳ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "Y"
       }
     },
     "Ỷ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "Y"
       }
     },
     "Ỹ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "Y"
       }
     },
     "Ỵ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "Y"
       }
     },
     "Ÿ": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "Y"
       }
     },
     "ž": {
-      "capital": false,
+      "case": "lower",
       "mapping": {
         "base": "z"
       }
     },
     "Ž": {
-      "capital": true,
+      "case": "upper",
       "mapping": {
         "base": "Z"
       }

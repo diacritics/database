@@ -6,7 +6,8 @@
  *****************************************************/
 'use strict';
 const fs = require('fs'),
-  und = require('./templates/und.json');
+  und = require('./templates/und.json'),
+  Utils = require('./processes/utils');
 
 /**
  * This file should only need to be run if additional diacritics are added to
@@ -60,10 +61,10 @@ class Undetermined {
   buildEntries(block) {
     block = block.split('');
     const base = block.shift(),
-      capital = base.toLowerCase() !== base;
+      caseValue = Utils.getCase(base);
     block.forEach(diacritic => {
       und.data[diacritic] = {
-        capital,
+        case: caseValue,
         mapping: {
           base
         }
