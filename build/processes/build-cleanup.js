@@ -15,11 +15,11 @@ class Cleanup {
    */
   constructor() {
     this.buildFile = './build/build-undetermined.js';
-    this.run();
+    this.buildContent = fs.readFileSync(this.buildFile, 'utf8');
   }
 
   /**
-   * Remove existing diacritics from undetermined list
+   * Remove existing diacritics from undetermined list; called by build.js
    * @param {object} output - The database file content
    * @param {object} charList - A Set object containing all diacritics from the
    * database
@@ -50,13 +50,6 @@ class Cleanup {
     });
     Utils.writeJSON('src/und', 'und', JSON.stringify(und, null, 2));
     console.log('"und.json" file updated');
-  }
-
-  /**
-   * Runs the build cleanup
-   */
-  run() {
-    this.buildContent = fs.readFileSync(this.buildFile, 'utf8');
   }
 
 }
