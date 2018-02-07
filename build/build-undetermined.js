@@ -23,8 +23,9 @@ const und = require('./templates/und.json'),
 class Undetermined {
   /**
    * Constructor
+   * @param {string} template - und.json base template
    */
-  constructor() {
+  constructor(template = und) {
     /**
      * This list was copied from https://git.io/vNPua
      * Duplicate diacritics will automatically be removed from this list by the
@@ -46,6 +47,7 @@ class Undetermined {
       'yỳỷỹỵÿ', 'YỲỶỸỴŸ',
       'zž', 'ZŽ'
     ];
+    this.und = {...template};
     this.run();
   }
 
@@ -55,14 +57,14 @@ class Undetermined {
   * a format where the base character is first, followed by a list
   * of diacritics characters that match the base, e.g. 'cçćč' where
   * 'c' is the base character and 'çćč' are the matching diacritics
-  * results are added directly to the global `und` template
+  * results are added directly to the `und` template
   */
   buildEntries(block) {
     block = block.split('');
     const base = block.shift(),
       caseValue = Utils.getCase(base);
     block.forEach(diacritic => {
-      und.data[diacritic] = {
+      this.und.data[diacritic] = {
         case: caseValue,
         mapping: {
           base
@@ -79,7 +81,7 @@ class Undetermined {
     Utils.writeJSON(
       './src/und/',
       'und',
-      JSON.stringify(und, null, 2) + '\n'
+      JSON.stringify(this.und, null, 2) + '\n'
     );
   }
 }
