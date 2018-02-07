@@ -5,8 +5,7 @@
  * Released under the MIT license https://git.io/vXg2H
  *****************************************************/
 'use strict';
-const fs = require('fs'),
-  und = require('./templates/und.json'),
+const und = require('./templates/und.json'),
   Utils = require('./processes/utils');
 
 /**
@@ -73,30 +72,15 @@ class Undetermined {
   }
 
   /**
-   * Write resulting "und.json" file using the global "und" variable
-   */
-  writeFile() {
-    const path = './src/und/';
-    if (!fs.existsSync(path)) {
-      fs.mkdirSync(path);
-    }
-    fs.writeFile(
-      `${path}und.json`,
-      JSON.stringify(und, null, 2) + '\n',
-      err => {
-        if (err) {
-          console.log('Error writing und.json', err);
-        }
-      }
-    );
-  }
-
-  /**
    * Runs the build
    */
   run() {
     this.diacritics.forEach(block => this.buildEntries(block));
-    this.writeFile();
+    Utils.writeJSON(
+      './src/und/',
+      'und',
+      JSON.stringify(und, null, 2) + '\n'
+    );
   }
 }
 
