@@ -31,7 +31,7 @@ class Cleanup {
         delete output.und.und.data[char];
         delete und.data[char];
         this.buildContent = this.buildContent.replace(char, '');
-        console.log(`Removed "${char}" from "und"`);
+        console.log(`Removed "${char}" from "und" & build file`);
       }
     });
     this.saveFiles();
@@ -48,7 +48,8 @@ class Cleanup {
       }
       console.log(`"${this.buildFile}" updated`);
     });
-    Utils.writeJSON('src/und', 'und', JSON.stringify(und, null, 2));
+    fs.unlinkSync('src/und/und.json');
+    Utils.writeJSON('src/und', 'und', JSON.stringify(und, null, 2) + '\n');
     console.log('"und.json" file updated');
   }
 

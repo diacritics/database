@@ -5,7 +5,8 @@
  * Released under the MIT license https://git.io/vXg2H
  *****************************************************/
 'use strict';
-const und = require('./templates/und.json'),
+const fs = require('fs'),
+  und = require('./templates/und.json'),
   Utils = require('./processes/utils');
 
 /**
@@ -78,6 +79,7 @@ class Undetermined {
    */
   run() {
     this.diacritics.forEach(block => this.buildEntries(block));
+    fs.unlinkSync('./src/und/und.json');
     Utils.writeJSON(
       './src/und/',
       'und',
