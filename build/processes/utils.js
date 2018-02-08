@@ -19,26 +19,59 @@ class Utils {
     if (options.lowerCase) {
       result = result.toLowerCase();
     }
-    return JSON.parse(result); 
+    return JSON.parse(result);
   }
 
   /**
    * Writes out a JSON file
    * @param {string} path - path to JSON file
    * @param {string} name - JSON file name
-   * @param {object|string} data - JSON file data
+   * @param {object} data - JSON data
    */
   static writeJSON(path, name, data) {
+    Utils.writeFile(path, name, Utils.stringify(data));
+  }
+
+  /**
+   * Writes out a file based on a string
+   * @param {string} path - path to the file
+   * @param {string} name - file name
+   * @param {string} data - the data to save
+   */
+  static writeFile(path, name, data) {
     if (!fs.existsSync(path)) {
       fs.mkdirSync(path);
     }
     const file = `${path}/${name}.json`;
-    const result = typeof data === 'string' ?
-      data :
-      JSON.stringify(data, null, 2);
     if (!fs.existsSync(file)) {
-      fs.writeFileSync(file, result, 'utf8');
+      fs.writeFileSync(file, data, 'utf8');
     }
+  }
+
+  /**
+   * Converts a JSON object to a string
+   * @param {object} data - JSON data
+   * @return {string}
+   */
+  static stringify(data) {
+    return JSON.stringify(data, null, 2) + '\n';
+  }
+
+  /**
+   * Determine character case
+   * @param {string} char - Diacritic character
+   * @return {string} - character case string
+   */
+  static getCase(char) {
+    let charCase = 'lower',
+      lower = char.toLowerCase() === char,
+      upper = char.toUpperCase() === char;
+    if (lower && upper) {
+      charCase = 'none';
+    } else if (upper) {
+      charCase = 'upper';
+    }
+    return charCase;
   }
 
 }

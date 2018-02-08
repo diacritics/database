@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "alphabet": "Zzzz",
+    "continent": [
+      "AF",
+      "AS",
+      "EU",
+      "NA",
+      "SA",
+      "OC",
+      "AN"
+    ],
+    "language": "und",
+    "languageNative": "undetermined",
+    "source": [
+      "http://www.unicode.org/reports/tr35/#Unknown_or_Invalid_Identifiers",
+      "https://github.com/julmot/mark.js/blob/31ae60c099bf82539079add9a3fe76fbc079b5dd/src/lib/regexpcreator.js#L288"
+    ]
+  },
+  "data": {}
+}

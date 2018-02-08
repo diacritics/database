@@ -30,6 +30,7 @@
   },
   "scripts": {
     "build": "npm run lint && node build/build.js",
+    "build:und": "node build/build-undetermined.js",
     "deploy": "node build/deploy.js",
     "extract": "node build/extract.js",
     "lint": "eslint ./"

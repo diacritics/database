@@ -8,6 +8,7 @@
 const fs = require('fs'),
   glob = require('glob'),
   del = require('del'),
+  Cleanup = require('./processes/build-cleanup'),
   Utils = require('./processes/utils'),
   Validate = require('./processes/validate'),
   pkg = require('../package.json'),
@@ -26,6 +27,7 @@ class Build {
    * Constructor
    */
   constructor() {
+    this.diacritics = new Set([]);
     this.run();
   }
 
@@ -186,6 +188,9 @@ class Build {
         Object.keys(json[lang][variant]['data']).forEach(char => {
           const eq = this.generateEquivalents(char);
           clone[lang][variant]['data'][char]['equivalents'] = eq;
+          if (lang !== 'und') {
+            this.diacritics.add(char);
+          }
         });
       });
     });
@@ -209,7 +214,7 @@ class Build {
         // languageData contains ALL territories where a language is
         // spoken, so we will cross-reference with the territoryInfo
         // to only find offical languages
-        if (languages[variant]['_territories']) {
+        if (languages[variant] && languages[variant]['_territories']) {
           languages[variant]['_territories'].forEach(territory => {
             const vrnt = territories[territory].languagePopulation[variant];
             // official or official_regional language if defined
@@ -244,7 +249,7 @@ class Build {
 
   /**
    * Writes the defined content into ./build/out/[version]/diacritics.json
-   * @param {string} content - The file content
+   * @param {object} content - The database file content
    */
   writeOutput(content) {
     // write diacritics.json based on `out`
@@ -264,11 +269,7 @@ class Build {
     this.clearBuild();
     let out = {};
     this.getLanguageFiles().forEach(item => {
-      const {
-        file,
-        folderName,
-        fileName
-      } = item;
+      const {file, folderName, fileName} = item;
       this.checkValidation(file);
       // add language & any variants
       if (typeof out[folderName] === 'undefined') {
@@ -278,6 +279,7 @@ class Build {
       out = this.addEquivalents(out);
       out = this.addOfficialLang(out);
     });
+    out = Cleanup.removeUndeterminedDuplicates(out, this.diacritics);
     this.writeOutput(out);
   }
 
