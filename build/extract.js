@@ -310,11 +310,14 @@ class Extract {
         folder :
         language.slice(indx + 1);
     }
-    const result = this.JSONtemplate.replace(
-      /\/\/<%= contents %>/gmi,
-      JSON.stringify(data, null, 2)
+    Utils.writeFile(
+      `./src/${folder}/`,
+      language.toLowerCase(),
+      this.JSONtemplate.replace(
+        /\/\/<%= contents %>/gmi,
+        Utils.stringify(data)
+      )
     );
-    Utils.writeJSON(`./src/${folder}/`, language.toLowerCase(), result);
   }
 
   /**

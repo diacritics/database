@@ -80,11 +80,7 @@ class Undetermined {
   run() {
     this.diacritics.forEach(block => this.buildEntries(block));
     fs.unlinkSync('./src/und/und.json');
-    Utils.writeJSON(
-      './src/und/',
-      'und',
-      JSON.stringify(this.und, null, 2) + '\n'
-    );
+    Utils.writeJSON('./src/und/', 'und', this.und);
   }
 }
 

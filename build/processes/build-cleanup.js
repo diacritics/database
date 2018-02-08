@@ -49,7 +49,7 @@ class Cleanup {
       console.log(`"${this.buildFile}" updated`);
     });
     fs.unlinkSync('src/und/und.json');
-    Utils.writeJSON('src/und', 'und', JSON.stringify(und, null, 2) + '\n');
+    Utils.writeJSON('src/und', 'und', und);
     console.log('"und.json" file updated');
   }
 
