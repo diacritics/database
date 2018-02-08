@@ -13,9 +13,10 @@ class Cleanup {
   /**
    * Constructor
    */
-  constructor() {
+  constructor(template = und) {
     this.buildFile = './build/build-undetermined.js';
     this.buildContent = fs.readFileSync(this.buildFile, 'utf8');
+    this.und = {...template};
   }
 
   /**
@@ -29,9 +30,9 @@ class Cleanup {
     [...charList].forEach(char => {
       if (output.und.und.data[char]) {
         delete output.und.und.data[char];
-        delete und.data[char];
+        delete this.und.data[char];
         this.buildContent = this.buildContent.replace(char, '');
-        console.log(`Removed "${char}" from "und" & build file`);
+        console.log(`Removed "${char}" from "und" language & build file`);
       }
     });
     this.saveFiles();
