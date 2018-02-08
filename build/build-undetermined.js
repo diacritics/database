@@ -23,8 +23,7 @@ const fs = require('fs'),
  */
 class Undetermined {
   /**
-   * Constructor
-   * @param {string} template - und.json base template
+   * @param {object} template - The "und" language template
    */
   constructor(template = und) {
     /**
@@ -32,6 +31,7 @@ class Undetermined {
      * Duplicate diacritics will automatically be removed from this list by the
      * build-cleanup script. Lone characters without diacritics will need to be
      * manually removed
+     * @type {string[]}
      */
     this.diacritics = [
       'aàảãạăằắẳẵặầấẩẫậåā', 'AÀẢÃẠĂẰẮẲẴẶẦẤẨẪẬÅĀ',
@@ -48,18 +48,22 @@ class Undetermined {
       'yỳỷỹỵÿ', 'YỲỶỸỴŸ',
       'zž', 'ZŽ'
     ];
+    /**
+     * Contains the "und" language file template
+     * @type {object}
+     */
     this.und = {...template};
     this.run();
   }
 
   /**
-  * Writes the defined content into ./src/[lang]/[lang].json
-  * @param {string} block - a block of diacritic characters using
-  * a format where the base character is first, followed by a list
-  * of diacritics characters that match the base, e.g. 'cçćč' where
-  * 'c' is the base character and 'çćč' are the matching diacritics
-  * results are added directly to the `und` template
-  */
+   * Writes the defined content into ./src/[lang]/[lang].json
+   * @param {string} block - a block of diacritic characters using
+   * a format where the base character is first, followed by a list
+   * of diacritics characters that match the base, e.g. 'cçćč' where
+   * 'c' is the base character and 'çćč' are the matching diacritics
+   * results are added directly to the `und` template
+   */
   buildEntries(block) {
     block = block.split('');
     const base = block.shift(),

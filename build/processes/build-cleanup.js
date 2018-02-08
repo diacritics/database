@@ -11,11 +11,25 @@ const fs = require('fs'),
 
 class Cleanup {
   /**
-   * Constructor
+   * @param {object} template - The "und" language template
    */
   constructor(template = und) {
+    /**
+     * The build file where the actual diacritics for the "und" language are
+     * originally stored
+     * @type {string}
+     */
     this.buildFile = './build/build-undetermined.js';
+    /**
+     * The build file contents where the actual diacritics for the "und"
+     * language are originally stored
+     * @type {object}
+     */
     this.buildContent = fs.readFileSync(this.buildFile, 'utf8');
+    /**
+     * Contains the "und" language file template
+     * @type {object}
+     */
     this.und = {...template};
   }
 
