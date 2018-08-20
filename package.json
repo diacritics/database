@@ -38,7 +38,7 @@
   "devDependencies": {
     "@julmot/git-branch-deploy": "^1.0.0",
     "ajv": "^6.0.0",
-    "cldr-data": "^32.0.0",
+    "cldr-data": "^33.0.0",
     "del": "^3.0.0",
     "eslint": "^5.0.0",
     "glob": "^7.1.2",
