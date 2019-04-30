@@ -44,7 +44,7 @@
     "glob": "^7.1.2",
     "simple-git": "^1.77.0",
     "strip-combining-marks": "^1.0.0",
-    "strip-json-comments": "^2.0.1"
+    "strip-json-comments": "^3.0.0"
   },
   "private": true
 }
