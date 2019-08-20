@@ -40,7 +40,7 @@
     "ajv": "^6.0.0",
     "cldr-data": "^34.0.0",
     "del": "^3.0.0",
-    "eslint": "^5.0.0",
+    "eslint": "^6.2.1",
     "glob": "^7.1.2",
     "simple-git": "^1.77.0",
     "strip-combining-marks": "^1.0.0",
