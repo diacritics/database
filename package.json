@@ -41,7 +41,7 @@
     "cldr-data": "^34.0.0",
     "del": "^3.0.0",
     "eslint": "^5.0.0",
-    "glob": "^7.1.2",
+    "glob": "^7.1.5",
     "simple-git": "^1.77.0",
     "strip-combining-marks": "^1.0.0",
     "strip-json-comments": "^2.0.1"
