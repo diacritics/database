@@ -42,7 +42,7 @@
     "del": "^3.0.0",
     "eslint": "^5.0.0",
     "glob": "^7.1.2",
-    "simple-git": "^1.77.0",
+    "simple-git": "^2.3.0",
     "strip-combining-marks": "^1.0.0",
     "strip-json-comments": "^2.0.1"
   },
